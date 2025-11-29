@@ -28,6 +28,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../../styles.css">
+    
+    <!-- Breadcrumb Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://fastshortcuts.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shortcuts",
+          "item": "https://fastshortcuts.com/#categories"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "VS Code Shortcuts",
+          "item": "https://fastshortcuts.com/shortcuts/vscode/"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- TechArticle Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "VS Code Keyboard Shortcuts 2025 - Complete Guide",
+      "description": "Master Visual Studio Code with 50+ keyboard shortcuts. Learn how to use VS Code shortcuts on Windows, Mac & Linux.",
+      "author": {
+        "@type": "Organization",
+        "name": "FastShortcuts"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FastShortcuts",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fastshortcuts.com/logo.png"
+        }
+      },
+      "datePublished": "2024-11-29",
+      "dateModified": "2025-11-29",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fastshortcuts.com/shortcuts/vscode/"
+      },
+      "keywords": "VS Code shortcuts, Visual Studio Code, keyboard shortcuts, developer productivity",
+      "articleSection": "Developer Tools",
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Visual Studio Code",
+        "operatingSystem": "Windows, macOS, Linux",
+        "applicationCategory": "DeveloperApplication"
+      }
+    }
+    </script>
+    
+    <!-- HowTo Schema for Learning Shortcuts -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use VS Code Keyboard Shortcuts",
+      "description": "Learn to master Visual Studio Code keyboard shortcuts for faster coding",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Learn General Shortcuts",
+          "text": "Start with essential shortcuts like Command Palette (Ctrl+Shift+P), Quick Open (Ctrl+P), and Settings (Ctrl+,)"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Master Editing Shortcuts",
+          "text": "Practice multi-cursor editing (Ctrl+D), line manipulation (Ctrl+Shift+K), and code formatting (Shift+Alt+F)"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Use Navigation Shortcuts",
+          "text": "Navigate efficiently with Go to Definition (F12), Go to File (Ctrl+P), and Symbol Search (Ctrl+Shift+O)"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Debug with Shortcuts",
+          "text": "Speed up debugging with Start/Continue (F5), Step Over (F10), and Toggle Breakpoint (F9)"
+        }
+      ],
+      "tool": {
+        "@type": "SoftwareApplication",
+        "name": "Visual Studio Code"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->

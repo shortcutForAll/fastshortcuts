@@ -16,13 +16,13 @@
     <meta property="og:title" content="FastShortcuts - Complete Keyboard Shortcuts Guide for All Developers">
     <meta property="og:description" content="Master keyboard shortcuts for VS Code, IntelliJ, Windows, Mac & more. Your ultimate productivity companion with 500+ shortcuts.">
     <meta property="og:url" content="https://fastshortcuts.com">
-    <meta property="og:image" content="https://fastshortcuts.com/og-image.png">
+    <!-- TODO: Create og-image.png (1200x630px) for social sharing -->
     
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="FastShortcuts - Master Keyboard Shortcuts for Developers">
     <meta name="twitter:description" content="Learn 500+ keyboard shortcuts for VS Code, IntelliJ, Windows, Mac & more. Boost productivity 10x.">
-    <meta name="twitter:image" content="https://fastshortcuts.com/twitter-image.png">
+    <!-- TODO: Create twitter-image.png (1200x600px) for Twitter sharing -->
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://fastshortcuts.com">
@@ -36,6 +36,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FastShortcuts",
+      "url": "https://fastshortcuts.com",
+      "description": "Complete keyboard shortcuts guide for developers. Learn VS Code, IntelliJ, Windows, Mac, Chrome & Sublime shortcuts.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://fastshortcuts.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FastShortcuts",
+        "url": "https://fastshortcuts.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fastshortcuts.com/logo.png"
+        },
+        "sameAs": [
+          "https://github.com/shortcutForAll/fastshortcuts"
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FastShortcuts",
+      "url": "https://fastshortcuts.com",
+      "logo": "https://fastshortcuts.com/logo.png",
+      "description": "Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "hello@fastshortcuts.com"
+      },
+      "sameAs": [
+        "https://github.com/shortcutForAll/fastshortcuts"
+      ]
+    }
+    </script>
+    
+    <!-- ItemList Schema for Categories -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Keyboard Shortcuts Categories",
+      "description": "Complete list of keyboard shortcuts guides available on FastShortcuts",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "TechArticle",
+            "name": "VS Code Keyboard Shortcuts",
+            "url": "https://fastshortcuts.com/shortcuts/vscode/",
+            "description": "Master Visual Studio Code with 50+ keyboard shortcuts"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "TechArticle",
+            "name": "IntelliJ IDEA Keyboard Shortcuts",
+            "url": "https://fastshortcuts.com/shortcuts/intellij/",
+            "description": "Boost productivity in IntelliJ with powerful shortcuts"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "TechArticle",
+            "name": "Windows Keyboard Shortcuts",
+            "url": "https://fastshortcuts.com/shortcuts/windows/",
+            "description": "Navigate Windows like a pro with these shortcuts"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "TechArticle",
+            "name": "macOS Keyboard Shortcuts",
+            "url": "https://fastshortcuts.com/shortcuts/mac/",
+            "description": "Essential Mac shortcuts for power users"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "TechArticle",
+            "name": "Google Chrome Keyboard Shortcuts",
+            "url": "https://fastshortcuts.com/shortcuts/chrome/",
+            "description": "Browse faster with Chrome keyboard shortcuts"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "TechArticle",
+            "name": "Sublime Text Keyboard Shortcuts",
+            "url": "https://fastshortcuts.com/shortcuts/sublime/",
+            "description": "Supercharge your text editing workflow"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
