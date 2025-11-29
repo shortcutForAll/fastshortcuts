@@ -33,7 +33,14 @@
             <p class="page-description">Browse faster with essential Chrome keyboard shortcuts for tabs, bookmarks, and DevTools!</p>
         </div>
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="🔍 Search Chrome shortcuts..." autocomplete="off">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="🔍 Search Chrome shortcuts..."
+                    autocomplete="off"
+                >
+            </div>
         </div>
         <div class="shortcuts-container">
             <div class="shortcut-group">
@@ -95,7 +102,38 @@
         </div>
         <div class="no-results" style="display: none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
     </main>
-    <footer><div class="footer-container"><div class="footer-bottom"><p>&copy; 2025 FastShortcuts. All rights reserved.</p></div></div></footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>⌨️ FastShortcuts</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#categories">All Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Shortcuts</h3>
+                    <ul class="footer-links">
+                        <li><a href="../vscode/">VS Code</a></li>
+                        <li><a href="../windows/">Windows</a></li>
+                        <li><a href="../mac/">Mac</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="../../script.js"></script>
 </body>
 </html>
