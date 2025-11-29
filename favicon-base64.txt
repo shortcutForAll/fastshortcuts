@@ -1,0 +1,14 @@
+# Simple 16x16 favicon (yellow keyboard on transparent)
+# You can convert this to .ico using online tools like favicon.io or realfavicongenerator.net
+
+Recommended steps:
+1. Go to https://favicon.io/favicon-generator/
+2. Use these settings:
+   - Text: ⌨
+   - Background: Rounded (#fbbf24)
+   - Font: Arial Bold
+   - Font Color: White (#ffffff)
+3. Download and extract favicon.ico
+4. Upload to your server
+
+Or use https://realfavicongenerator.net/ with the favicon.svg file

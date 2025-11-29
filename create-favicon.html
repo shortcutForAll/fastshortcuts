@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Generator</title>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Yellow background
+        ctx.fillStyle = '#fbbf24';
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Dark border
+        ctx.strokeStyle = '#92400e';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(1, 1, 30, 30);
+        
+        // White keyboard symbol (simplified)
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 20px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('⌨', 16, 16);
+        
+        // Convert to ICO would require additional processing
+        console.log('Favicon canvas created');
+    </script>
+</body>
+</html>
