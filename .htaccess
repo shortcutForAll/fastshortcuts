@@ -12,6 +12,14 @@ RewriteRule ^intellij\.html$ /shortcuts/intellij/ [R=301,L]
 RewriteRule ^chrome\.html$ /shortcuts/chrome/ [R=301,L]
 RewriteRule ^sublime\.html$ /shortcuts/sublime/ [R=301,L]
 
+# Remove .html extension for legal pages (clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(about|contact|privacy|terms)$ /$1.html [L]
+
+# Redirect .html URLs to clean URLs for legal pages
+RewriteRule ^(about|contact|privacy|terms)\.html$ /$1 [R=301,L]
+
 # Ensure trailing slashes for directory URLs (prevents redirect loops)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} -d

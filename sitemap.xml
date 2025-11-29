@@ -7,25 +7,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fastshortcuts.com/about.html</loc>
+    <loc>https://fastshortcuts.com/about</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fastshortcuts.com/contact.html</loc>
+    <loc>https://fastshortcuts.com/contact</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fastshortcuts.com/privacy.html</loc>
+    <loc>https://fastshortcuts.com/privacy</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://fastshortcuts.com/terms.html</loc>
+    <loc>https://fastshortcuts.com/terms</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
