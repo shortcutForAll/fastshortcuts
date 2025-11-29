@@ -40,6 +40,10 @@ logs/
 *.ftp
 ftp-config.json
 
+# Documentation files
+*.md
+!README.md
+
 # OS
 Thumbs.db
 .DS_Store
