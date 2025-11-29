@@ -3,100 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastShortcuts - Auto Deployment testing</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            max-width: 600px;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            animation: fadeIn 1s ease-in;
-        }
-        
-        .emoji {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            animation: bounce 2s infinite;
-        }
-        
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-        
-        .status {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 1rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-        }
-        
-        .badge {
-            display: inline-block;
-            background: #48bb78;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-    </style>
+    
+    <!-- SEO Meta Tags -->
+    <title>FastShortcuts - How to Use Keyboard Shortcuts? Complete Guide for VS Code, Windows, Mac & All IDEs</title>
+    <meta name="description" content="Learn keyboard shortcuts for VS Code, IntelliJ, Windows, Mac & Chrome. Find answers to 'what are keyboard shortcuts?', 'how to use shortcuts in VS Code?', 'best productivity shortcuts' and boost your workflow efficiency by 10x.">
+    <meta name="keywords" content="keyboard shortcuts guide, how to use keyboard shortcuts, VS Code shortcuts tutorial, Windows keyboard shortcuts list, Mac shortcuts for beginners, what are keyboard shortcuts, best IDE shortcuts, developer productivity tips, keyboard shortcuts cheat sheet, learn keyboard shortcuts fast, keyboard shortcuts for programmers, how to master keyboard shortcuts">
+    <meta name="author" content="FastShortcuts">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FastShortcuts - Complete Keyboard Shortcuts Guide for All Developers">
+    <meta property="og:description" content="Master keyboard shortcuts for VS Code, IntelliJ, Windows, Mac & more. Your ultimate productivity companion with 500+ shortcuts.">
+    <meta property="og:url" content="https://fastshortcuts.com">
+    <meta property="og:image" content="https://fastshortcuts.com/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FastShortcuts - Master Keyboard Shortcuts for Developers">
+    <meta name="twitter:description" content="Learn 500+ keyboard shortcuts for VS Code, IntelliJ, Windows, Mac & more. Boost productivity 10x.">
+    <meta name="twitter:image" content="https://fastshortcuts.com/twitter-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fastshortcuts.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">🚀</div>
-        <h1>FastShortcuts</h1>
-        <p>Automated deployment is now active!</p>
-        <p>Every push to the main branch will automatically deploy to Hostinger.</p>
-        
-        <div class="status">
-            <p style="margin: 0;">Deployment Status</p>
-            <div class="badge">✓ Live & Running</div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⌨️</span>
+                <span>FastShortcuts</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="shortcuts/vscode/">VS Code</a></li>
+                <li><a href="shortcuts/windows/">Windows</a></li>
+                <li><a href="shortcuts/mac/">Mac</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
         </div>
-        
-        <p style="font-size: 0.9rem; margin-top: 2rem; opacity: 0.7;">
-            Last updated: <span id="datetime"></span>
-        </p>
-    </div>
-    
-    <script>
-        // Display current date and time
-        document.getElementById('datetime').textContent = new Date().toLocaleString();
-    </script>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content hero-content-wide">
+            <span class="hero-badge">⌨️ Free Keyboard Shortcuts Database</span>
+            <h1 class="hero-heading-large">Master Keyboard Shortcuts<br>Work Faster, Code Smarter</h1>
+            <p class="hero-subtitle">
+                The ultimate resource for developers and power users. Access 500+ keyboard shortcuts for VS Code, IntelliJ, Windows, Mac, Chrome, and more. Boost your productivity by up to 10x with our comprehensive, easy-to-search shortcut guides.
+            </p>
+            <div class="cta-buttons">
+                <a href="#categories" class="btn btn-primary">
+                    Browse All Shortcuts
+                </a>
+                <a href="shortcuts/vscode/" class="btn btn-secondary">
+                    VS Code Shortcuts →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="section-header">
+            <h2 class="section-title">Explore By Category</h2>
+            <p class="section-subtitle">Choose your tool and start learning shortcuts instantly</p>
+        </div>
+        <div class="categories-grid">
+            <a href="shortcuts/vscode/" class="category-card">
+                <span class="category-icon">💻</span>
+                <h3 class="category-title">Visual Studio Code</h3>
+                <p class="category-description">Master the most popular code editor with essential shortcuts</p>
+                <span class="category-count">50+ Shortcuts</span>
+            </a>
+            
+            <a href="shortcuts/intellij/" class="category-card">
+                <span class="category-icon">🧠</span>
+                <h3 class="category-title">IntelliJ IDEA</h3>
+                <p class="category-description">Boost productivity in IntelliJ with powerful shortcuts</p>
+                <span class="category-count">45+ Shortcuts</span>
+            </a>
+            
+            <a href="shortcuts/windows/" class="category-card">
+                <span class="category-icon">🪟</span>
+                <h3 class="category-title">Windows OS</h3>
+                <p class="category-description">Navigate Windows like a pro with these shortcuts</p>
+                <span class="category-count">40+ Shortcuts</span>
+            </a>
+            
+            <a href="shortcuts/mac/" class="category-card">
+                <span class="category-icon">🍎</span>
+                <h3 class="category-title">macOS</h3>
+                <p class="category-description">Essential Mac shortcuts for power users</p>
+                <span class="category-count">40+ Shortcuts</span>
+            </a>
+            
+            <a href="shortcuts/chrome/" class="category-card">
+                <span class="category-icon">🌐</span>
+                <h3 class="category-title">Google Chrome</h3>
+                <p class="category-description">Browse faster with Chrome keyboard shortcuts</p>
+                <span class="category-count">35+ Shortcuts</span>
+            </a>
+            
+            <a href="shortcuts/sublime/" class="category-card">
+                <span class="category-icon">📝</span>
+                <h3 class="category-title">Sublime Text</h3>
+                <p class="category-description">Supercharge your text editing workflow</p>
+                <span class="category-count">30+ Shortcuts</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="section-header">
+                <h2 class="section-title">What is FastShortcuts?</h2>
+                <p class="section-subtitle">Your comprehensive keyboard shortcuts companion for developers and power users</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        FastShortcuts is your go-to resource for mastering keyboard shortcuts across all major development tools and operating systems. We've compiled the most comprehensive database of shortcuts to help developers, designers, and power users work more efficiently.
+                    </p>
+                    <p class="about-description">
+                        Whether you're coding in VS Code, navigating Windows or macOS, browsing with Chrome, or working in IntelliJ IDEA, we have you covered. Our mission is to make keyboard shortcuts accessible, searchable, and easy to learn for everyone.
+                    </p>
+                    <p class="about-description">
+                        Learning keyboard shortcuts can dramatically improve your workflow. Instead of constantly switching between keyboard and mouse, you can execute commands instantly. From simple text editing to complex IDE operations, keyboard shortcuts help you maintain focus and get more done in less time.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Shortcuts</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Tools Covered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Free Forever</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10x</div>
+                            <div class="stat-label">Productivity Boost</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <!-- Demo Animation -->
+                    <div class="demo-container">
+                        <h3 class="demo-title">🎯 See It In Action</h3>
+                        <div class="demo-animation">
+                            <div class="demo-search">
+                                <input type="text" class="demo-search-input" placeholder="Search shortcuts..." readonly>
+                                <div class="demo-cursor"></div>
+                            </div>
+                            <div class="demo-results">
+                                <div class="demo-shortcut-item">
+                                    <span class="demo-description">Copy line down</span>
+                                    <div class="demo-right">
+                                        <div class="demo-keys">
+                                            <span class="demo-key">Shift</span>
+                                            <span class="demo-plus">+</span>
+                                            <span class="demo-key">Alt</span>
+                                            <span class="demo-plus">+</span>
+                                            <span class="demo-key">↓</span>
+                                        </div>
+                                        <button class="demo-copy-btn">📋</button>
+                                    </div>
+                                </div>
+                                <div class="demo-shortcut-item">
+                                    <span class="demo-description">Delete line</span>
+                                    <div class="demo-right">
+                                        <div class="demo-keys">
+                                            <span class="demo-key">Ctrl</span>
+                                            <span class="demo-plus">+</span>
+                                            <span class="demo-key">Shift</span>
+                                            <span class="demo-plus">+</span>
+                                            <span class="demo-key">K</span>
+                                        </div>
+                                        <button class="demo-copy-btn">📋</button>
+                                    </div>
+                                </div>
+                                <div class="demo-shortcut-item">
+                                    <span class="demo-description">Find and replace</span>
+                                    <div class="demo-right">
+                                        <div class="demo-keys">
+                                            <span class="demo-key">Ctrl</span>
+                                            <span class="demo-plus">+</span>
+                                            <span class="demo-key">H</span>
+                                        </div>
+                                        <button class="demo-copy-btn">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-mouse-cursor">🖱️</div>
+                        </div>
+                        <p class="demo-note">
+                            Watch how easy it is to search for any shortcut and copy it to your clipboard instantly. Try it yourself on any of our shortcut pages!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header">
+                <h2 class="section-title">Why FastShortcuts?</h2>
+                <p class="section-subtitle">Everything you need to become a keyboard shortcut master</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Comprehensive Database</h3>
+                    <p class="feature-description">Access shortcuts for 50+ tools and platforms, all in one place</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Easy Search</h3>
+                    <p class="feature-description">Find any shortcut instantly with our powerful search feature</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Mobile Friendly</h3>
+                    <p class="feature-description">Access shortcuts on any device, anywhere, anytime</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Optimized for speed with instant page loads</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Beautiful Design</h3>
+                    <p class="feature-description">Modern, clean interface that's easy on the eyes</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🆓</div>
+                    <h3 class="feature-title">100% Free</h3>
+                    <p class="feature-description">All shortcuts, all features, completely free forever</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>⌨️ FastShortcuts</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⚡</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">All Categories</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Shortcuts</h3>
+                    <ul class="footer-links">
+                        <li><a href="shortcuts/vscode/">VS Code Shortcuts</a></li>
+                        <li><a href="shortcuts/intellij/">IntelliJ Shortcuts</a></li>
+                        <li><a href="shortcuts/windows/">Windows Shortcuts</a></li>
+                        <li><a href="shortcuts/mac/">Mac Shortcuts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Cheat Sheets</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
