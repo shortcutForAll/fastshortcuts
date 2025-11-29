@@ -26,19 +26,21 @@ jobs:
       #   run: npm run build
       
       - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Specify the local folder to upload (use 'dist' or 'build' if you have a build step)
+          port: 21
+          protocol: ftp
           local-dir: ./
-          # Specify the remote directory on Hostinger
-          server-dir: ./public_html/
-          # Files to exclude from deployment
+          server-dir: /public_html/
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
             **/.env
             **/README.md
+            **/.github/**
+            **/DEPLOYMENT_CHECKLIST.md
