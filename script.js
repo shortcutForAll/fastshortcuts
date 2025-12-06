@@ -343,3 +343,99 @@ if (document.readyState === 'loading') {
 } else {
     initDemoAnimation();
 }
+
+// Related Shortcuts - Dynamic Population
+document.addEventListener('DOMContentLoaded', function() {
+    const relatedGrid = document.querySelector('.related-grid');
+    
+    if (!relatedGrid) return;
+    
+    // All shortcut pages with metadata (ordered by date - newest first)
+    const allShortcuts = [
+        {
+            name: 'Photoshop',
+            path: '../photoshop/',
+            icon: '🎨',
+            description: 'Master Adobe Photoshop with 70+ essential keyboard shortcuts for faster photo editing and design workflows.',
+            badge: 'New',
+            date: '2024-12-06'
+        },
+        {
+            name: 'Sublime Text',
+            path: '../sublime/',
+            icon: '📝',
+            description: 'Boost productivity with Sublime Text shortcuts for editing, navigation, and multi-cursor operations.',
+            badge: 'Popular',
+            date: '2024-11-29'
+        },
+        {
+            name: 'IntelliJ IDEA',
+            path: '../intellij/',
+            icon: '💡',
+            description: 'Speed up Java development with IntelliJ IDEA keyboard shortcuts for coding, debugging, and refactoring.',
+            badge: 'Developer',
+            date: '2024-11-29'
+        },
+        {
+            name: 'Chrome',
+            path: '../chrome/',
+            icon: '🌐',
+            description: 'Navigate faster with Chrome browser shortcuts for tabs, bookmarks, and developer tools.',
+            badge: 'Essential',
+            date: '2024-11-29'
+        },
+        {
+            name: 'Mac',
+            path: '../mac/',
+            icon: '🍎',
+            description: 'Master macOS with essential keyboard shortcuts for Finder, Spotlight, Mission Control, and more.',
+            badge: 'System',
+            date: '2024-11-28'
+        },
+        {
+            name: 'Windows',
+            path: '../windows/',
+            icon: '🪟',
+            description: 'Increase Windows productivity with shortcuts for taskbar, File Explorer, virtual desktops, and more.',
+            badge: 'System',
+            date: '2024-11-28'
+        },
+        {
+            name: 'VS Code',
+            path: '../vscode/',
+            icon: '💻',
+            description: 'Code faster with VS Code shortcuts for editing, debugging, Git integration, and extensions.',
+            badge: 'Developer',
+            date: '2024-11-28'
+        }
+    ];
+    
+    // Get current page
+    const currentPath = window.location.pathname;
+    const currentPageName = currentPath.split('/').filter(p => p).pop() || currentPath.split('/').slice(-2, -1)[0];
+    
+    // Filter out current page and get 3 latest shortcuts
+    const relatedShortcuts = allShortcuts
+        .filter(shortcut => {
+            const shortcutName = shortcut.path.split('/').filter(p => p).pop();
+            return shortcutName !== currentPageName;
+        })
+        .slice(0, 3); // Get first 3 (already sorted by date, newest first)
+    
+    // Populate the grid
+    relatedShortcuts.forEach(shortcut => {
+        const card = document.createElement('a');
+        card.href = shortcut.path;
+        card.className = 'related-card';
+        
+        card.innerHTML = `
+            <div class="related-card-icon">${shortcut.icon}</div>
+            <span class="related-card-badge">${shortcut.badge}</span>
+            <h3>${shortcut.name} Shortcuts</h3>
+            <p>${shortcut.description}</p>
+            <span class="related-card-cta">Explore ${shortcut.name}</span>
+        `;
+        
+        relatedGrid.appendChild(card);
+    });
+});
