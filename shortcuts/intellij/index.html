@@ -93,6 +93,93 @@
       "articleSection": "Developer Tools"
     }
     </script>
+    
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use IntelliJ IDEA Keyboard Shortcuts",
+      "description": "Master IntelliJ IDEA shortcuts for efficient Java development and coding",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Use Search Everywhere",
+          "text": "Press Double Shift to open Search Everywhere dialog, find classes with Ctrl+N (Cmd+O on Mac), files with Ctrl+Shift+N, and symbols with Ctrl+Alt+Shift+N"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Master Code Generation",
+          "text": "Generate code with Alt+Insert (Cmd+N on Mac) for constructors, getters/setters. Use Ctrl+O to override methods and Ctrl+I to implement interface methods"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Refactor Efficiently",
+          "text": "Refactor code with Ctrl+Alt+Shift+T (Ctrl+T on Mac) for refactor menu, Shift+F6 for rename, Ctrl+Alt+M for extract method, and Ctrl+Alt+V for extract variable"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Navigate Code Quickly",
+          "text": "Navigate with Ctrl+B (Cmd+B on Mac) for go to declaration, Alt+F7 for find usages, Ctrl+H for type hierarchy, and Ctrl+E for recent files"
+        }
+      ],
+      "tool": {
+        "@type": "SoftwareApplication",
+        "name": "IntelliJ IDEA",
+        "applicationCategory": "DeveloperApplication"
+      }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the most important IntelliJ IDEA shortcuts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Essential IntelliJ shortcuts include: Double Shift (Search Everywhere), Ctrl+Space (Code Completion), Alt+Enter (Show Intention Actions), Ctrl+B (Go to Declaration), Shift+F6 (Rename), Ctrl+Alt+L (Reformat Code), and Shift+F10 (Run). These shortcuts dramatically improve coding efficiency in IntelliJ IDEA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I search for anything in IntelliJ IDEA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Press Double Shift (Shift twice quickly) to open the Search Everywhere dialog in IntelliJ IDEA. This searches classes, files, symbols, actions, and settings. For specific searches: Ctrl+N for classes, Ctrl+Shift+N for files, Ctrl+Shift+A for actions, and Ctrl+Alt+Shift+N for symbols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the shortcut for code completion in IntelliJ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Ctrl+Space for basic code completion in IntelliJ IDEA. For smarter completion, press Ctrl+Shift+Space. This provides context-aware suggestions based on expected type. Press Tab to accept the selected suggestion or Enter to replace existing code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I refactor code in IntelliJ using keyboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access IntelliJ's refactor menu with Ctrl+Alt+Shift+T (Ctrl+T on Mac). Common refactoring shortcuts: Shift+F6 (Rename), Ctrl+Alt+M (Extract Method), Ctrl+Alt+V (Extract Variable), Ctrl+Alt+C (Extract Constant), and F6 (Move). These refactorings work safely across your entire project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are IntelliJ shortcuts different on Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, IntelliJ shortcuts differ between Windows/Linux and Mac. Mac uses Cmd instead of Ctrl for many shortcuts. For example, Go to Declaration is Ctrl+B on Windows but Cmd+B on Mac. IntelliJ provides a keymap switcher in Settings to preview shortcuts for your OS."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <nav id="navbar">
@@ -242,93 +329,6 @@
                     <h3>Running and Testing Shortcuts</h3>
                     
                     <p>IntelliJ provides powerful shortcuts for running and testing code. Shift+F10 (Ctrl+R) runs the current configuration, while Shift+F9 (Ctrl+D) debugs it. Ctrl+Shift+F10 (Ctrl+Shift+R) runs the context configuration (automatically determining what to run based on cursor position). Alt+Shift+F10 (Ctrl+Alt+R) shows the Run popup for selecting configurations.</p>
-
-                    <p>Testing shortcuts include Ctrl+Shift+F10 (Ctrl+Shift+R) to run tests for the current class or method, Ctrl+Shift+T (Cmd+Shift+T) to navigate between test and production code, and Ctrl+Alt+F5 to rerun tests. These shortcuts integrate seamlessly with JUnit, TestNG, and other testing frameworks, enabling test-driven development without mouse interaction.</p>
-
-                    <h3>Version Control (Git) Shortcuts in IntelliJ</h3>
-                    
-                    <p>IntelliJ's Git integration includes comprehensive keyboard shortcuts. Alt+9 (Cmd+9) opens the Version Control tool window, Ctrl+K (Cmd+K) commits changes, Ctrl+Shift+K (Cmd+Shift+K) pushes commits, and Ctrl+Alt+Z (Cmd+Alt+Z) reverts changes. Ctrl+T (Cmd+T) updates the project from version control (pull), and Alt+Shift+C (Cmd+Shift+C) views recent changes.</p>
-
-                    <p>Advanced Git shortcuts include Ctrl+D (Cmd+D) to show diff for selected files, Ctrl+Alt+A (Cmd+Alt+A) to add files to VCS, and Alt+Backquote to access VCS operations popup. These shortcuts eliminate context switching to external Git clients, enabling complete version control workflows within IntelliJ IDEA.</p>
-
-                    <h3>Search and Replace Shortcuts</h3>
-                    
-                    <p>IntelliJ's search capabilities are accessible via keyboard shortcuts. Ctrl+F (Cmd+F) opens Find in current file, Ctrl+R (Cmd+R) opens Replace, Ctrl+Shift+F (Cmd+Shift+F) finds in path (project-wide search), and Ctrl+Shift+R (Cmd+Shift+R) replaces in path. F3 (Cmd+G) finds next occurrence, while Shift+F3 (Cmd+Shift+G) finds previous.</p>
-
-                    <p>Advanced search includes Alt+F7 (Cmd+F7) to find usages, Ctrl+Alt+F7 (Cmd+Alt+F7) to show usages popup, and Ctrl+Shift+F7 to highlight usages in file. Ctrl+F7 (Cmd+F7) finds usages in current file. These shortcuts are essential for understanding code dependencies and refactoring safely across large projects.</p>
-
-                    <h3>Customizing IntelliJ Keyboard Shortcuts</h3>
-                    
-                    <p>IntelliJ allows complete keyboard shortcut customization through Settings > Keymap (Preferences > Keymap on Mac). Choose from predefined keymaps including IntelliJ IDEA Classic, Eclipse, Visual Studio, NetBeans, Emacs, and Vim. You can customize individual shortcuts or create entirely custom keymaps. Search for actions by name or current shortcut to find and modify any command.</p>
-
-                    <p>The Find Action dialog (Ctrl+Shift+A or Cmd+Shift+A) is IntelliJ's command palette, allowing you to execute any action by typing its name. This is invaluable for discovering new features and their shortcuts. When you execute an action via Find Action, IntelliJ displays its current keyboard shortcut, helping you learn shortcuts organically through regular use.</p>
-
-                    <h3>Download IntelliJ Shortcuts PDF Cheat Sheet</h3>
-                    
-                    <p>Download our comprehensive IntelliJ IDEA keyboard shortcuts cheat sheet as a PDF using the button at the top of this page. The PDF includes shortcuts for Windows, Mac, and Linux, organized by functionality (navigation, editing, refactoring, debugging). Print it and keep it visible while coding until these shortcuts become muscle memory.</p>
-
-                    <h3>Conclusion: Master IntelliJ Shortcuts for Professional Development</h3>
-                    
-                    <p>Mastering IntelliJ IDEA keyboard shortcuts is an investment that pays dividends throughout your development career. Start with essential navigation shortcuts (Double Shift, Ctrl+B, Alt+F7), then gradually add editing, refactoring, and debugging shortcuts to your repertoire. Within weeks of consistent practice, you'll navigate codebases effortlessly, refactor fearlessly, and debug efficiently - all without touching the mouse. Download our PDF cheat sheet, practice daily, and watch your IntelliJ productivity soar.</p>
-                </article>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>⌨️ FastShortcuts</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                        Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-                        <a href="#" class="social-link" aria-label="GitHub">⚡</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../../">Home</a></li>
-                        <li><a href="../../#categories">All Categories</a></li>
-                        <li><a href="../../#features">Features</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Popular Shortcuts</h3>
-                    <ul class="footer-links">
-                        <li><a href="../vscode/">VS Code</a></li>
-                        <li><a href="../intellij/">IntelliJ IDEA</a></li>
-                        <li><a href="../windows/">Windows</a></li>
-                        <li><a href="../mac/">macOS</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Resources</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">VS Code Docs</a></li>
-                        <li><a href="https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" rel="noopener">Windows Shortcuts</a></li>
-                        <li><a href="https://support.apple.com/en-us/HT201236" target="_blank" rel="noopener">Mac Shortcuts</a></li>
-                        <li><a href="https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html" target="_blank" rel="noopener">IntelliJ Guide</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
-            </div>
-        </div>
     </footer>
 
     <script src="../../script.js"></script>
