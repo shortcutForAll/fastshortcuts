@@ -117,14 +117,50 @@
             <button class="mobile-menu-btn">☰</button>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="../../" class="logo">
+                <span class="logo-icon">⌨️</span>
+                <span>FastShortcuts</span>
+            </a>
+            <button class="mobile-menu-close">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../#categories">Categories</a></li>
+            <li><a href="../vscode/">VS Code</a></li>
+            <li><a href="../windows/">Windows</a></li>
+            <li><a href="../mac/">Mac</a></li>
+            <li><a href="../intellij/">IntelliJ</a></li>
+            <li><a href="../chrome/">Chrome</a></li>
+            <li><a href="../sublime/">Sublime</a></li>
+            <li><a href="../../about">About</a></li>
+            <li><a href="../../contact">Contact</a></li>
+        </ul>
+    </div>
+
     <main class="shortcut-page">
         <div class="page-header">
             <h1 class="page-title">🍎 macOS Keyboard Shortcuts</h1>
             <p class="page-description">Master macOS with essential keyboard shortcuts for productivity and navigation!</p>
         </div>
+
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="�� Search Mac shortcuts..." autocomplete="off">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="🔍 Search Mac shortcuts..."
+                    autocomplete="off"
+                >
+            </div>
         </div>
+
         <div class="shortcuts-container">
             <div class="shortcut-group">
                 <h2 class="group-title">General Mac Shortcuts</h2>
