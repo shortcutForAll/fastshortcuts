@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Photoshop',
             path: '../photoshop/',
-            icon: '🎨',
+            icon: '../../icons/photoshop.svg',
             description: 'Master Adobe Photoshop with 70+ essential keyboard shortcuts for faster photo editing and design workflows.',
             badge: 'New',
             date: '2024-12-06'
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Sublime Text',
             path: '../sublime/',
-            icon: '📝',
+            icon: '../../icons/sublime.svg',
             description: 'Boost productivity with Sublime Text shortcuts for editing, navigation, and multi-cursor operations.',
             badge: 'Popular',
             date: '2024-11-29'
@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'IntelliJ IDEA',
             path: '../intellij/',
-            icon: '💡',
+            icon: '../../icons/intellij.svg',
             description: 'Speed up Java development with IntelliJ IDEA keyboard shortcuts for coding, debugging, and refactoring.',
             badge: 'Developer',
             date: '2024-11-29'
@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Chrome',
             path: '../chrome/',
-            icon: '🌐',
+            icon: '../../icons/chrome.svg',
             description: 'Navigate faster with Chrome browser shortcuts for tabs, bookmarks, and developer tools.',
             badge: 'Essential',
             date: '2024-11-29'
@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Mac',
             path: '../mac/',
-            icon: '🍎',
+            icon: '../../icons/mac.svg',
             description: 'Master macOS with essential keyboard shortcuts for Finder, Spotlight, Mission Control, and more.',
             badge: 'System',
             date: '2024-11-28'
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Windows',
             path: '../windows/',
-            icon: '🪟',
+            icon: '../../icons/windows.svg',
             description: 'Increase Windows productivity with shortcuts for taskbar, File Explorer, virtual desktops, and more.',
             badge: 'System',
             date: '2024-11-28'
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'VS Code',
             path: '../vscode/',
-            icon: '💻',
+            icon: '../../icons/vscode.svg',
             description: 'Code faster with VS Code shortcuts for editing, debugging, Git integration, and extensions.',
             badge: 'Developer',
             date: '2024-11-28'
@@ -429,7 +429,9 @@ document.addEventListener('DOMContentLoaded', function() {
         card.className = 'related-card';
         
         card.innerHTML = `
-            <div class="related-card-icon">${shortcut.icon}</div>
+            <div class="related-card-icon">
+                <img src="${shortcut.icon}" alt="${shortcut.name}" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
             <span class="related-card-badge">${shortcut.badge}</span>
             <h3>${shortcut.name} Shortcuts</h3>
             <p>${shortcut.description}</p>
