@@ -1880,66 +1880,67 @@ footer {
 .platform-tabs {
     display: flex;
     gap: 1rem;
-    margin: 2rem auto 3rem;
-    border-bottom: 3px solid var(--border-light);
-    padding: 0;
-    max-width: 600px;
+    margin: 2.5rem auto 3rem;
+    padding: 0.5rem;
+    max-width: 700px;
     justify-content: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .platform-tab {
-    padding: 1.25rem 3rem;
-    background: var(--bg-secondary);
-    border: 2px solid var(--border-color);
-    border-bottom: none;
-    color: var(--text-secondary);
+    padding: 1.2rem 3.5rem;
+    background: transparent;
+    border: none;
+    color: #64748b;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    transition: all 0.3s ease;
-    border-radius: 12px 12px 0 0;
-    margin-bottom: -3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 14px;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    min-width: 200px;
+    min-width: 220px;
     justify-content: center;
 }
 
 .platform-tab svg,
 .platform-tab img,
 .platform-tab .tab-icon {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
+    width: 26px;
+    height: 26px;
+    transition: all 0.3s ease;
+    opacity: 0.6;
 }
 
 .platform-tab:hover {
-    background: #ffffff;
-    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.6);
+    color: #334155;
     transform: translateY(-2px);
-    border-color: var(--primary);
 }
 
 .platform-tab:hover svg,
 .platform-tab:hover img,
 .platform-tab:hover .tab-icon {
+    opacity: 0.9;
     transform: scale(1.1);
 }
 
 .platform-tab.active {
-    background: #ffffff;
-    color: var(--primary);
-    border-color: var(--primary);
-    border-bottom: 3px solid #ffffff;
-    box-shadow: 0 -2px 8px rgba(251, 191, 36, 0.2);
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #000000;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
 }
 
 .platform-tab.active svg,
 .platform-tab.active img,
 .platform-tab.active .tab-icon {
-    filter: brightness(1.2);
+    opacity: 1;
+    filter: brightness(0) invert(1);
 }
 
 .platform-content {
@@ -1981,9 +1982,10 @@ footer {
 
 @media (max-width: 768px) {
     .platform-tabs {
-        padding: 0 1rem;
+        padding: 0.4rem;
         gap: 0.5rem;
         max-width: 100%;
+        margin: 2rem 1rem 2.5rem;
     }
     
     .platform-tab {
@@ -1991,6 +1993,8 @@ footer {
         font-size: 0.95rem;
         min-width: 140px;
         flex: 1;
+        border-radius: 10px;
+        gap: 0.5rem;
     }
     
     .platform-tab svg,
