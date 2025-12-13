@@ -34,7 +34,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
     <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     
     <!-- Breadcrumb Schema (JSON-LD) -->
     <script type="application/ld+json">
@@ -222,6 +222,7 @@
     </script>
 </head>
 <body>
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="../../" class="logo">
@@ -231,12 +232,19 @@
             <ul class="nav-links">
                 <li><a href="../../">Home</a></li>
                 <li><a href="../../#categories">Categories</a></li>
-                <li><a href="../vscode/">VS Code</a></li>
-                <li><a href="../windows/">Windows</a></li>
-                <li><a href="../mac/">Mac</a></li>
-                <li><a href="../intellij/">IntelliJ</a></li>
-                <li><a href="../chrome/">Chrome</a></li>
-                <li><a href="../sublime/">Sublime</a></li>
+                <li><a href="../../#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tools ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../vscode/">VS Code</a></li>
+                        <li><a href="../intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="../sublime/">Sublime Text</a></li>
+                        <li><a href="../photoshop/">Photoshop</a></li>
+                        <li><a href="../chrome/">Chrome</a></li>
+                        <li><a href="../windows/">Windows</a></li>
+                        <li><a href="../mac/">macOS</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="utility-buttons">
                 <button class="pdf-download-btn" title="Download as PDF">📥 Download PDF</button>
@@ -266,15 +274,15 @@
             <li><a href="../intellij/">IntelliJ</a></li>
             <li><a href="../chrome/">Chrome</a></li>
             <li><a href="../sublime/">Sublime</a></li>
-            <li><a href="../../about">About</a></li>
-            <li><a href="../../contact">Contact</a></li>
+            <li><a href="../../pages/about.html">About</a></li>
+            <li><a href="../../pages/contact.html">Contact</a></li>
         </ul>
     </div>
 
     <main class="shortcut-page">
         <div class="page-header">
             <h1 class="page-title">
-                <img src="../../icons/photoshop.svg" alt="Adobe Photoshop" class="page-title-icon">
+                <img src="../../assets/icons/photoshop.svg" alt="Adobe Photoshop" class="page-title-icon">
                 Adobe Photoshop Keyboard Shortcuts
             </h1>
             <p class="page-description">Master Photoshop with 70+ essential keyboard shortcuts for faster photo editing and design!</p>
@@ -374,55 +382,55 @@
                 <h2 class="group-title">Layer Management</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">New Layer</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">N</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">N</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Duplicate Layer</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">J</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">J</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Merge Layers</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">E</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Merge Visible</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Stamp Visible (Merge to New Layer)</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Group Layers</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">G</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Ungroup Layers</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">G</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">G</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Move Layer Up</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">]</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">]</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Move Layer Down</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">[</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">[</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Move Layer to Top</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">]</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">]</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Move Layer to Bottom</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">[</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">[</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Select All Layers</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">A</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">A</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Create Clipping Mask</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">G</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">G</kbd></div>
                 </div>
             </div>
 
@@ -431,27 +439,27 @@
                 <h2 class="group-title">Selection Shortcuts</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Select All</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">A</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Deselect</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">D</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Reselect</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">D</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">D</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Inverse Selection</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">I</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">I</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Feather Selection</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Select & Mask</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">R</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">R</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Quick Mask Mode</span>
@@ -500,7 +508,7 @@
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Fill with Background Color</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Backspace</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Backspace</kbd></div>
                 </div>
             </div>
 
@@ -509,39 +517,39 @@
                 <h2 class="group-title">View & Navigation</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Zoom In</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">+</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">+</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Zoom Out</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">-</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">-</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Fit to Screen</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">0</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">0</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">100% Zoom (Actual Pixels)</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">1</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">1</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Show/Hide Rulers</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">R</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">R</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Show/Hide Grid</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">'</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">'</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Show/Hide Guides</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">;</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">;</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Lock Guides</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">;</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">;</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Snap</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">;</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">;</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Screen Modes</span>
@@ -558,47 +566,47 @@
                 <h2 class="group-title">Transform & Edit</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Free Transform</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">T</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Transform Again</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">T</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">T</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Undo</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Z</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Z</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Step Backward</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Z</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Z</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Step Forward</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Z</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Z</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Fade</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">F</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">F</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Cut</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">X</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Copy</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">C</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Copy Merged</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Paste</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">V</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">V</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Paste in Place</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">V</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">V</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Content-Aware Fill</span>
@@ -611,43 +619,43 @@
                 <h2 class="group-title">Color & Adjustments</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Levels</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">L</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">L</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Curves</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">M</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">M</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Hue/Saturation</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">U</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Color Balance</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">B</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Black & White</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Desaturate</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">U</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">U</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Invert</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">I</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">I</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Auto Tone</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Auto Contrast</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Auto Color</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div>
                 </div>
             </div>
 
@@ -656,35 +664,35 @@
                 <h2 class="group-title">File Operations</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">New Document</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">N</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Open File</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">O</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">O</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Save</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">S</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">S</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Save As</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Save for Web</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Close</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">W</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Close All</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">W</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">W</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Print</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">P</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div>
                 </div>
             </div>
 
@@ -693,27 +701,27 @@
                 <h2 class="group-title">Type & Text</h2>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Show/Hide Character Panel</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">T</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Increase Font Size</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">></kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">></kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Decrease Font Size</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key"><</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key"><</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Align Left</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Align Center</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Align Right</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">R</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">R</kbd></div>
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Increase Kerning</span>
@@ -733,7 +741,468 @@
                 </div>
                 <div class="shortcut-item">
                     <span class="shortcut-description">Select All Text</span>
-                    <div class="shortcut-keys"><kbd class="key">Cmd/Ctrl</kbd><kbd class="key">A</kbd></div>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Platform Tabs -->
+        <div class="platform-tabs">
+            <button class="platform-tab active" data-platform="windows">
+                <img src="../../assets/icons/windows.svg" alt="Windows" class="tab-icon">
+                Windows / Linux
+            </button>
+            <button class="platform-tab" data-platform="mac">
+                <img src="../../assets/icons/mac.svg" alt="macOS" class="tab-icon">
+                macOS
+            </button>
+        </div>
+
+        <!-- Windows/Linux Shortcuts -->
+        <div id="windows-shortcuts" class="platform-content active">
+        <div class="shortcuts-container">
+            <!-- Essential Tools -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Essential Tool Shortcuts</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Move Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">V</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Rectangular Marquee Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">M</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Lasso Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">L</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Magic Wand / Quick Selection</span>
+                    <div class="shortcut-keys"><kbd class="key">W</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Crop Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">C</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Eyedropper Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">I</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Spot Healing Brush</span>
+                    <div class="shortcut-keys"><kbd class="key">J</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Brush Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">B</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Clone Stamp Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">S</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Eraser Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">E</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Gradient / Paint Bucket</span>
+                    <div class="shortcut-keys"><kbd class="key">G</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Dodge / Burn / Sponge</span>
+                    <div class="shortcut-keys"><kbd class="key">O</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Pen Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">P</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Type Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">T</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Hand Tool (Pan)</span>
+                    <div class="shortcut-keys"><kbd class="key">Space</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Zoom Tool</span>
+                    <div class="shortcut-keys"><kbd class="key">Z</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Default Colors (Black/White)</span>
+                    <div class="shortcut-keys"><kbd class="key">D</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Switch Foreground/Background</span>
+                    <div class="shortcut-keys"><kbd class="key">X</kbd></div>
+                </div>
+            </div>
+
+            <!-- Layer Management -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Layer Management</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">New Layer</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">N</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Duplicate Layer</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">J</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Merge Layers</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Merge Visible</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Stamp Visible (Merge to New Layer)</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Group Layers</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Ungroup Layers</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">G</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Move Layer Up</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">]</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Move Layer Down</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">[</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Move Layer to Top</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">]</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Move Layer to Bottom</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">[</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Select All Layers</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">A</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Create Clipping Mask</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">G</kbd></div>
+                </div>
+            </div>
+
+            <!-- Selection Shortcuts -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Selection Shortcuts</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Select All</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Deselect</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Reselect</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">D</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Inverse Selection</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">I</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Feather Selection</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Select & Mask</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">R</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Quick Mask Mode</span>
+                    <div class="shortcut-keys"><kbd class="key">Q</kbd></div>
+                </div>
+            </div>
+
+            <!-- Brush & Painting -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Brush & Painting</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Increase Brush Size</span>
+                    <div class="shortcut-keys"><kbd class="key">]</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Decrease Brush Size</span>
+                    <div class="shortcut-keys"><kbd class="key">[</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Increase Brush Hardness</span>
+                    <div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">]</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Decrease Brush Hardness</span>
+                    <div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">[</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Previous Brush</span>
+                    <div class="shortcut-keys"><kbd class="key">,</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Next Brush</span>
+                    <div class="shortcut-keys"><kbd class="key">.</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">First Brush</span>
+                    <div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">,</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Last Brush</span>
+                    <div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">.</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Fill with Foreground Color</span>
+                    <div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">Backspace</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Fill with Background Color</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Backspace</kbd></div>
+                </div>
+            </div>
+
+            <!-- View & Navigation -->
+            <div class="shortcut-group">
+                <h2 class="group-title">View & Navigation</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Zoom In</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">+</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Zoom Out</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">-</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Fit to Screen</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">0</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">100% Zoom (Actual Pixels)</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">1</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Show/Hide Rulers</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">R</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Show/Hide Grid</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">'</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Show/Hide Guides</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">;</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Lock Guides</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">;</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Snap</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">;</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Screen Modes</span>
+                    <div class="shortcut-keys"><kbd class="key">F</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Toggle Panels</span>
+                    <div class="shortcut-keys"><kbd class="key">Tab</kbd></div>
+                </div>
+            </div>
+
+            <!-- Transform & Edit -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Transform & Edit</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Free Transform</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Transform Again</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">T</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Undo</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Z</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Step Backward</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Z</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Step Forward</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Z</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Fade</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">F</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Cut</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Copy</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Copy Merged</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Paste</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">V</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Paste in Place</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">V</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Content-Aware Fill</span>
+                    <div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">F5</kbd></div>
+                </div>
+            </div>
+
+            <!-- Adjustments -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Color & Adjustments</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Levels</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">L</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Curves</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">M</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Hue/Saturation</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Color Balance</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Black & White</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Desaturate</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">U</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Invert</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">I</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Auto Tone</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Auto Contrast</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Auto Color</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div>
+                </div>
+            </div>
+
+            <!-- File Operations -->
+            <div class="shortcut-group">
+                <h2 class="group-title">File Operations</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">New Document</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Open File</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">O</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Save</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">S</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Save As</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Save for Web</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Close</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Close All</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">W</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Print</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div>
+                </div>
+            </div>
+
+            <!-- Type & Text -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Type & Text</h2>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Show/Hide Character Panel</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Increase Font Size</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">></kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Decrease Font Size</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key"><</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Align Left</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Align Center</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Align Right</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">R</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Increase Kerning</span>
+                    <div class="shortcut-keys"><kbd class="key">Alt/Option</kbd><kbd class="key">→</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Decrease Kerning</span>
+                    <div class="shortcut-keys"><kbd class="key">Alt/Option</kbd><kbd class="key">←</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Increase Leading</span>
+                    <div class="shortcut-keys"><kbd class="key">Alt/Option</kbd><kbd class="key">↓</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Decrease Leading</span>
+                    <div class="shortcut-keys"><kbd class="key">Alt/Option</kbd><kbd class="key">↑</kbd></div>
+                </div>
+                <div class="shortcut-item">
+                    <span class="shortcut-description">Select All Text</span>
+                    <div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div>
                 </div>
             </div>
         </div>
@@ -845,6 +1314,261 @@
                 </article>
             </div>
         </section>
+        </div>
+        <!-- End Windows/Linux Shortcuts -->
+
+        <!-- macOS Shortcuts -->
+        <div id="mac-shortcuts" class="platform-content">
+        <div class="shortcuts-container">
+            <!-- Essential Tools -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Essential Tool Shortcuts</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Move Tool</span><div class="shortcut-keys"><kbd class="key">V</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Rectangular Marquee Tool</span><div class="shortcut-keys"><kbd class="key">M</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Lasso Tool</span><div class="shortcut-keys"><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Magic Wand Tool</span><div class="shortcut-keys"><kbd class="key">W</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Crop Tool</span><div class="shortcut-keys"><kbd class="key">C</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Eyedropper Tool</span><div class="shortcut-keys"><kbd class="key">I</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Spot Healing Brush</span><div class="shortcut-keys"><kbd class="key">J</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Brush Tool</span><div class="shortcut-keys"><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Clone Stamp Tool</span><div class="shortcut-keys"><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Eraser Tool</span><div class="shortcut-keys"><kbd class="key">E</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Gradient Tool</span><div class="shortcut-keys"><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Dodge/Burn Tool</span><div class="shortcut-keys"><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Pen Tool</span><div class="shortcut-keys"><kbd class="key">P</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Type Tool</span><div class="shortcut-keys"><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Hand Tool</span><div class="shortcut-keys"><kbd class="key">H</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Zoom Tool</span><div class="shortcut-keys"><kbd class="key">Z</kbd></div></div>
+            </div>
+
+            <!-- File Operations -->
+            <div class="shortcut-group">
+                <h2 class="group-title">File Operations</h2>
+                <div class="shortcut-item"><span class="shortcut-description">New File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">N</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Open File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Open As</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Save</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Save As</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Save for Web</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Close</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">W</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Close All</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">W</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Print</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">P</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Quit Photoshop</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Q</kbd></div></div>
+            </div>
+
+            <!-- Edit & Transform -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Edit & Transform</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Undo</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Z</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Step Backward</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">Z</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Step Forward</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">Z</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Cut</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">X</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Copy</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">C</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Copy Merged</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">C</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Paste</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">V</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Paste in Place</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">V</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Free Transform</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Transform Again</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Content-Aware Scale</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">C</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Fill</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">F5</kbd></div></div>
+            </div>
+
+            <!-- Layers -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Layer Management</h2>
+                <div class="shortcut-item"><span class="shortcut-description">New Layer</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">N</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Duplicate Layer</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">J</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Group Layers</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Ungroup Layers</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Merge Down</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">E</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Merge Visible</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">E</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Stamp Visible</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">E</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select All Layers</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">A</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Lock Layer</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">/</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Bring Forward</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Send Backward</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Bring to Front</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Send to Back</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">[</kbd></div></div>
+            </div>
+
+            <!-- Selections -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Selection Shortcuts</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Select All</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">A</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Deselect</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Reselect</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Inverse Selection</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">I</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select All Layers</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">A</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Feather Selection</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Modify Selection</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">M</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Refine Edge</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">R</kbd></div></div>
+            </div>
+
+            <!-- View & Navigation -->
+            <div class="shortcut-group">
+                <h2 class="group-title">View & Navigation</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Zoom In</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">+</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Zoom Out</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">-</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Fit on Screen</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">0</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">100% Zoom</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">1</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">200% Zoom</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Zoom to Selection</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">0</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Full Screen Mode</span><div class="shortcut-keys"><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle Rulers</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show/Hide Guides</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">;</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Lock Guides</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">;</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show/Hide Grid</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">'</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Snap</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">;</kbd></div></div>
+            </div>
+
+            <!-- Adjustments -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Image Adjustments</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Levels</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Curves</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">M</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Hue/Saturation</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">U</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Color Balance</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Black & White</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Desaturate</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">U</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Invert</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Auto Tone</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Auto Contrast</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Auto Color</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">B</kbd></div></div>
+            </div>
+
+            <!-- Brush & Tool Settings -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Brush & Tool Settings</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Increase Brush Size</span><div class="shortcut-keys"><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Decrease Brush Size</span><div class="shortcut-keys"><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Increase Brush Hardness</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Decrease Brush Hardness</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Previous Brush</span><div class="shortcut-keys"><kbd class="key">,</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Next Brush</span><div class="shortcut-keys"><kbd class="key">.</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">First Brush</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">,</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Last Brush</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">.</kbd></div></div>
+            </div>
+
+            <!-- Panels -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Panel Shortcuts</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Layers Panel</span><div class="shortcut-keys"><kbd class="key">F7</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Info Panel</span><div class="shortcut-keys"><kbd class="key">F8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Actions Panel</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F9</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Brushes Panel</span><div class="shortcut-keys"><kbd class="key">F5</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Color Panel</span><div class="shortcut-keys"><kbd class="key">F6</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle All Panels</span><div class="shortcut-keys"><kbd class="key">Tab</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle All Panels Except Toolbox</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Tab</kbd></div></div>
+            </div>
+
+            <!-- Masks & Channels -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Masks & Channels</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Add Layer Mask</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">\\</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle Layer Mask</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Click Mask</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">View Layer Mask Alone</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">Click Mask</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Create Clipping Mask</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Release Clipping Mask</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">G</kbd></div></div>
+            </div>
+
+            <!-- Colors -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Color Shortcuts</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Default Colors (Black/White)</span><div class="shortcut-keys"><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Switch Foreground/Background</span><div class="shortcut-keys"><kbd class="key">X</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Color Picker</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">⌫</kbd></div></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Filter Shortcuts</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Last Filter</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Blur Gallery</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Liquify</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">X</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Camera Raw Filter</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">A</kbd></div></div>
+            </div>
+
+            <!-- Type -->
+            <div class="shortcut-group">
+                <h2 class="group-title">Type Shortcuts</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Increase Font Size</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">></kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Decrease Font Size</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key"><</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Increase Leading</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↓</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Decrease Leading</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↑</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Increase Kerning</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">→</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Decrease Kerning</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">←</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Align Left</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Align Center</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">C</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Align Right</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">R</kbd></div></div>
+            </div>
+        </div>
+
+        <!-- SEO Content -->
+        <section class="tips-section">
+            <div class="container">
+                <article class="tips-content">
+                    <h2>Mastering Adobe Photoshop Keyboard Shortcuts</h2>
+                    
+                    <p>Adobe Photoshop stands as the industry standard for digital image editing, used by photographers, graphic designers, digital artists, and creative professionals worldwide. Mastering keyboard shortcuts transforms Photoshop from a complex tool into an efficient creative workflow. The difference between professionals and amateurs often lies not in artistic skill alone, but in workflow efficiency enabled by keyboard shortcuts.</p>
+
+                    <h3>Essential Tool Selection Shortcuts</h3>
+                    
+                    <p>Photoshop's toolbar contains dozens of tools, and clicking each one wastes precious seconds. Single-letter shortcuts provide instant tool access: V for Move Tool (your most-used tool for positioning layers and selections), B for Brush Tool (essential for painting and retouching), L for Lasso Tool (quick selections), M for Marquee Tool (geometric selections), and W for Magic Wand (color-based selections).</p>
+
+                    <p>Advanced tool shortcuts include J for Spot Healing Brush (quick retouching), S for Clone Stamp (duplicating image areas), E for Eraser, G for Gradient Tool, O for Dodge/Burn (local exposure adjustments), P for Pen Tool (precise vector paths), and T for Type Tool. Holding Shift while pressing a tool letter cycles through related tools in that tool group. For example, pressing Shift+L cycles between Lasso, Polygonal Lasso, and Magnetic Lasso tools.</p>
+
+                    <h3>Layer Management Shortcuts for Efficient Workflows</h3>
+                    
+                    <p>Layers are fundamental to non-destructive Photoshop editing, and layer management shortcuts dramatically improve efficiency. ⌘+J (Cmd+J) duplicates the current layer or selection to a new layer - probably the most-used Photoshop shortcut after tool selection. ⌘+G groups selected layers, while ⌘+⇧+G ungroups them, essential for organizing complex documents.</p>
+
+                    <p>Layer ordering shortcuts include ⌘+] to bring a layer forward, ⌘+[ to send it backward, ⌘+⇧+] to bring to front, and ⌘+⇧+[ to send to back. ⌘+E merges the current layer with the layer below, while ⌘+⇧+E merges all visible layers. ⌘+⌥+⇧+E creates a new merged layer from all visible layers without destroying originals - crucial for non-destructive editing.</p>
+
+                    <h3>Selection and Masking Shortcuts</h3>
+                    
+                    <p>Professional Photoshop work requires precise selections and masks. ⌘+A selects all, ⌘+D deselects, ⌘+⇧+D reselects the previous selection, and ⌘+⇧+I inverts selections. ⌘+⌥+D opens Feather dialog for smooth selection edges. For quick masks, ⌘+\\ adds a layer mask to the current layer, while ⌥+clicking a mask thumbnail views it in isolation.</p>
+
+                    <p>Advanced selection techniques include ⌘+⌥+R for Refine Edge (Select and Mask in newer versions), perfect for selecting hair, fur, and complex edges. Creating a clipping mask with ⌘+⌥+G constrains one layer's visibility to the layer below's shape, essential for texture application and non-destructive effects.</p>
+
+                    <h3>Transformation and Editing Shortcuts</h3>
+                    
+                    <p>⌘+T activates Free Transform, Photoshop's most powerful transformation tool. Hold Shift while dragging corners to maintain proportions, ⌘+drag corners to distort perspective, and ⌘+⌥+drag to scale from center. Press Enter to apply transformations, Escape to cancel. ⌘+⇧+T repeats the last transformation, invaluable when applying identical transformations to multiple layers.</p>
+
+                    <p>Editing shortcuts include ⌘+Z for undo (toggles between current and previous state), ⌘+⌥+Z to step backward through history, and ⌘+⇧+Z to step forward. Unlike many applications, Photoshop's ⌘+Z only toggles one step, so memorize ⌘+⌥+Z for stepping through multiple undos.</p>
+
+                    <h3>Brush and Tool Adjustment Shortcuts</h3>
+                    
+                    <p>Brush-based work (painting, retouching, masking) benefits immensely from shortcuts. Square brackets [ ] decrease and increase brush size respectively, while ⇧+[ and ⇧+] adjust brush hardness. Comma and period keys (< and >) cycle through brush presets. Number keys set brush opacity: 1 for 10%, 5 for 50%, 0 for 100%. Pressing two numbers quickly sets precise opacity: 34 for 34%.</p>
+
+                    <p>X switches foreground and background colors instantly, while D resets to default black and white. These shortcuts combine powerfully with brushes and masks for rapid editing workflows. For example, painting a mask with white brush, hit X to switch to black for erasure, X again to switch back.</p>
+
+                    <h3>View and Navigation Shortcuts</h3>
+                    
+                    <p>Large images require efficient navigation. ⌘++ zooms in, ⌘+- zooms out, ⌘+0 fits image on screen, and ⌘+1 views at 100% (actual pixels). Hold Spacebar to temporarily activate Hand Tool for panning. ⌘+Spacebar+click zooms in to clicked area, ⌘+⌥+Spacebar+click zooms out.</p>
+
+                    <p>Screen mode shortcuts include F to cycle through Standard, Full Screen with Menus, and Full Screen modes, eliminating distractions. Tab toggles all panels visibility, while ⇧+Tab toggles panels while keeping the toolbox visible. ⌘+R toggles rulers, ⌘+; toggles guides, and ⌘+' toggles grid. ⌘+H hides/shows extras (guides, grids, selections) for clean preview.</p>
+
+                    <h3>Color Adjustment Shortcuts</h3>
+                    
+                    <p>Professional color correction relies on adjustment shortcuts. ⌘+L opens Levels (fundamental tonal adjustment), ⌘+M opens Curves (precise tonal control), ⌘+U opens Hue/Saturation (color adjustment), and ⌘+B opens Color Balance. ⌘+I inverts colors, useful for creating negative effects and inverting masks.</p>
+
+                    <p>⌘+⇧+U desaturates (converts to grayscale within RGB mode), while ⌘+⌥+⇧+B opens Black & White adjustment for advanced conversion. Auto adjustments include ⌘+⇧+L (Auto Tone), ⌘+⌥+⇧+L (Auto Contrast), and ⌘+⇧+B (Auto Color), though manual adjustments usually yield superior results.</p>
+
+                    <h3>File Operations and Workflow Shortcuts</h3>
+                    
+                    <p>File management shortcuts streamline workflow. ⌘+N creates new documents, ⌘+O opens files, ⌘+S saves, ⌘+⇧+S opens Save As dialog, and ⌘+⌥+⇧+S opens Save for Web (Export As in CC versions). ⌘+W closes current document, ⌘+⌥+W closes all open documents, useful when working with multiple files.</p>
+
+                    <p>⌘+P opens Print dialog, while ⌘+⌥+I opens Image Size dialog for resizing documents. ⌘+K opens Preferences, ⌘+⌥+K opens keyboard shortcuts customization where you can personalize shortcuts to match your workflow or muscle memory from other applications.</p>
+
+                    <h3>Advanced Tips for Photoshop Shortcut Mastery</h3>
+                    
+                    <p>Mastering Adobe Photoshop keyboard shortcuts is the difference between amateur and professional workflows. Start with essential shortcuts like V (Move), B (Brush), ⌘+J (Duplicate Layer), ⌘+T (Transform), and bracket keys for brush sizing. Practice these daily until they become muscle memory, then gradually add layer management shortcuts, adjustment shortcuts, and advanced selection techniques.</p>
+
+                    <p>Whether you're a photographer retouching portraits, a graphic designer creating marketing materials, a digital artist painting illustrations, or a UI designer crafting interfaces, Photoshop shortcuts will save hours of work weekly. For developers who also do design work, mastering shortcuts across tools like Photoshop, <a href="../intellij/">IntelliJ IDEA</a>, and <a href="../chrome/">Chrome DevTools</a> creates an efficient multi-disciplinary workflow. Bookmark this page for regular reference, download the PDF cheat sheet, customize shortcuts to match your workflow, and commit to using keyboard shortcuts instead of toolbar clicking. Within weeks, you'll experience the productivity boost that separates professional Photoshop users from casual users. Your efficiency, creativity, and professional output will all improve dramatically through shortcut mastery.</p>
+                </article>
+            </div>
+        </section>
+        </div>
+        <!-- End macOS Shortcuts -->
 
         <!-- Related Shortcuts Section -->
         <section class="related-shortcuts">
@@ -887,10 +1611,10 @@
                 <div class="footer-column">
                     <h3>Company</h3>
                     <ul class="footer-links">
-                        <li><a href="../../about">About Us</a></li>
-                        <li><a href="../../contact">Contact</a></li>
-                        <li><a href="../../privacy">Privacy Policy</a></li>
-                        <li><a href="../../terms">Terms of Service</a></li>
+                        <li><a href="../../pages/about.html">About Us</a></li>
+                        <li><a href="../../pages/contact.html">Contact</a></li>
+                        <li><a href="../../pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="../../pages/terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -909,6 +1633,6 @@
         </div>
     </footer>
 
-    <script src="../../script.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 </html>
