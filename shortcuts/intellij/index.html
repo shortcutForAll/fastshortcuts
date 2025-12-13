@@ -34,7 +34,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
     <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     
     <!-- Breadcrumb Schema (JSON-LD) -->
     <script type="application/ld+json">
@@ -182,6 +182,7 @@
     </script>
 </head>
 <body>
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="../../" class="logo">
@@ -191,12 +192,19 @@
             <ul class="nav-links">
                 <li><a href="../../">Home</a></li>
                 <li><a href="../../#categories">Categories</a></li>
-                <li><a href="../vscode/">VS Code</a></li>
-                <li><a href="../windows/">Windows</a></li>
-                <li><a href="../mac/">Mac</a></li>
-                <li><a href="../intellij/">IntelliJ</a></li>
-                <li><a href="../chrome/">Chrome</a></li>
-                <li><a href="../sublime/">Sublime</a></li>
+                <li><a href="../../#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tools ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../vscode/">VS Code</a></li>
+                        <li><a href="../intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="../sublime/">Sublime Text</a></li>
+                        <li><a href="../photoshop/">Photoshop</a></li>
+                        <li><a href="../chrome/">Chrome</a></li>
+                        <li><a href="../windows/">Windows</a></li>
+                        <li><a href="../mac/">macOS</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="utility-buttons">
                 <button class="pdf-download-btn" title="Download as PDF">📥 Download PDF</button>
@@ -226,15 +234,15 @@
             <li><a href="../intellij/">IntelliJ</a></li>
             <li><a href="../chrome/">Chrome</a></li>
             <li><a href="../sublime/">Sublime</a></li>
-            <li><a href="../../about">About</a></li>
-            <li><a href="../../contact">Contact</a></li>
+            <li><a href="../../pages/about.html">About</a></li>
+            <li><a href="../../pages/contact.html">Contact</a></li>
         </ul>
     </div>
 
     <main class="shortcut-page">
         <div class="page-header">
             <h1 class="page-title">
-                <img src="../../icons/intellij.svg" alt="IntelliJ IDEA" class="page-title-icon">
+                <img src="../../assets/icons/intellij.svg" alt="IntelliJ IDEA" class="page-title-icon">
                 IntelliJ IDEA Shortcuts
             </h1>
             <p class="page-description">Master IntelliJ IDEA with powerful keyboard shortcuts for Java development and beyond!</p>
@@ -249,6 +257,21 @@
                 >
             </div>
         </div>
+
+        <!-- Platform Tabs -->
+        <div class="platform-tabs">
+            <button class="platform-tab active" data-platform="windows">
+                <img src="../../assets/icons/windows.svg" alt="Windows" class="tab-icon">
+                Windows / Linux
+            </button>
+            <button class="platform-tab" data-platform="mac">
+                <img src="../../assets/icons/mac.svg" alt="macOS" class="tab-icon">
+                macOS
+            </button>
+        </div>
+
+        <!-- Windows/Linux Shortcuts -->
+        <div id="windows-shortcuts" class="platform-content active">
         <div class="shortcuts-container">
             <div class="shortcut-group">
                 <h2 class="group-title">Essential</h2>
@@ -442,17 +465,193 @@
                 </article>
             </div>
         </section>
+        </div>
+        <!-- End Windows/Linux Shortcuts -->
 
-        <!-- Related Shortcuts Section -->
-        <section class="related-shortcuts">
+        <!-- macOS Shortcuts -->
+        <div id="mac-shortcuts" class="platform-content">
+        <div class="shortcuts-container">
+            <div class="shortcut-group">
+                <h2 class="group-title">Essential</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Search Everywhere</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⇧</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Class</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Symbol</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Recent Files</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">E</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Editing</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Duplicate Line</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Delete Line</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌫</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Move Line Up/Down</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌥</kbd><kbd class="key">↑↓</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Comment/Uncomment Line</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">/</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Block Comment</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">/</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Basic Code Completion</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">Space</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Smart Code Completion</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">Space</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Complete Current Statement</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">↵</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Reformat Code</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Optimize Imports</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌥</kbd><kbd class="key">O</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Navigation</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Declaration</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Implementation</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Type Declaration</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Super Method</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">U</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Test</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Line</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">File Structure</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F12</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Navigate Back</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Navigate Forward</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Last Edit Location</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">⌫</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Refactoring</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Refactor This</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Rename</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">F6</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Extract Method</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">M</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Extract Variable</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">V</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Extract Constant</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">C</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Extract Field</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Extract Parameter</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">P</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Inline</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">N</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Change Signature</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F6</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Safe Delete</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌦</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Debugging</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle Breakpoint</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Resume Program</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Step Over</span><div class="shortcut-keys"><kbd class="key">F8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Step Into</span><div class="shortcut-keys"><kbd class="key">F7</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Step Out</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">F8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Run to Cursor</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F9</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Evaluate Expression</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">View Breakpoints</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show Execution Point</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F10</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Search & Replace</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Find in File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Replace in File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find in Path</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Replace in Path</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find Next</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find Previous</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find Usages</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F7</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show Usages</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">F7</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Tool Windows</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Project</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">1</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Commit</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">0</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Favorites</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Run</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">4</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Debug</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">5</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Structure</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">7</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Services</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">8</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Version Control</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">9</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Terminal</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F12</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Hide All Windows</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F12</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Running & Testing</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Run</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Debug</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Run Context Configuration</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Debug Context Configuration</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select Configuration and Run</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌥</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select Configuration and Debug</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌥</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Edit Configurations</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌥</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Rerun Tests</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Code Generation</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Generate Code</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">N</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Override Methods</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Implement Methods</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">I</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Surround With</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Insert Live Template</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">J</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Multi-Cursor & Selection</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Add Cursor Above</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌥</kbd><kbd class="key">↑</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Add Cursor Below</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌥</kbd><kbd class="key">↓</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select Next Occurrence</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select All Occurrences</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Unselect Occurrence</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Extend Selection</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↑</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Shrink Selection</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↓</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Version Control</h2>
+                <div class="shortcut-item"><span class="shortcut-description">VCS Operations Popup</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">V</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Commit Changes</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Update Project</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Push Commits</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">K</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show Diff</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Editor Actions</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Close Active Tab</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">W</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Save All</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Open Settings</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">,</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Project Structure</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">;</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Maximize/Restore Editor</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F12</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show Intention Actions</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↵</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Quick Documentation</span><div class="shortcut-keys"><kbd class="key">F1</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Parameter Info</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">P</kbd></div></div>
+            </div>
+        </div>
+
+        <!-- SEO Content -->
+        <section class="tips-section">
             <div class="container">
-                <h2>🔥 Explore More Shortcuts</h2>
-                <p class="section-subtitle">Discover other powerful keyboard shortcuts to boost your productivity</p>
-                <div class="related-grid">
-                    <!-- Cards will be dynamically populated by JavaScript -->
-                </div>
+                <article class="tips-content">
+                    <h2>Mastering IntelliJ IDEA Keyboard Shortcuts</h2>
+                    
+                    <p>IntelliJ IDEA stands as one of the most powerful integrated development environments for Java and JVM languages. Mastering its keyboard shortcuts transforms coding efficiency dramatically. The most essential shortcut is double Shift, which opens Search Everywhere - your gateway to finding any class, file, action, or symbol instantly.</p>
+
+                    <h3>Essential Navigation Shortcuts for IntelliJ</h3>
+                    
+                    <p>Navigation in IntelliJ IDEA becomes seamless with keyboard shortcuts. ⌘+O (Cmd+O on Mac) opens Go to Class dialog for quickly jumping to any class in your project or libraries. ⌘+⇧+O navigates to files, while ⌘+⌥+O finds symbols (methods, fields, constants). ⌘+E shows recent files, providing quick access to your working file set.</p>
+
+                    <p>For code navigation, ⌘+B (Go to Declaration) and ⌘+⌥+B (Go to Implementation) are invaluable. These shortcuts jump directly to where classes, methods, or variables are defined or implemented. ⌘+U navigates to super method/class, essential when working with inheritance hierarchies. ⌘+F12 opens File Structure, showing an outline of the current file's methods and fields for quick navigation.</p>
+
+                    <h3>Editing and Code Completion Shortcuts</h3>
+                    
+                    <p>IntelliJ IDEA's editing shortcuts significantly accelerate coding. ⌘+D duplicates the current line or selection, while ⌘+⌫ deletes the entire line. ⌘+/ comments or uncomments lines, and ⌘+⌥+/ handles block comments. ⌃+Space triggers basic code completion, while ⌃+⇧+Space invokes smart type-matching completion.</p>
+
+                    <p>Code generation shortcuts include ⌘+N (Generate Code menu), ⌃+O for overriding methods, and ⌃+I for implementing interface methods. ⌘+⌥+T opens Surround With dialog for wrapping code in try-catch, if-else, or other structures. ⌘+J inserts live templates - predefined code snippets that expand into full blocks with customizable placeholders.</p>
+
+                    <h3>Refactoring Shortcuts for IntelliJ IDEA</h3>
+                    
+                    <p>IntelliJ IDEA is famous for powerful refactoring capabilities, all accessible via keyboard shortcuts. ⌃+T (Refactor This) opens the refactor menu showing all applicable refactorings for the current context. ⇧+F6 renames variables, methods, classes, and files safely across the entire project with automatic reference updates.</p>
+
+                    <p>Advanced refactoring shortcuts include ⌘+⌥+M to extract methods, ⌘+⌥+V to extract variables, ⌘+⌥+C to extract constants, and ⌘+⌥+F to extract fields. ⌘+⌥+P extracts parameters, while ⌘+F6 changes method signatures. These refactorings maintain code correctness by updating all references automatically.</p>
+
+                    <h3>Debugging Shortcuts for IntelliJ IDEA</h3>
+                    
+                    <p>Efficient debugging relies heavily on keyboard shortcuts. ⌥+⌘+R resumes program execution, F8 steps over to the next line, F7 steps into methods, and ⇧+F8 steps out of the current method. ⌘+F8 toggles breakpoints on the current line, while ⌘+⇧+F8 opens the breakpoints dialog for managing all breakpoints.</p>
+
+                    <p>Advanced debugging shortcuts include ⌥+F9 to run to cursor, ⌥+F8 to evaluate expressions during debugging, and ⌘+⇧+F8 to view and manage breakpoints. F2 navigates to the next highlighted error, while ⇧+F2 navigates to the previous error, allowing quick error fixing without leaving the keyboard.</p>
+
+                    <h3>IntelliJ Window and Tool Window Management</h3>
+                    
+                    <p>Managing IntelliJ's interface efficiently requires tool window shortcuts. ⌘+1 toggles the Project tool window, ⌘+7 opens Structure, ⌘+9 shows Version Control, and ⌥+F12 opens the Terminal. ⇧+Esc hides the active tool window, while ⌘+⇧+F12 toggles maximum editor space by hiding all tool windows.</p>
+
+                    <p>Editor management shortcuts include ⌃+Tab to switch between files and tool windows via the switcher popup, ⌘+E for recent files, and ⌘+⇧+E for recent locations. ⌘+[ and ⌘+] navigate backward and forward through edit locations, essential for jumping between recently edited code sections.</p>
+
+                    <h3>Running and Testing Shortcuts</h3>
+                    
+                    <p>IntelliJ provides powerful shortcuts for running and testing code. ⌃+R runs the current configuration, while ⌃+D debugs it. ⌃+⇧+R runs the context configuration (automatically determining what to run based on cursor position). ⌃+⌥+R shows the Run popup for selecting configurations.</p>
+                </article>
             </div>
         </section>
+        </div>
+        <!-- End macOS Shortcuts -->
+
+        <!-- Related Shortcuts Section -->
     </main>
 
     <!-- Footer -->
@@ -484,10 +683,10 @@
                 <div class="footer-column">
                     <h3>Company</h3>
                     <ul class="footer-links">
-                        <li><a href="../../about">About Us</a></li>
-                        <li><a href="../../contact">Contact</a></li>
-                        <li><a href="../../privacy">Privacy Policy</a></li>
-                        <li><a href="../../terms">Terms of Service</a></li>
+                        <li><a href="../../pages/about.html">About Us</a></li>
+                        <li><a href="../../pages/contact.html">Contact</a></li>
+                        <li><a href="../../pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="../../pages/terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -506,6 +705,6 @@
         </div>
     </footer>
 
-    <script src="../../script.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 </html>

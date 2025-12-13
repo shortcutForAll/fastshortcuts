@@ -34,7 +34,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
     <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     
     <!-- Breadcrumb Schema (JSON-LD) -->
     <script type="application/ld+json">
@@ -148,6 +148,7 @@
     </script>
 </head>
 <body>
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="../../" class="logo">
@@ -157,12 +158,19 @@
             <ul class="nav-links">
                 <li><a href="../../">Home</a></li>
                 <li><a href="../../#categories">Categories</a></li>
-                <li><a href="../vscode/">VS Code</a></li>
-                <li><a href="../windows/">Windows</a></li>
-                <li><a href="../mac/">Mac</a></li>
-                <li><a href="../intellij/">IntelliJ</a></li>
-                <li><a href="../chrome/">Chrome</a></li>
-                <li><a href="../sublime/">Sublime</a></li>
+                <li><a href="../../#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tools ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../vscode/">VS Code</a></li>
+                        <li><a href="../intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="../sublime/">Sublime Text</a></li>
+                        <li><a href="../photoshop/">Photoshop</a></li>
+                        <li><a href="../chrome/">Chrome</a></li>
+                        <li><a href="../windows/">Windows</a></li>
+                        <li><a href="../mac/">macOS</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="utility-buttons">
                 <button class="pdf-download-btn" title="Download as PDF">📥 Download PDF</button>
@@ -192,15 +200,15 @@
             <li><a href="../intellij/">IntelliJ</a></li>
             <li><a href="../chrome/">Chrome</a></li>
             <li><a href="../sublime/">Sublime</a></li>
-            <li><a href="../../about">About</a></li>
-            <li><a href="../../contact">Contact</a></li>
+            <li><a href="../../pages/about.html">About</a></li>
+            <li><a href="../../pages/contact.html">Contact</a></li>
         </ul>
     </div>
 
     <main class="shortcut-page">
         <div class="page-header">
             <h1 class="page-title">
-                <img src="../../icons/sublime.svg" alt="Sublime Text" class="page-title-icon">
+                <img src="../../assets/icons/sublime.svg" alt="Sublime Text" class="page-title-icon">
                 Sublime Text Shortcuts
             </h1>
             <p class="page-description">Master Sublime Text with powerful keyboard shortcuts for lightning-fast text editing!</p>
@@ -215,6 +223,21 @@
                 >
             </div>
         </div>
+
+        <!-- Platform Tabs -->
+        <div class="platform-tabs">
+            <button class="platform-tab active" data-platform="windows">
+                <img src="../../assets/icons/windows.svg" alt="Windows" class="tab-icon">
+                Windows / Linux
+            </button>
+            <button class="platform-tab" data-platform="mac">
+                <img src="../../assets/icons/mac.svg" alt="macOS" class="tab-icon">
+                macOS
+            </button>
+        </div>
+
+        <!-- Windows/Linux Shortcuts -->
+        <div id="windows-shortcuts" class="platform-content active">
         <div class="shortcuts-container">
             <div class="shortcut-group">
                 <h2 class="group-title">Essential</h2>
@@ -363,6 +386,130 @@
             </div>
         </div>
         <div class="no-results" style="display: none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
+        </div>
+        <!-- End Windows/Linux Shortcuts -->
+
+        <!-- macOS Shortcuts -->
+        <div id="mac-shortcuts" class="platform-content">
+        <div class="shortcuts-container">
+            <div class="shortcut-group">
+                <h2 class="group-title">Essential</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Command Palette</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">P</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Anything</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">P</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Symbol</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Line</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Go to Definition</span><div class="shortcut-keys"><kbd class="key">F12</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Multi-Cursor & Selection</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Add Next Occurrence</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Select All Occurrences</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Add Cursor Above</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">↑</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Add Cursor Below</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">↓</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Split Selection into Lines</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Expand Selection to Brackets</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">M</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Expand Selection to Line</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Expand Selection to Word</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Editing</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Duplicate Line</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">D</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Delete Line</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">K</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Move Line Up</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌃</kbd><kbd class="key">↑</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Move Line Down</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌃</kbd><kbd class="key">↓</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Join Lines</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">J</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Comment/Uncomment</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">/</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Block Comment</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">/</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Indent</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Unindent</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Reindent</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">R</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Search & Replace</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Find</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Replace</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find in Files</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Replace in Files</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">H</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find Next</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Find Previous</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">G</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Incremental Find</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Use Selection for Find</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">E</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">File Navigation</h2>
+                <div class="shortcut-item"><span class="shortcut-description">New File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">N</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Open File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">O</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Save</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Save As</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Close Tab</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">W</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Reopen Last File</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Switch Tab (Next)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Switch Tab (Previous)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Switch to Tab 1-9</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">1-9</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">View & Layout</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle Sidebar</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle Minimap</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">M</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Full Screen</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Distraction Free Mode</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Single Column Layout</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">1</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Two Column Layout</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Grid Layout (2x2)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">5</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Focus Group</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">1-4</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Move File to Group</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">1-4</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Bookmarks & Navigation</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Toggle Bookmark</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Next Bookmark</span><div class="shortcut-keys"><kbd class="key">F2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Previous Bookmark</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">F2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Clear Bookmarks</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">F2</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Jump Back</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">-</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Jump Forward</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">-</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Code Folding</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Fold</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">[</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Unfold</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">]</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Fold All</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">1</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Unfold All</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">J</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Fold Level 1</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">1</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Fold Level 2</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">2</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Transform Text</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Upper Case</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">U</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Lower Case</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">L</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Title Case</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">T</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Swap Case</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd><kbd class="key">⌘</kbd><kbd class="key">S</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Sort Lines</span><div class="shortcut-keys"><kbd class="key">F5</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Sort Lines (Case Sensitive)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F5</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Macros & Build</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Record Macro</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">Q</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Playback Macro</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⇧</kbd><kbd class="key">Q</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Build</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Build With...</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">B</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Cancel Build</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">C</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Spelling & Completion</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Show Completions</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">Space</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Next Misspelling</span><div class="shortcut-keys"><kbd class="key">F6</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Previous Misspelling</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">F6</kbd></div></div>
+            </div>
+            <div class="shortcut-group">
+                <h2 class="group-title">Project & Workspace</h2>
+                <div class="shortcut-item"><span class="shortcut-description">Switch Project</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌘</kbd><kbd class="key">P</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Reveal in Sidebar</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+                <div class="shortcut-item"><span class="shortcut-description">Show Console</span><div class="shortcut-keys"><kbd class="key">⌃</kbd><kbd class="key">`</kbd></div></div>
+            </div>
+        </div>
+        <div class="no-results" style="display: none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
+        </div>
+        <!-- End macOS Shortcuts -->
 
         <!-- Related Shortcuts Section -->
         <section class="related-shortcuts">
@@ -410,10 +557,10 @@
                 <div class="footer-column">
                     <h3>Company</h3>
                     <ul class="footer-links">
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="../../pages/about.html">About Us</a></li>
+                        <li><a href="../../pages/contact.html">Contact</a></li>
+                        <li><a href="../../pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="../../pages/terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -432,6 +579,6 @@
         </div>
     </footer>
 
-    <script src="../../script.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 </html>

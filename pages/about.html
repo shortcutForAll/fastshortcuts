@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D077DENC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4D077DENC5');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About FastShortcuts | Our Story & Mission</title>
+    <meta name="description" content="Learn about FastShortcuts - why we built the ultimate keyboard shortcuts database for developers and how we're helping thousands code faster every day.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fastshortcuts.com/about">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About FastShortcuts | Our Story & Mission">
+    <meta property="og:description" content="Learn about FastShortcuts - why we built the ultimate keyboard shortcuts database for developers.">
+    <meta property="og:url" content="https://fastshortcuts.com/about">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About FastShortcuts | Our Story & Mission">
+    <meta name="twitter:description" content="Learn about FastShortcuts - why we built the ultimate keyboard shortcuts database for developers.">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .about-page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        .about-hero {
+            text-align: center;
+            margin: 3rem 0 4rem;
+        }
+        .about-title {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fbbf24 0%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        .about-subtitle {
+            font-size: 1.4rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .story-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 3rem;
+        }
+        .story-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1.5rem;
+        }
+        .story-section p {
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .mission-card {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #fbbf24;
+        }
+        .mission-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .mission-card p {
+            color: #78350f;
+            line-height: 1.7;
+        }
+        .stats-section {
+            background: linear-gradient(135deg, #111827 0%, #374151 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            color: white;
+            margin: 3rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            color: #d1d5db;
+            font-size: 1rem;
+        }
+        .team-quote {
+            background: #f9fafb;
+            padding: 2rem;
+            border-left: 4px solid #fbbf24;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #374151;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            color: #78350f;
+            margin-top: 3rem;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background: white;
+            color: #92400e;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">⌨️</span>
+                <span>FastShortcuts</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#categories">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <div class="about-page">
+        <div class="about-hero">
+            <h1 class="about-title">About FastShortcuts</h1>
+            <p class="about-subtitle">We're developers who got tired of googling "how to refactor in IntelliJ" for the 47th time. So we built this.</p>
+        </div>
+
+        <div class="story-section">
+            <h2>The Origin Story</h2>
+            <p>FastShortcuts started from pure frustration. You know that moment when you're deep in flow state, fingers flying across the keyboard, and then... you have to grab your mouse to click through three menus just to rename a variable?</p>
+            
+            <p>Yeah, we got tired of that too.</p>
+            
+            <p>As developers, we knew keyboard shortcuts existed for almost everything. The problem? They were scattered across outdated documentation, buried in 200-page PDFs, or locked behind video tutorials where you had to scrub through 10 minutes to find one shortcut.</p>
+            
+            <p>So in late 2024, we decided to fix this. We started compiling shortcuts for our own use - VS Code, IntelliJ, Windows, Mac - tools we used every day. Then we thought: why not share this with everyone?</p>
+            
+            <p>FastShortcuts was born from that simple idea: <strong>one centralized, searchable database of keyboard shortcuts for developers.</strong> No ads, no paywalls, no BS. Just shortcuts.</p>
+        </div>
+
+        <div class="mission-grid">
+            <div class="mission-card">
+                <h3>🎯 Our Mission</h3>
+                <p>Help developers work faster by making keyboard shortcuts easily accessible. Every second you save looking up a shortcut is a second you can spend actually building something.</p>
+            </div>
+            <div class="mission-card">
+                <h3>💡 Our Vision</h3>
+                <p>A world where developers never have to break their flow to search for shortcuts. Where muscle memory replaces menu clicking. Where productivity is the default, not the exception.</p>
+            </div>
+            <div class="mission-card">
+                <h3>🤝 Our Values</h3>
+                <p>Keep it simple. Keep it free. Keep it accurate. No bloated interfaces, no subscription traps, just honest tools for honest work.</p>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <h2 style="text-align: center; margin-bottom: 0.5rem;">FastShortcuts by the Numbers</h2>
+            <p style="text-align: center; color: #d1d5db; margin-bottom: 2rem;">Making developers more productive, one shortcut at a time</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Keyboard Shortcuts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Major Tools Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Forever</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Platforms Supported</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <h2>Why Keyboard Shortcuts Matter</h2>
+            <p>Here's the thing about shortcuts: they're not just about speed (though that's a nice bonus). They're about maintaining focus.</p>
+            
+            <p>Studies show it takes 23 minutes to fully recover from an interruption. Every time you stop to google a shortcut, you're not just losing those 30 seconds - you're potentially losing 20+ minutes of deep work.</p>
+            
+            <p>Keyboard shortcuts let you stay in the zone. Your hands never leave the keyboard. Your eyes stay on the code. Your brain stays in flow state. That's when the magic happens.</p>
+
+            <div class="team-quote">
+                "I used to joke that I was a professional Googler who occasionally wrote code. After discovering FastShortcuts and actually learning VS Code shortcuts, I realized I'd been working at 50% capacity for years. Now I feel like I have superpowers."
+                <br><br>
+                <strong>- Every developer after discovering keyboard shortcuts</strong>
+            </div>
+
+            <p>We're not exaggerating when we say shortcuts can 10x your productivity. Learn the top 20 shortcuts for your main tool, and you'll wonder how you ever lived without them.</p>
+        </div>
+
+        <div class="story-section">
+            <h2>What Makes FastShortcuts Different</h2>
+            <p>There are other shortcut resources out there. Here's why we think FastShortcuts is better:</p>
+            
+            <p><strong>🔍 Instantly Searchable:</strong> Every page has live search. Type what you want to do, find the shortcut instantly. No scrolling through hundreds of irrelevant commands.</p>
+            
+            <p><strong>📱 Mobile-Friendly:</strong> Need a shortcut on your phone while working? Our site works perfectly on any device.</p>
+            
+            <p><strong>📥 Downloadable PDFs:</strong> Want offline access? Download any shortcuts page as a PDF. Print it, keep it next to your keyboard, reference it anytime.</p>
+            
+            <p><strong>🎨 Clean Design:</strong> No cluttered interfaces, no distracting ads, no popups begging for your email. Just clean, fast, functional design.</p>
+            
+            <p><strong>✅ Platform-Specific:</strong> We show shortcuts for Windows, Mac, and Linux where they differ. No more guessing which key combo works on your system.</p>
+            
+            <p><strong>🆓 Actually Free:</strong> Not "free trial" or "freemium." Just free. Forever. We're developers building for developers.</p>
+        </div>
+
+        <div class="story-section">
+            <h2>The Road Ahead</h2>
+            <p>FastShortcuts is a work in progress. We're constantly adding new tools, updating existing shortcuts, and improving the site based on user feedback.</p>
+            
+            <p><strong>Coming soon:</strong></p>
+            <ul style="margin-left: 1.75rem; color: #4b5563; line-height: 1.8;">
+                <li>More IDEs (PyCharm, WebStorm, Android Studio)</li>
+                <li>Design tools (Figma, Adobe Suite, Sketch)</li>
+                <li>Terminal shortcuts (zsh, bash, tmux)</li>
+                <li>Custom shortcut collections (save your favorites)</li>
+                <li>Dark mode (because of course)</li>
+            </ul>
+            
+            <p>Have a tool you'd like to see covered? Let us know! This site exists to serve the developer community, and your input shapes what we build next.</p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Level Up Your Workflow?</h2>
+            <p>Join thousands of developers who've ditched their mouse and embraced keyboard-driven productivity.</p>
+            <div class="cta-buttons">
+                <a href="/#categories" class="btn btn-primary">Browse All Shortcuts</a>
+                <a href="contact.html" class="btn btn-secondary">Send Us Feedback</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>⌨️ FastShortcuts</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⚡</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#categories">All Categories</a></li>
+                        <li><a href="/#features">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Shortcuts</h3>
+                    <ul class="footer-links">
+                        <li><a href="/shortcuts/vscode/">VS Code</a></li>
+                        <li><a href="/shortcuts/intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="/shortcuts/windows/">Windows</a></li>
+                        <li><a href="/shortcuts/mac/">macOS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">VS Code Docs</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" rel="noopener">Windows Shortcuts</a></li>
+                        <li><a href="https://support.apple.com/en-us/HT201236" target="_blank" rel="noopener">Mac Shortcuts</a></li>
+                        <li><a href="https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html" target="_blank" rel="noopener">IntelliJ Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

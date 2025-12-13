@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D077DENC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4D077DENC5');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FastShortcuts - Get in Touch</title>
+    <meta name="description" content="Contact FastShortcuts with questions, feedback or suggestions about our keyboard shortcuts guides. We'd love to hear from you. Quick response guaranteed.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fastshortcuts.com/contact">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us | FastShortcuts">
+    <meta property="og:description" content="Contact FastShortcuts with questions, feedback, or suggestions. We'd love to hear from you.">
+    <meta property="og:url" content="https://fastshortcuts.com/contact">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Us | FastShortcuts">
+    <meta name="twitter:description" content="Contact FastShortcuts with questions, feedback, or suggestions.">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .contact-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        .contact-hero {
+            text-align: center;
+            margin: 3rem 0 3rem;
+        }
+        .contact-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        .contact-info-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #fbbf24;
+        }
+        .contact-info-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 1.5rem;
+        }
+        .contact-method {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .contact-method h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .contact-method p {
+            color: #6b7280;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .contact-method a {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #fbbf24;
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: white;
+            padding: 0.875rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+        }
+        .response-time {
+            background: #ecfdf5;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #10b981;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #065f46;
+        }
+        .faq-section {
+            margin-top: 4rem;
+        }
+        .faq-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 1rem;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.75rem;
+        }
+        .faq-item p {
+            color: #6b7280;
+            line-height: 1.7;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">⌨️</span>
+                <span>FastShortcuts</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#categories">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <div class="contact-page">
+        <div class="contact-hero">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-subtitle">Found a mistake? Have a suggestion? Want to request a new tool? We're all ears. Real humans read and respond to every message.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2 style="font-size: 1.75rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">Send Us a Message</h2>
+                
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">What's this about? *</label>
+                        <select id="category" name="category" required>
+                            <option value="">Choose a category...</option>
+                            <option value="bug">🐛 Bug Report / Incorrect Shortcut</option>
+                            <option value="suggestion">💡 Feature Suggestion</option>
+                            <option value="request">🛠️ Tool Request</option>
+                            <option value="feedback">📝 General Feedback</option>
+                            <option value="other">💬 Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+
+                    <div class="response-time">
+                        <strong>⚡ Response Time:</strong> We typically respond within 24-48 hours. Messages sent on weekends might take until Monday.
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-section">
+                <h3>Other Ways to Reach Us</h3>
+
+                <div class="contact-method">
+                    <h4>📧 Email</h4>
+                    <p>Prefer email? Send us a message at:<br>
+                    <a href="mailto:hello@fastshortcuts.com">hello@fastshortcuts.com</a></p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>🐛 Bug Reports</h4>
+                    <p>Found an incorrect shortcut?<br>
+                    <a href="mailto:bugs@fastshortcuts.com">bugs@fastshortcuts.com</a></p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>💡 Suggestions</h4>
+                    <p>Have an idea for improving the site?<br>
+                    <a href="mailto:ideas@fastshortcuts.com">ideas@fastshortcuts.com</a></p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>🔒 Privacy & Legal</h4>
+                    <p>Questions about data handling?<br>
+                    <a href="mailto:privacy@fastshortcuts.com">privacy@fastshortcuts.com</a></p>
+                </div>
+
+                <div style="background: white; padding: 1.25rem; border-radius: 8px; margin-top: 1.5rem;">
+                    <p style="margin: 0; color: #6b7280; font-size: 0.95rem; line-height: 1.6;">
+                        <strong style="color: #111827;">Note:</strong> We're a small team of developers running this in our spare time. We read every message but can't guarantee immediate responses. Thanks for your patience! 🙏
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Common Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I report an incorrect shortcut?</h3>
+                <p>Use the form above (select "Bug Report") or email us at bugs@fastshortcuts.com. Please include: which shortcut is wrong, which tool/page it's on, and what the correct shortcut should be. Bonus points for including your OS version!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can you add shortcuts for [tool name]?</h3>
+                <p>Absolutely! We're always expanding. Send us a request through the form above (select "Tool Request") and tell us which tool you'd like to see. Popular requests get priority.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you accept contributions?</h3>
+                <p>Yes! If you want to contribute shortcuts, corrections, or improvements, reach out to us. We're building FastShortcuts for the developer community, and community input is invaluable.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why haven't you responded to my message?</h3>
+                <p>Check your spam folder first - sometimes our replies end up there. If it's been more than a week, please resend your message. We promise we're not ignoring you; emails occasionally slip through the cracks.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I advertise on FastShortcuts?</h3>
+                <p>We don't run ads currently, and we plan to keep it that way. FastShortcuts is built for developers, by developers - no distractions, no sponsored content. Just pure shortcuts.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How can I support FastShortcuts?</h3>
+                <p>The best support is spreading the word! Share FastShortcuts with your dev team, tweet about it, or mention it in your blog. The more people who use it, the more motivated we are to keep improving it.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>⌨️ FastShortcuts</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⚡</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#categories">All Categories</a></li>
+                        <li><a href="/#features">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Shortcuts</h3>
+                    <ul class="footer-links">
+                        <li><a href="/shortcuts/vscode/">VS Code</a></li>
+                        <li><a href="/shortcuts/intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="/shortcuts/windows/">Windows</a></li>
+                        <li><a href="/shortcuts/mac/">macOS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">VS Code Docs</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" rel="noopener">Windows Shortcuts</a></li>
+                        <li><a href="https://support.apple.com/en-us/HT201236" target="_blank" rel="noopener">Mac Shortcuts</a></li>
+                        <li><a href="https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html" target="_blank" rel="noopener">IntelliJ Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Simple form handling (you can replace with your preferred form service)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // You can integrate with Formspree, EmailJS, or your backend here
+            // For now, just show a simple alert
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

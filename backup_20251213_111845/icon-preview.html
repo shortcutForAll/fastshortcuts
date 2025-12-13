@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Preview - FastShortcuts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #fafafa;
+            padding: 3rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .icon-card {
+            background: #fafafa;
+            border: 2px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .icon-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: #2563EB;
+        }
+        
+        .icon-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .icon-card:hover .icon-wrapper {
+            transform: scale(1.1);
+        }
+        
+        .icon-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .icon-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .icon-size {
+            font-size: 0.85rem;
+            color: #999;
+        }
+        
+        .comparison {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .comparison h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+        }
+        
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .comparison-box {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .comparison-box h3 {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+        
+        .before h3 {
+            color: #ef4444;
+        }
+        
+        .after h3 {
+            color: #10b981;
+        }
+        
+        .emoji-display {
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+        
+        .svg-display {
+            width: 80px;
+            height: 80px;
+            margin: 1rem auto;
+        }
+        
+        .note {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .note h3 {
+            color: #f59e0b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .note ul {
+            margin-left: 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .before-after {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 New SVG Icons Preview</h1>
+        <p class="subtitle">Professional application icons for FastShortcuts</p>
+        
+        <div class="icon-grid">
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/vscode.svg" alt="VS Code">
+                </div>
+                <div class="icon-name">VS Code</div>
+                <div class="icon-size">403 bytes</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/windows.svg" alt="Windows">
+                </div>
+                <div class="icon-name">Windows 11</div>
+                <div class="icon-size">290 bytes</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/mac.svg" alt="macOS">
+                </div>
+                <div class="icon-name">macOS</div>
+                <div class="icon-size">592 bytes</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/chrome.svg" alt="Chrome">
+                </div>
+                <div class="icon-name">Chrome</div>
+                <div class="icon-size">714 bytes</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/intellij.svg" alt="IntelliJ IDEA">
+                </div>
+                <div class="icon-name">IntelliJ IDEA</div>
+                <div class="icon-size">802 bytes</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/sublime.svg" alt="Sublime Text">
+                </div>
+                <div class="icon-name">Sublime Text</div>
+                <div class="icon-size">414 bytes</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-wrapper">
+                    <img src="icons/photoshop.svg" alt="Photoshop">
+                </div>
+                <div class="icon-name">Photoshop</div>
+                <div class="icon-size">592 bytes</div>
+            </div>
+        </div>
+        
+        <div class="comparison">
+            <h2>Before vs After Comparison</h2>
+            <div class="before-after">
+                <div class="comparison-box before">
+                    <h3>❌ Before (Emojis)</h3>
+                    <div class="emoji-display">💻</div>
+                    <p style="color: #666; margin-top: 1rem;">
+                        Generic emojis<br>
+                        Inconsistent across devices<br>
+                        Not recognizable
+                    </p>
+                </div>
+                
+                <div class="comparison-box after">
+                    <h3>✅ After (SVG Icons)</h3>
+                    <div class="svg-display">
+                        <img src="icons/vscode.svg" alt="VS Code" style="width: 100%; height: 100%;">
+                    </div>
+                    <p style="color: #666; margin-top: 1rem;">
+                        Real VS Code icon<br>
+                        Consistent everywhere<br>
+                        Instantly recognizable
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="note">
+            <h3>✨ Benefits of SVG Icons</h3>
+            <ul>
+                <li><strong>Professional:</strong> Real brand icons that users recognize</li>
+                <li><strong>Scalable:</strong> Perfect quality at any size (vector graphics)</li>
+                <li><strong>Consistent:</strong> Same appearance on all devices and browsers</li>
+                <li><strong>Lightweight:</strong> Each icon is less than 1KB!</li>
+                <li><strong>Animated:</strong> Smooth hover effects (scale 1.1x)</li>
+                <li><strong>Modern:</strong> Matches professional sites like shortcuts.design</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e5e5e5;">
+            <a href="index.html" style="display: inline-block; padding: 1rem 2rem; background: #2563EB; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                See Icons on Homepage →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
