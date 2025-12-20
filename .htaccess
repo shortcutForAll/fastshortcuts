@@ -13,9 +13,11 @@ RewriteRule ^chrome\.html$ /shortcuts/chrome/ [R=301,L]
 RewriteRule ^sublime\.html$ /shortcuts/sublime/ [R=301,L]
 
 # Remove .html extension for legal pages (clean URLs)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(about|contact|privacy|terms)$ /$1.html [L]
+# Redirect /about -> /pages/about.html
+RewriteRule ^about$ /pages/about.html [L]
+RewriteRule ^contact$ /pages/contact.html [L]
+RewriteRule ^privacy$ /pages/privacy.html [L]
+RewriteRule ^terms$ /pages/terms.html [L]
 
 # Redirect .html URLs to clean URLs for legal pages
 RewriteRule ^(about|contact|privacy|terms)\.html$ /$1 [R=301,L]
