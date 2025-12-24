@@ -4,6 +4,9 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
+# Block archive folder from being indexed
+RewriteRule ^archive/.*$ - [F,L]
+
 # Redirect old .html files to new folder structure
 RewriteRule ^vscode\.html$ /shortcuts/vscode/ [R=301,L]
 RewriteRule ^windows\.html$ /shortcuts/windows/ [R=301,L]

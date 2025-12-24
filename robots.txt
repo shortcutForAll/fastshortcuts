@@ -4,5 +4,15 @@
 User-agent: *
 Allow: /
 
+# Block archive folder (old files)
+Disallow: /archive/
+
+# Block empty directories (no content yet)
+Disallow: /shortcuts/arc/
+Disallow: /shortcuts/canva/
+Disallow: /shortcuts/discord/
+Disallow: /shortcuts/linear/
+Disallow: /shortcuts/trello/
+
 # Sitemap location
 Sitemap: https://fastshortcuts.com/sitemap.xml
