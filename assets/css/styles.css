@@ -12,6 +12,7 @@
     --warning: #f59e0b;
     --bg-primary: #ffffff; /* White background */
     --bg-secondary: #f9fafb; /* Light gray background */
+    --bg-light: #f9fafb; /* Alias for bg-secondary */
     --bg-accent: #fffbeb; /* Very light yellow */
     --text-primary: #111827; /* Almost black text */
     --text-secondary: #6b7280; /* Medium gray text */

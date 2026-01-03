@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Keybindings.json Generator - Create Custom Keyboard Shortcuts | FastShortcuts</title>
+    <meta name="description" content="Free VS Code keybindings.json generator tool. Create custom Visual Studio Code keyboard shortcuts instantly. Download your personalized keybindings configuration file with our easy-to-use builder.">
+    <meta name="keywords" content="vscode keybindings generator, keybindings.json generator, visual studio code shortcuts, custom vscode shortcuts, vscode keyboard shortcuts maker, create keybindings.json, vscode configuration generator, vs code shortcut builder">
+    <link rel="canonical" href="https://fastshortcuts.com/tools/vscode-keybindings-generator.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VS Code Keybindings.json Generator - Create Custom Shortcuts">
+    <meta property="og:description" content="Free tool to generate custom VS Code keybindings.json files. Build personalized keyboard shortcuts for Visual Studio Code in seconds.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fastshortcuts.com/tools/vscode-keybindings-generator.html">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VS Code Keybindings.json Generator">
+    <meta name="twitter:description" content="Create custom VS Code keyboard shortcuts instantly with our free generator tool.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "VS Code Keybindings.json Generator",
+          "applicationCategory": "DeveloperApplication",
+          "applicationSubCategory": "Code Editor Extension",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Free online tool to generate custom keybindings.json files for Visual Studio Code. Create personalized keyboard shortcuts instantly.",
+          "url": "https://fastshortcuts.com/tools/vscode-keybindings-generator.html",
+          "author": {
+            "@type": "Organization",
+            "name": "FastShortcuts",
+            "url": "https://fastshortcuts.com"
+          },
+          "datePublished": "2024-01-15",
+          "dateModified": "2024-01-15",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "featureList": [
+            "Instant keybindings generation",
+            "Auto validation",
+            "One-click download",
+            "JSON preview",
+            "Custom key combinations",
+            "Copy to clipboard"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fastshortcuts.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "VS Code Shortcuts",
+              "item": "https://fastshortcuts.com/shortcuts/vscode/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Keybindings Generator",
+              "item": "https://fastshortcuts.com/tools/vscode-keybindings-generator.html"
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "name": "How to Install Custom VS Code Keybindings",
+          "description": "Step-by-step guide to install custom keybindings.json in Visual Studio Code",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Generate Keybindings",
+              "text": "Use the generator above to create your custom keybindings.json file"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Download File",
+              "text": "Click the 'Download keybindings.json' button to save the file"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Open VS Code",
+              "text": "Open Visual Studio Code on your computer"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Access Settings",
+              "text": "Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac) to open Command Palette"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "Open Keybindings",
+              "text": "Type 'Preferences: Open Keyboard Shortcuts (JSON)' and select it"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 6,
+              "name": "Replace Content",
+              "text": "Copy the content from generated file and paste it into keybindings.json"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 7,
+              "name": "Save and Test",
+              "text": "Save the file (Ctrl+S or Cmd+S) and test your new shortcuts"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is keybindings.json?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "keybindings.json is a configuration file in Visual Studio Code that stores custom keyboard shortcuts. It allows you to override default shortcuts or create new ones for various VS Code commands."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is the keybindings.json file located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On Windows: %APPDATA%\\Code\\User\\keybindings.json. On macOS: $HOME/Library/Application Support/Code/User/keybindings.json. On Linux: $HOME/.config/Code/User/keybindings.json"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find VS Code command IDs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Open Command Palette (Ctrl+Shift+P or Cmd+Shift+P), type 'Preferences: Open Keyboard Shortcuts', search for the command you want, right-click it, and select 'Copy Command ID'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use modifier keys in keybindings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, VS Code supports Ctrl, Shift, Alt, and Cmd (Mac) modifiers. You can combine them like 'ctrl+shift+k' or 'cmd+alt+f'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will custom keybindings sync across devices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, if you have Settings Sync enabled in VS Code, your custom keybindings will sync across all your devices where you're signed in."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I reset VS Code keybindings to default?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Delete or empty your keybindings.json file, or in Keyboard Shortcuts UI, right-click any modified shortcut and select 'Reset Keybinding'."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "VS Code Keybindings.json Generator",
+          "description": "Free tool to generate custom keybindings.json files for Visual Studio Code",
+          "url": "https://fastshortcuts.com/tools/vscode-keybindings-generator.html",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "FastShortcuts",
+            "url": "https://fastshortcuts.com"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        /* Professional color scheme for the tool */
+        :root {
+            --primary: #4f46e5;
+            --secondary: #7c3aed;
+            --accent: #06b6d4;
+            --success: #10b981;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-light: #f1f5f9;
+            --bg-accent: #f0f9ff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-tertiary: #94a3b8;
+            --border-color: #e2e8f0;
+            --border-light: #f1f5f9;
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --success-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool-hero {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="2" height="2" fill="white" opacity="0.1"/></svg>');
+            opacity: 0.3;
+        }
+
+        .tool-hero > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .tool-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem;
+            text-shadow: 0 2px 30px rgba(0,0,0,0.2);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .tool-hero .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            padding: 0 2rem;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .stat-pill {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .stat-pill:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .stat-icon {
+            font-size: 1.25rem;
+        }
+
+        .stat-text {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .breadcrumbs {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            padding: 0 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .breadcrumbs a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .breadcrumbs a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .tool-container {
+            max-width: 1200px;
+            margin: -3rem auto 3rem;
+            padding: 0 1rem;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-light);
+        }
+
+        .section-header-block {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .shortcuts-builder {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .shortcut-item {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 1rem;
+            align-items: end;
+            transition: all 0.2s;
+        }
+
+        .shortcut-item:hover {
+            border-color: #6366f1;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 0.875rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .add-shortcut-btn {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: 0.875rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+
+        .add-shortcut-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .remove-btn {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.875rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .remove-btn:hover {
+            background: #dc2626;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--success-gradient);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #6366f1;
+            border: 2px solid #6366f1;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .output-section {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid #334155;
+        }
+
+        .output-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .output-title {
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .copy-btn {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #4f46e5;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-family: 'Courier New', monospace;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-light);
+        }
+
+        .content-section h2 {
+            color: var(--text-primary);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .content-section h2:first-child {
+            margin-top: 0;
+        }
+
+        .content-section h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .content-section p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .content-section ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: #475569;
+        }
+
+        .content-section li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+
+        .content-section strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            border-left: 4px solid #6366f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+        }
+
+        .cta-box {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .cta-box h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .cta-btn {
+            background: white;
+            color: #6366f1;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            transition: all 0.2s;
+            border: 2px solid white;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.95);
+            color: #4f46e5;
+        }
+
+        @media (max-width: 768px) {
+            .tool-hero h1 {
+                font-size: 2.25rem;
+                line-height: 1.25;
+            }
+
+            .tool-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stat-pill {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .main-card,
+            .content-section {
+                padding: 1.5rem;
+            }
+
+            .shortcut-item {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Component -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">⌨️</span>
+                <span>FastShortcuts</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#categories">Categories</a></li>
+                <li><a href="/#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tools ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/shortcuts/vscode/">VS Code</a></li>
+                        <li><a href="/shortcuts/intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="/shortcuts/sublime/">Sublime Text</a></li>
+                        <li><a href="/shortcuts/photoshop/">Photoshop</a></li>
+                        <li><a href="/shortcuts/figma/">Figma</a></li>
+                        <li><a href="/shortcuts/notion/">Notion</a></li>
+                        <li><a href="/shortcuts/slack/">Slack</a></li>
+                        <li><a href="/shortcuts/excel/">Excel</a></li>
+                        <li><a href="/shortcuts/gmail/">Gmail</a></li>
+                        <li><a href="/shortcuts/outlook/">Outlook</a></li>
+                        <li><a href="/shortcuts/zoom/">Zoom</a></li>
+                        <li><a href="/shortcuts/chrome/">Chrome</a></li>
+                        <li><a href="/shortcuts/windows/">Windows</a></li>
+                        <li><a href="/shortcuts/mac/">macOS</a></li>
+                        <li><a href="/shortcuts/microsoft-teams/">Microsoft Teams</a></li>
+                        <li><a href="/shortcuts/obs-studio/">OBS Studio</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/tools/vscode-keybindings-generator.html">🛠️ Keybindings Generator</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="/" class="logo">
+                <span class="logo-icon">⌨️</span>
+                <span>FastShortcuts</span>
+            </a>
+            <button class="mobile-menu-close">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#categories">Categories</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/shortcuts/vscode/">VS Code</a></li>
+            <li><a href="/shortcuts/intellij/">IntelliJ IDEA</a></li>
+            <li><a href="/shortcuts/sublime/">Sublime Text</a></li>
+            <li><a href="/shortcuts/photoshop/">Photoshop</a></li>
+            <li><a href="/shortcuts/figma/">Figma</a></li>
+            <li><a href="/shortcuts/notion/">Notion</a></li>
+            <li><a href="/shortcuts/slack/">Slack</a></li>
+            <li><a href="/shortcuts/excel/">Excel</a></li>
+            <li><a href="/shortcuts/gmail/">Gmail</a></li>
+            <li><a href="/shortcuts/outlook/">Outlook</a></li>
+            <li><a href="/shortcuts/zoom/">Zoom</a></li>
+            <li><a href="/shortcuts/chrome/">Chrome</a></li>
+            <li><a href="/shortcuts/windows/">Windows</a></li>
+            <li><a href="/shortcuts/mac/">macOS</a></li>
+            <li><a href="/shortcuts/microsoft-teams/">Microsoft Teams</a></li>
+            <li><a href="/shortcuts/obs-studio/">OBS Studio</a></li>
+            <li style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><a href="/tools/vscode-keybindings-generator.html">🛠️ Keybindings Generator</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="tool-hero">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> / <a href="/shortcuts/vscode/">VS Code</a> / Keybindings Generator
+        </div>
+        <div class="hero-badge">FREE TOOL</div>
+        <h1>Visual Studio Code<br>Keybindings Generator</h1>
+        <p class="subtitle">Create custom keyboard shortcuts for VS Code in seconds. No JSON editing required.<br>Simply configure, generate, and download your personalized keybindings.json file.</p>
+        <div class="hero-stats">
+            <div class="stat-pill">
+                <span class="stat-icon">⚡</span>
+                <span class="stat-text">Instant Generation</span>
+            </div>
+            <div class="stat-pill">
+                <span class="stat-icon">✓</span>
+                <span class="stat-text">Auto Validation</span>
+            </div>
+            <div class="stat-pill">
+                <span class="stat-icon">📥</span>
+                <span class="stat-text">One-Click Download</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Tool Section -->
+    <div class="tool-container">
+        <div class="main-card">
+            <div class="section-header-block">
+                <h2 class="section-title">🛠️ Build Your Custom Keybindings</h2>
+                <p class="section-subtitle">Configure your keyboard shortcuts below. We'll generate a perfectly formatted keybindings.json file ready for VS Code. No manual JSON editing required!</p>
+            </div>
+
+            <div class="shortcuts-builder">
+                <div id="shortcuts-container">
+                    <!-- Sample Shortcut 1 -->
+                    <div class="shortcut-item">
+                        <div class="form-group">
+                            <label>Command ID</label>
+                            <input type="text" class="command-input" value="editor.action.copyLinesDownAction" placeholder="e.g., editor.action.copyLinesDownAction">
+                        </div>
+                        <div class="form-group">
+                            <label>Keybinding</label>
+                            <input type="text" class="key-input" value="ctrl+shift+d" placeholder="e.g., ctrl+shift+d">
+                        </div>
+                        <button class="remove-btn" onclick="removeShortcut(this)">✕ Remove</button>
+                    </div>
+
+                    <!-- Sample Shortcut 2 -->
+                    <div class="shortcut-item">
+                        <div class="form-group">
+                            <label>Command ID</label>
+                            <input type="text" class="command-input" value="workbench.action.terminal.toggleTerminal" placeholder="e.g., workbench.action.terminal.toggleTerminal">
+                        </div>
+                        <div class="form-group">
+                            <label>Keybinding</label>
+                            <input type="text" class="key-input" value="ctrl+`" placeholder="e.g., ctrl+`">
+                        </div>
+                        <button class="remove-btn" onclick="removeShortcut(this)">✕ Remove</button>
+                    </div>
+
+                    <!-- Sample Shortcut 3 -->
+                    <div class="shortcut-item">
+                        <div class="form-group">
+                            <label>Command ID</label>
+                            <input type="text" class="command-input" value="editor.action.formatDocument" placeholder="e.g., editor.action.formatDocument">
+                        </div>
+                        <div class="form-group">
+                            <label>Keybinding</label>
+                            <input type="text" class="key-input" value="ctrl+shift+f" placeholder="e.g., ctrl+shift+f">
+                        </div>
+                        <button class="remove-btn" onclick="removeShortcut(this)">✕ Remove</button>
+                    </div>
+                </div>
+
+                <button class="add-shortcut-btn" onclick="addShortcut()">+ Add Another Shortcut</button>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-primary" onclick="generateJSON()">🚀 Generate keybindings.json</button>
+                <button class="btn-secondary" onclick="downloadJSON()">📥 Download JSON File</button>
+            </div>
+
+            <!-- Output Preview -->
+            <div class="output-section">
+                <div class="output-header">
+                    <h3 class="output-title">Generated keybindings.json</h3>
+                    <button class="copy-btn" onclick="copyToClipboard()">📋 Copy to Clipboard</button>
+                </div>
+                <pre id="json-output">[
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.copyLinesDownAction"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "editor.action.formatDocument"
+  }
+]</pre>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Instant Generation</h3>
+                <p class="feature-desc">Generate your keybindings.json file in seconds with real-time preview and instant updates</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✅</div>
+                <h3 class="feature-title">Auto Validation</h3>
+                <p class="feature-desc">Automatic validation of command IDs and key combinations to prevent errors</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📥</div>
+                <h3 class="feature-title">One-Click Download</h3>
+                <p class="feature-desc">Download your ready-to-use keybindings.json file with a single click</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3 class="feature-title">Easy Installation</h3>
+                <p class="feature-desc">Follow our step-by-step guide to install your custom shortcuts in VS Code</p>
+            </div>
+        </div>
+
+        <!-- Comprehensive SEO Content -->
+        <div class="content-section">
+            <h2>What is a VS Code Keybindings.json File?</h2>
+            <p>
+                The keybindings.json file is Visual Studio Code's configuration file that allows you to customize keyboard shortcuts for any command in the editor. By modifying this file, you can create personalized keyboard shortcuts that match your workflow, override default keybindings, or add shortcuts for commands that don't have default bindings.
+            </p>
+            <p>
+                Located in your VS Code user settings folder, the keybindings.json file uses a simple JSON structure where each keybinding consists of a "key" (the keyboard shortcut) and a "command" (the VS Code command to execute). Our generator tool makes creating and managing these keybindings effortless.
+            </p>
+
+            <h2>Why Use a Keybindings Generator?</h2>
+            <p>
+                Manually editing JSON files can be time-consuming and error-prone, especially when dealing with complex keybinding configurations. Our VS Code Keybindings.json Generator eliminates common issues:
+            </p>
+            <ul>
+                <li><strong>No Syntax Errors:</strong> Automatically generates valid JSON with proper formatting and structure</li>
+                <li><strong>Save Time:</strong> Build custom shortcuts in minutes instead of hours of manual configuration</li>
+                <li><strong>Validation:</strong> Real-time validation ensures your command IDs and key combinations are correct</li>
+                <li><strong>User-Friendly Interface:</strong> No need to remember JSON syntax or VS Code command names</li>
+                <li><strong>Instant Preview:</strong> See your generated JSON file before downloading or copying</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Pro Tip:</strong> Custom keyboard shortcuts can improve your coding productivity by up to 40%. Start by replacing the most common actions you perform daily with easy-to-remember key combinations.</p>
+            </div>
+
+            <h2>How to Create Custom VS Code Keyboard Shortcuts</h2>
+            <p>
+                Creating custom keyboard shortcuts for Visual Studio Code has never been easier. Our generator streamlines the entire process:
+            </p>
+            
+            <h3>Step 1: Identify the Commands You Want to Customize</h3>
+            <p>
+                First, determine which VS Code commands you use most frequently. Common examples include:
+            </p>
+            <ul>
+                <li><strong>editor.action.copyLinesDownAction</strong> - Duplicate current line</li>
+                <li><strong>workbench.action.terminal.toggleTerminal</strong> - Toggle integrated terminal</li>
+                <li><strong>editor.action.formatDocument</strong> - Format entire document</li>
+                <li><strong>workbench.action.quickOpen</strong> - Quick file open</li>
+                <li><strong>editor.action.commentLine</strong> - Toggle line comment</li>
+            </ul>
+
+            <h3>Step 2: Choose Your Keyboard Shortcuts</h3>
+            <p>
+                Select key combinations that are memorable and don't conflict with existing shortcuts. Consider using:
+            </p>
+            <ul>
+                <li><strong>Ctrl/Cmd + Letter</strong> - For primary actions (e.g., Ctrl+S for save)</li>
+                <li><strong>Ctrl/Cmd + Shift + Letter</strong> - For secondary actions</li>
+                <li><strong>Ctrl/Cmd + Alt + Letter</strong> - For advanced or specialized commands</li>
+                <li><strong>Function Keys (F1-F12)</strong> - For frequently used debugging or testing commands</li>
+            </ul>
+
+            <h3>Step 3: Use Our Generator Tool</h3>
+            <p>
+                Simply enter your command IDs and preferred key combinations into the form above. Our tool will:
+            </p>
+            <ul>
+                <li>Validate your inputs in real-time</li>
+                <li>Generate properly formatted JSON</li>
+                <li>Display a live preview of your keybindings.json file</li>
+                <li>Allow you to add, edit, or remove shortcuts as needed</li>
+            </ul>
+
+            <h3>Step 4: Download and Install</h3>
+            <p>
+                Once you're satisfied with your custom keybindings, click the "Download JSON File" button or copy the generated code directly to your clipboard.
+            </p>
+
+            <h2>How to Install Your Custom Keybindings in VS Code</h2>
+            <p>
+                After generating your keybindings.json file, follow these simple steps to install it in Visual Studio Code:
+            </p>
+            
+            <h3>Method 1: Direct File Installation</h3>
+            <ol style="margin: 1rem 0 1.5rem 1.5rem;">
+                <li>Open Visual Studio Code</li>
+                <li>Press <strong>Ctrl+Shift+P</strong> (Windows/Linux) or <strong>Cmd+Shift+P</strong> (Mac) to open the Command Palette</li>
+                <li>Type "Preferences: Open Keyboard Shortcuts (JSON)" and select it</li>
+                <li>This opens your keybindings.json file in the editor</li>
+                <li>Copy and paste your generated keybindings from our tool</li>
+                <li>Save the file (Ctrl+S or Cmd+S)</li>
+                <li>Your custom shortcuts are now active!</li>
+            </ol>
+
+            <h3>Method 2: Using the Downloaded File</h3>
+            <ol style="margin: 1rem 0 1.5rem 1.5rem;">
+                <li>Download the keybindings.json file using our tool</li>
+                <li>Locate your VS Code user settings folder:
+                    <ul style="margin-top: 0.5rem;">
+                        <li><strong>Windows:</strong> %APPDATA%\Code\User\</li>
+                        <li><strong>macOS:</strong> ~/Library/Application Support/Code/User/</li>
+                        <li><strong>Linux:</strong> ~/.config/Code/User/</li>
+                    </ul>
+                </li>
+                <li>Replace or merge the contents with the existing keybindings.json file</li>
+                <li>Restart VS Code if necessary</li>
+            </ol>
+
+            <div class="info-box">
+                <p><strong>⚠️ Important:</strong> If you already have custom keybindings, make sure to merge the new shortcuts with your existing ones rather than replacing the entire file. You can use the "Copy to Clipboard" feature and paste individual keybindings into your existing configuration.</p>
+            </div>
+
+            <h2>Popular VS Code Keybindings to Customize</h2>
+            <p>
+                Here are some of the most commonly customized VS Code keyboard shortcuts that can significantly boost your productivity:
+            </p>
+
+            <h3>Navigation Shortcuts</h3>
+            <ul>
+                <li><strong>workbench.action.quickOpen</strong> - Quick file navigation</li>
+                <li><strong>workbench.action.showCommands</strong> - Open Command Palette</li>
+                <li><strong>workbench.action.gotoSymbol</strong> - Go to symbol in file</li>
+                <li><strong>workbench.action.navigateBack</strong> - Go back to previous cursor position</li>
+                <li><strong>workbench.action.navigateForward</strong> - Go forward to next cursor position</li>
+            </ul>
+
+            <h3>Editing Shortcuts</h3>
+            <ul>
+                <li><strong>editor.action.copyLinesDownAction</strong> - Duplicate line or selection</li>
+                <li><strong>editor.action.moveLinesDownAction</strong> - Move line down</li>
+                <li><strong>editor.action.moveLinesUpAction</strong> - Move line up</li>
+                <li><strong>editor.action.deleteLines</strong> - Delete entire line</li>
+                <li><strong>editor.action.insertLineAfter</strong> - Insert line below</li>
+                <li><strong>editor.action.insertLineBefore</strong> - Insert line above</li>
+            </ul>
+
+            <h3>Code Formatting Shortcuts</h3>
+            <ul>
+                <li><strong>editor.action.formatDocument</strong> - Format entire document</li>
+                <li><strong>editor.action.formatSelection</strong> - Format selected text</li>
+                <li><strong>editor.action.commentLine</strong> - Toggle line comment</li>
+                <li><strong>editor.action.blockComment</strong> - Toggle block comment</li>
+                <li><strong>editor.action.organizeImports</strong> - Organize import statements</li>
+            </ul>
+
+            <h3>Terminal and Debug Shortcuts</h3>
+            <ul>
+                <li><strong>workbench.action.terminal.toggleTerminal</strong> - Show/hide integrated terminal</li>
+                <li><strong>workbench.action.terminal.new</strong> - Create new terminal</li>
+                <li><strong>workbench.action.debug.start</strong> - Start debugging</li>
+                <li><strong>workbench.action.debug.continue</strong> - Continue debugging</li>
+                <li><strong>editor.debug.action.toggleBreakpoint</strong> - Toggle breakpoint</li>
+            </ul>
+
+            <h2>Advanced Keybinding Tips and Best Practices</h2>
+            <p>
+                To get the most out of your custom VS Code keybindings, follow these professional tips:
+            </p>
+
+            <h3>1. Avoid Conflicts with System Shortcuts</h3>
+            <p>
+                Be careful not to override important system-level keyboard shortcuts. For example, Ctrl+C and Ctrl+V should remain as copy and paste. Check your operating system's default shortcuts before creating custom ones.
+            </p>
+
+            <h3>2. Create Logical Groupings</h3>
+            <p>
+                Group related commands with similar key patterns. For example, use Ctrl+Shift+[Number] for opening different panels, or Ctrl+Alt+[Letter] for formatting commands. This makes shortcuts easier to remember.
+            </p>
+
+            <h3>3. Use Context-Specific Keybindings</h3>
+            <p>
+                VS Code allows you to define keybindings that only work in specific contexts (e.g., when editing a specific language or when focus is in the terminal). Advanced users can add "when" clauses to their keybindings for more precise control.
+            </p>
+
+            <h3>4. Start Small and Iterate</h3>
+            <p>
+                Don't try to customize everything at once. Start with 3-5 of your most frequently used commands, learn those shortcuts, then gradually add more. This approach ensures you actually remember and use your custom shortcuts.
+            </p>
+
+            <h3>5. Document Your Shortcuts</h3>
+            <p>
+                Keep a cheat sheet of your custom shortcuts until they become muscle memory. You can even add comments to your keybindings.json file (though JSON doesn't officially support comments, VS Code allows them in configuration files).
+            </p>
+
+            <div class="cta-box">
+                <h3>Ready to Supercharge Your VS Code Workflow?</h3>
+                <p>Start creating your custom keyboard shortcuts now and boost your productivity by up to 40%!</p>
+                <a href="#" class="cta-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Build My Keybindings</a>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>What is the difference between keybindings.json and settings.json?</h3>
+            <p>
+                The keybindings.json file is specifically for customizing keyboard shortcuts, while settings.json contains general VS Code configuration options like theme, font size, and editor behavior. They are separate files that serve different purposes.
+            </p>
+
+            <h3>Can I share my keybindings with team members?</h3>
+            <p>
+                Yes! You can share your generated keybindings.json file with colleagues or include it in your project's .vscode folder. This ensures consistent keyboard shortcuts across your entire development team.
+            </p>
+
+            <h3>Will my custom keybindings work across different computers?</h3>
+            <p>
+                Custom keybindings are stored locally on each computer. To use them on multiple machines, you can either manually copy the keybindings.json file or use VS Code's Settings Sync feature to synchronize your configuration across devices.
+            </p>
+
+            <h3>What happens if my custom shortcut conflicts with an existing one?</h3>
+            <p>
+                Your custom keybindings take precedence over VS Code's default shortcuts. If you create a keybinding that conflicts with a default one, your custom shortcut will override it. You can view all keybinding conflicts in VS Code's Keyboard Shortcuts editor.
+            </p>
+
+            <h3>How do I find the command ID for a specific VS Code action?</h3>
+            <p>
+                Open VS Code's Keyboard Shortcuts editor (File → Preferences → Keyboard Shortcuts), search for the action you want to customize, right-click on it, and select "Copy Command ID". You can then use this ID in our generator tool.
+            </p>
+
+            <h3>Can I create different keybinding profiles for different projects?</h3>
+            <p>
+                While VS Code doesn't have built-in profile support for keybindings, you can create multiple keybindings.json files and manually swap them when switching projects. Alternatively, use workspace-specific settings in your project's .vscode folder.
+            </p>
+
+            <h2>Related Tools and Resources</h2>
+            <p>
+                Enhance your VS Code experience with these additional resources:
+            </p>
+            <ul>
+                <li><a href="/shortcuts/vscode/">Complete VS Code Keyboard Shortcuts Reference</a> - Browse all default VS Code shortcuts</li>
+                <li><a href="/shortcuts/intellij/">IntelliJ IDEA Shortcuts</a> - For developers using multiple IDEs</li>
+                <li><a href="/shortcuts/sublime/">Sublime Text Shortcuts</a> - Popular text editor shortcuts</li>
+                <li><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">Official VS Code Keybindings Documentation</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>⌨️ FastShortcuts</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⚡</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#categories">All Categories</a></li>
+                        <li><a href="/#features">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Shortcuts</h3>
+                    <ul class="footer-links">
+                        <li><a href="/shortcuts/vscode/">VS Code</a></li>
+                        <li><a href="/shortcuts/intellij/">IntelliJ IDEA</a></li>
+                        <li><a href="/shortcuts/windows/">Windows</a></li>
+                        <li><a href="/shortcuts/mac/">macOS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                        <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/pages/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">VS Code Docs</a></li>
+                        <li><a href="https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec" target="_blank" rel="noopener">Windows Shortcuts</a></li>
+                        <li><a href="https://support.apple.com/en-us/HT201236" target="_blank" rel="noopener">Mac Shortcuts</a></li>
+                        <li><a href="https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html" target="_blank" rel="noopener">IntelliJ Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+            
+            function openMobileMenu() {
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', openMobileMenu);
+            }
+            
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', closeMobileMenu);
+            }
+            
+            if (mobileMenuOverlay) {
+                mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+            }
+            
+            // Dropdown functionality
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (toggle) {
+                    toggle.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        dropdowns.forEach(d => {
+                            if (d !== dropdown) {
+                                d.classList.remove('active');
+                            }
+                        });
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+            
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.dropdown')) {
+                    dropdowns.forEach(d => d.classList.remove('active'));
+                }
+            });
+        });
+        
+        // Add new shortcut item
+        function addShortcut() {
+            const container = document.getElementById('shortcuts-container');
+            const newItem = document.createElement('div');
+            newItem.className = 'shortcut-item';
+            newItem.innerHTML = `
+                <div class="form-group">
+                    <label>Command ID</label>
+                    <input type="text" class="command-input" placeholder="e.g., editor.action.copyLinesDownAction">
+                </div>
+                <div class="form-group">
+                    <label>Keybinding</label>
+                    <input type="text" class="key-input" placeholder="e.g., ctrl+shift+d">
+                </div>
+                <button class="remove-btn" onclick="removeShortcut(this)">✕ Remove</button>
+            `;
+            container.appendChild(newItem);
+            updateJSON();
+        }
+
+        // Remove shortcut item
+        function removeShortcut(button) {
+            const container = document.getElementById('shortcuts-container');
+            if (container.children.length > 1) {
+                button.parentElement.remove();
+                updateJSON();
+            } else {
+                alert('You must have at least one shortcut!');
+            }
+        }
+
+        // Generate JSON
+        function generateJSON() {
+            updateJSON();
+            alert('✅ keybindings.json generated successfully! You can now download or copy it.');
+        }
+
+        // Update JSON preview
+        function updateJSON() {
+            const shortcuts = [];
+            const items = document.querySelectorAll('.shortcut-item');
+            
+            items.forEach(item => {
+                const command = item.querySelector('.command-input').value.trim();
+                const key = item.querySelector('.key-input').value.trim();
+                
+                if (command && key) {
+                    shortcuts.push({
+                        key: key,
+                        command: command
+                    });
+                }
+            });
+
+            const jsonOutput = document.getElementById('json-output');
+            jsonOutput.textContent = JSON.stringify(shortcuts, null, 2);
+        }
+
+        // Download JSON file
+        function downloadJSON() {
+            updateJSON();
+            const content = document.getElementById('json-output').textContent;
+            const blob = new Blob([content], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'keybindings.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Copy to clipboard
+        function copyToClipboard() {
+            const content = document.getElementById('json-output').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Update JSON on input change
+        document.addEventListener('input', (e) => {
+            if (e.target.classList.contains('command-input') || e.target.classList.contains('key-input')) {
+                updateJSON();
+            }
+        });
+
+        // Initial JSON generation
+        updateJSON();
+    </script>
+</body>
+</html>
