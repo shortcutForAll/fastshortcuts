@@ -8,7 +8,7 @@ FastShortcuts is a comprehensive keyboard shortcuts reference website for develo
 
 ## Features
 
-- ✅ **16 Shortcut Pages** - VS Code, IntelliJ, Sublime Text, Photoshop, Figma, Notion, Slack, Excel, Gmail, Outlook, Zoom, Chrome, Windows, macOS, Microsoft Teams, OBS Studio
+- ✅ **50 Shortcut Pages** - VS Code, IntelliJ, Sublime Text, Photoshop, Figma, Notion, Slack, Excel, Gmail, Outlook, Zoom, Chrome, Windows, macOS, Microsoft Teams, OBS Studio
 - ✅ **Interactive Tool** - VS Code Keybindings.json Generator
 - ✅ **Responsive Design** - Mobile-friendly interface
 - ✅ **SEO Optimized** - Schema.org structured data, proper meta tags
