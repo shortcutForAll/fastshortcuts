@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Discord',
+            path: '../discord/',
+            icon: '../../assets/icons/discord.svg',
+            description: 'Navigate Discord faster with Quick Switcher, voice controls, search, and formatting shortcuts for desktop and browser.',
+            badge: 'New',
+            date: '2026-03-28'
+        },
+        {
             name: 'Photoshop',
             path: '../photoshop/',
             icon: '../../assets/icons/photoshop.svg',
