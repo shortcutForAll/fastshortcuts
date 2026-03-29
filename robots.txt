@@ -10,7 +10,6 @@ Disallow: /archive/
 # Block empty directories (no content yet)
 Disallow: /shortcuts/arc/
 Disallow: /shortcuts/canva/
-Disallow: /shortcuts/discord/
 Disallow: /shortcuts/linear/
 Disallow: /shortcuts/trello/
 

@@ -59,22 +59,14 @@
     
     <link rel="stylesheet" href="assets/css/styles.css">
     
-    <!-- Schema.org Structured Data (JSON-LD) -->
+    <!-- Schema.org: single WebSite (no SearchAction — search is in-page JS on guide pages, not a URL endpoint) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "FastShortcuts",
       "url": "https://fastshortcuts.com",
-      "description": "Complete keyboard shortcuts guide for developers. Learn VS Code, IntelliJ, Windows, Mac, Chrome & Sublime shortcuts.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://fastshortcuts.com/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      },
+      "description": "Complete keyboard shortcuts guide for developers, designers, and power users. VS Code, IntelliJ, Windows, Mac, Chrome, Slack, and more.",
       "publisher": {
         "@type": "Organization",
         "name": "FastShortcuts",
@@ -107,29 +99,6 @@
       "sameAs": [
         "https://github.com/shortcutForAll/fastshortcuts"
       ]
-    }
-    </script>
-    
-    <!-- WebSite Schema with SearchAction -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "FastShortcuts",
-      "url": "https://fastshortcuts.com",
-      "description": "Complete keyboard shortcuts guide for developers, designers, and power users",
-      "publisher": {
-        "@type": "Organization",
-        "name": "FastShortcuts"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://fastshortcuts.com/search?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
     }
     </script>
     
