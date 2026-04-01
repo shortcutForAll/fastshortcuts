@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Google Sheets',
+            path: '../google-sheets/',
+            icon: '../../assets/icons/google-sheets.svg',
+            description: 'Master Google Sheets shortcuts for formulas, formatting, navigation, and data filtering.',
+            badge: 'New',
+            date: '2026-03-31'
+        },
+        {
             name: 'Discord',
             path: '../discord/',
             icon: '../../assets/icons/discord.svg',
