@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Cursor',
+            path: '../cursor/',
+            icon: '../../assets/icons/cursor.svg',
+            description: 'Cursor AI editor shortcuts for chat, Agent, inline edit, terminal, and VS Code-compatible editing.',
+            badge: 'New',
+            date: '2026-04-18'
+        },
+        {
             name: 'Google Sheets',
             path: '../google-sheets/',
             icon: '../../assets/icons/google-sheets.svg',
