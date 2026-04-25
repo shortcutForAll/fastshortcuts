@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Claude Code',
+            path: '../claude-code/',
+            icon: '../../assets/icons/claude-code.svg',
+            description: 'Claude Code shortcuts for terminal control, prompt editing, history search, and slash commands.',
+            badge: 'New',
+            date: '2026-04-25'
+        },
+        {
             name: 'Cursor',
             path: '../cursor/',
             icon: '../../assets/icons/cursor.svg',
