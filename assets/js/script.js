@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Perplexity',
+            path: '../perplexity/',
+            icon: '../../assets/icons/perplexity.svg',
+            description: 'Perplexity shortcuts for search, follow-ups, source checks, thread navigation, and prompt commands.',
+            badge: 'New',
+            date: '2026-05-01'
+        },
+        {
             name: 'Claude Code',
             path: '../claude-code/',
             icon: '../../assets/icons/claude-code.svg',
