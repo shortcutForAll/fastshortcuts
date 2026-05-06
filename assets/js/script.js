@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Cursor Agent Mode',
+            path: '../cursor-agent-mode/',
+            icon: '../../assets/icons/cursor.svg',
+            description: 'Cursor Agent mode shortcuts for chat controls, model switching, context injection, and apply/reject flows.',
+            badge: 'New',
+            date: '2026-05-06'
+        },
+        {
             name: 'Perplexity',
             path: '../perplexity/',
             icon: '../../assets/icons/perplexity.svg',
