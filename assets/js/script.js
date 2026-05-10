@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Windsurf',
+            path: '../windsurf/',
+            icon: '../../assets/icons/windsurf.svg',
+            description: 'Windsurf IDE shortcuts for Cascade, Command (Ctrl/Cmd+I), Tab completions, terminal AI, and VS Code–compatible editing.',
+            badge: 'New',
+            date: '2026-05-10'
+        },
+        {
             name: 'Cursor Agent Mode',
             path: '../cursor-agent-mode/',
             icon: '../../assets/icons/cursor.svg',
