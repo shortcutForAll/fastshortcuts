@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'ChatGPT',
+            path: '../chatgpt/',
+            icon: '../../assets/icons/chatgpt.svg',
+            description: 'ChatGPT shortcuts for the web app and Mac/Windows desktop apps — Ctrl+/ panel, new chat, copy responses, code blocks, voice mode, and 100+ keys.',
+            badge: 'New',
+            date: '2026-05-16'
+        },
+        {
             name: 'Windsurf',
             path: '../windsurf/',
             icon: '../../assets/icons/windsurf.svg',
