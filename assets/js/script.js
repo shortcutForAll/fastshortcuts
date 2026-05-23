@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Claude',
+            path: '../claude/',
+            icon: '../../assets/icons/claude.svg',
+            description: 'Claude.ai web and Claude Desktop shortcuts (Mac/Windows) — new chat, search palette (Cmd/Ctrl+K), Artifacts, Projects, voice mode, slash commands, and 300+ keys.',
+            badge: 'New',
+            date: '2026-05-23'
+        },
+        {
             name: 'ChatGPT',
             path: '../chatgpt/',
             icon: '../../assets/icons/chatgpt.svg',
