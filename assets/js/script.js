@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'GitHub Copilot',
+            path: '../github-copilot/',
+            icon: '../../assets/icons/github-copilot.svg',
+            description: 'All GitHub Copilot shortcuts — Tab to accept, Ctrl+I Inline Chat, Chat view, Quick Chat, Edits, Agent mode, voice, slash commands for VS Code, JetBrains and Visual Studio.',
+            badge: 'New',
+            date: '2026-06-05'
+        },
+        {
             name: 'Claude',
             path: '../claude/',
             icon: '../../assets/icons/claude.svg',
