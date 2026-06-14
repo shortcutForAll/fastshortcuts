@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Zed Editor',
+            path: '../zed/',
+            icon: '../../assets/icons/zed.svg',
+            description: 'Zed Editor shortcuts for AI Agent, file finder, terminal, git, panels, and VS Code–compatible editing.',
+            badge: 'New',
+            date: '2026-06-13'
+        },
+        {
             name: 'GitHub Copilot',
             path: '../github-copilot/',
             icon: '../../assets/icons/github-copilot.svg',
