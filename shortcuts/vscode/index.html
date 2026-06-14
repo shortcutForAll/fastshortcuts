@@ -1618,6 +1618,39 @@
         <section style="padding:2rem;text-align:center;background:var(--bg-secondary);">
             <p style="font-size:1.1rem;color:var(--text-primary);margin:0;">Also see: <a href="../github-copilot/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">GitHub Copilot</a> • <a href="../cursor/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Cursor</a> • <a href="../windsurf/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Windsurf</a> • <a href="../claude-code/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Claude Code</a> • <a href="../intellij/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">IntelliJ IDEA</a></p>
         </section>
+        <!-- FAQ Section — visible to AI crawlers and users -->
+        <section id="faq" style="padding: 3rem 1.5rem; max-width: 860px; margin: 0 auto;">
+            <div style="text-align:center; margin-bottom: 2rem;">
+                <h2 style="font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">VS Code Shortcuts — Frequently Asked Questions</h2>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">What is the VS Code Command Palette shortcut?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Open the Command Palette with <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+Shift+P</kbd> on Windows/Linux or <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⌘⇧P</kbd> on macOS. From there you can search and run any VS Code command, extension action, or setting by name.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">How do I quickly open a file in VS Code?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Press <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+P</kbd> (Windows/Linux) or <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⌘P</kbd> (Mac) to open the Quick Open file picker. Start typing a filename to fuzzy-search across all files in your workspace.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">How do I format a document in VS Code?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Use <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Shift+Alt+F</kbd> on Windows/Linux or <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⇧⌥F</kbd> on macOS to format the entire document with your configured formatter (Prettier, ESLint, etc.). You can enable <em>Format on Save</em> in Settings to run this automatically on every save.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">How do I view all VS Code keyboard shortcuts?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Open the Keyboard Shortcuts editor with <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+K Ctrl+S</kbd> (Windows) or <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⌘K ⌘S</kbd> (Mac). This lists all commands and their current bindings. You can search, change, or add keybindings from there. The full official reference is available at the <a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener" style="color:var(--primary-color);">VS Code keybindings docs</a>.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">Are VS Code shortcuts the same as Cursor shortcuts?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Mostly yes — Cursor is built on VS Code and shares the same baseline keybindings for editing, navigation, and the terminal. Cursor overrides or adds keys for AI features like inline edit (<kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+K</kbd>) and AI chat (<kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+I</kbd>). See our <a href="../cursor/" style="color:var(--primary-color);">Cursor shortcuts page</a> for the AI-specific differences.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">How do I toggle the terminal in VS Code?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Press <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+`</kbd> (backtick) on both Windows/Linux and macOS to open or hide the integrated terminal. You can open a new terminal instance with <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+Shift+`</kbd>.</p>
+                </details>
+            </div>
+        </section>
+
         <!-- Related Shortcuts Section -->
         <section class="related-shortcuts">
             <div class="container">

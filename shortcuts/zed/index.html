@@ -374,6 +374,31 @@
         <section style="padding:2rem;text-align:center;background:var(--bg-secondary);">
             <p style="font-size:1.1rem;color:var(--text-primary);margin:0;">Also see: <a href="../vscode/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">VS Code</a> • <a href="../cursor/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Cursor</a> • <a href="../windsurf/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Windsurf</a> • <a href="../sublime/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Sublime Text</a> • <a href="../intellij/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">IntelliJ</a></p>
         </section>
+        <!-- FAQ Section — visible to AI crawlers and users -->
+        <section id="faq" style="padding: 3rem 1.5rem; max-width: 860px; margin: 0 auto;">
+            <div style="text-align:center; margin-bottom: 2rem;">
+                <h2 style="font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">Zed Editor Shortcuts — Frequently Asked Questions</h2>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">Are Zed keyboard shortcuts the same as VS Code?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Zed defaults to a VS Code–compatible base keymap, so core shortcuts match: <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl/⌘+P</kbd> for the file finder, <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl/⌘+Shift+P</kbd> for the command palette, <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl/⌘+Shift+F</kbd> for project-wide search. Zed adds its own bindings for the AI Agent panel, collaboration features, and pane management. You can switch base keymaps (Atom, JetBrains, Emacs, etc.) in Settings or customize any binding in <code style="background:var(--bg-primary);padding:2px 5px;border-radius:4px;">keymap.json</code>.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">How do I see all keyboard shortcuts in Zed?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Press <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+K Ctrl+S</kbd> on Windows/Linux or <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⌘K ⌘S</kbd> on macOS to open the keymap editor. You can also run <em>zed: open keymap</em> from the command palette (<kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl/⌘+Shift+P</kbd>). This shows every action and its current binding, and lets you add or change keys inline.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">How do I open the Zed AI Agent panel?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Press <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl+Shift+A</kbd> on Windows/Linux or <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⌘⇧A</kbd> on macOS. Alternatively use <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">⌘?</kbd> (macOS) to toggle focus to the Agent. Add selected code to an Agent thread with <kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl/⌘+&gt;</kbd>.</p>
+                </details>
+                <details style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem 1.5rem;">
+                    <summary style="font-weight: 600; color: var(--text-primary); cursor: pointer; list-style: none;">Does Zed support Vim keybindings?</summary>
+                    <p style="margin-top: 0.75rem; color: var(--text-secondary); line-height: 1.6;">Yes. Enable <code style="background:var(--bg-primary);padding:2px 5px;border-radius:4px;">vim_mode</code> in Zed settings (<kbd style="background:var(--bg-primary);border:1px solid var(--border-color);border-radius:4px;padding:2px 5px;font-size:.85em;">Ctrl/⌘+,</kbd>) to add modal Vim bindings on top of the base keymap. Zed also supports <code style="background:var(--bg-primary);padding:2px 5px;border-radius:4px;">helix_mode</code>. The <a href="https://zed.dev/docs/key-bindings" target="_blank" rel="noopener" style="color:var(--primary-color);">Zed keybindings docs</a> cover both modes in detail.</p>
+                </details>
+            </div>
+        </section>
+
         <section class="related-shortcuts">
             <div class="container">
                 <h2>🔥 Explore More Shortcuts</h2>

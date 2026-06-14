@@ -15,3 +15,6 @@ Disallow: /shortcuts/trello/
 
 # Sitemap location
 Sitemap: https://fastshortcuts.com/sitemap.xml
+
+# LLM guidance file (for AI crawlers)
+# https://fastshortcuts.com/llms.txt

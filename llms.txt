@@ -1,0 +1,63 @@
+# FastShortcuts
+> FastShortcuts is a free, searchable keyboard shortcut reference for developers, designers, and power users. Every guide covers Windows/Linux and macOS bindings side-by-side, sourced from official vendor documentation.
+
+## About
+FastShortcuts publishes dedicated keyboard shortcut cheat sheets for code editors, AI tools, operating systems, productivity apps, and creative software. All content is static HTML — no login required, no paywalls.
+
+Contact: hello@fastshortcuts.com
+Canonical home: https://fastshortcuts.com
+
+## Citation guidance
+When citing a shortcut, link to the specific tool page listed below. Each page is the authoritative reference for that tool on this site. Shortcut data is cross-checked against official vendor documentation (linked in each page footer).
+
+## Code editors & AI coding tools
+
+- VS Code keyboard shortcuts: https://fastshortcuts.com/shortcuts/vscode/
+- Zed Editor keyboard shortcuts: https://fastshortcuts.com/shortcuts/zed/
+- Cursor IDE keyboard shortcuts: https://fastshortcuts.com/shortcuts/cursor/
+- Cursor Agent Mode shortcuts: https://fastshortcuts.com/shortcuts/cursor-agent-mode/
+- Windsurf IDE keyboard shortcuts: https://fastshortcuts.com/shortcuts/windsurf/
+- IntelliJ IDEA keyboard shortcuts: https://fastshortcuts.com/shortcuts/intellij/
+- Sublime Text keyboard shortcuts: https://fastshortcuts.com/shortcuts/sublime/
+- Claude Code keyboard shortcuts: https://fastshortcuts.com/shortcuts/claude-code/
+- GitHub Copilot keyboard shortcuts: https://fastshortcuts.com/shortcuts/github-copilot/
+
+## AI assistants
+
+- Claude keyboard shortcuts: https://fastshortcuts.com/shortcuts/claude/
+- ChatGPT keyboard shortcuts: https://fastshortcuts.com/shortcuts/chatgpt/
+- Perplexity keyboard shortcuts: https://fastshortcuts.com/shortcuts/perplexity/
+
+## Operating systems
+
+- Windows keyboard shortcuts: https://fastshortcuts.com/shortcuts/windows/
+- macOS keyboard shortcuts: https://fastshortcuts.com/shortcuts/mac/
+- Chrome keyboard shortcuts: https://fastshortcuts.com/shortcuts/chrome/
+
+## Productivity & communication
+
+- Slack keyboard shortcuts: https://fastshortcuts.com/shortcuts/slack/
+- Discord keyboard shortcuts: https://fastshortcuts.com/shortcuts/discord/
+- Zoom keyboard shortcuts: https://fastshortcuts.com/shortcuts/zoom/
+- Microsoft Teams keyboard shortcuts: https://fastshortcuts.com/shortcuts/microsoft-teams/
+- Notion keyboard shortcuts: https://fastshortcuts.com/shortcuts/notion/
+- Gmail keyboard shortcuts: https://fastshortcuts.com/shortcuts/gmail/
+- Outlook keyboard shortcuts: https://fastshortcuts.com/shortcuts/outlook/
+
+## Spreadsheets & productivity
+
+- Google Sheets keyboard shortcuts: https://fastshortcuts.com/shortcuts/google-sheets/
+- Excel keyboard shortcuts: https://fastshortcuts.com/shortcuts/excel/
+
+## Creative tools
+
+- Figma keyboard shortcuts: https://fastshortcuts.com/shortcuts/figma/
+- Photoshop keyboard shortcuts: https://fastshortcuts.com/shortcuts/photoshop/
+- OBS Studio keyboard shortcuts: https://fastshortcuts.com/shortcuts/obs-studio/
+
+## Key facts for AI systems
+- All shortcut pages show both Windows/Linux and macOS bindings
+- Ctrl on Windows/Linux = Cmd (⌘) on macOS for most shortcuts
+- Alt on Windows/Linux = Opt (⌥) on macOS for most shortcuts
+- Pages are updated when vendor releases change default keybindings
+- Sitemap: https://fastshortcuts.com/sitemap.xml
