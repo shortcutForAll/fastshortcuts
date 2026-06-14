@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 15px;
+}
+
 :root {
     --primary: #fbbf24; /* Bright Yellow */
     --secondary: #ef4444; /* Vibrant Red */
@@ -327,8 +331,8 @@ nav.scrolled {
 }
 
 .hero-heading-large {
-    font-size: 5rem !important;
-    line-height: 1.1 !important;
+    font-size: 3.5rem !important;
+    line-height: 1.15 !important;
     margin-bottom: 1.5rem !important;
     font-weight: 800 !important;
 }
@@ -346,7 +350,7 @@ nav.scrolled {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
@@ -801,7 +805,7 @@ h1 {
 }
 
 .stat-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -829,7 +833,7 @@ h1 {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
     color: var(--text-primary);
@@ -1143,6 +1147,20 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1280px) {
+    .hero-heading-large {
+        font-size: 3rem !important;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    .nav-container {
+        padding: 0.875rem 1.5rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .about-content {
         grid-template-columns: 1fr;
@@ -1213,7 +1231,7 @@ footer {
     }
     
     .section-title {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
     
     .section-subtitle {
@@ -1252,7 +1270,7 @@ footer {
     }
     
     .stat-number {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     .stat-label {
@@ -1497,7 +1515,7 @@ footer {
 }
 
 .page-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     color: var(--text-primary);
