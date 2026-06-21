@@ -361,6 +361,14 @@ document.addEventListener('DOMContentLoaded', function() {
             date: '2026-06-13'
         },
         {
+            name: 'Linear',
+            path: '../linear/',
+            icon: '../../assets/icons/linear.svg',
+            description: 'Linear keyboard shortcuts for issue creation, G-key navigation, status, priority, cycles, filters, and the Cmd+K command menu.',
+            badge: 'New',
+            date: '2026-06-21'
+        },
+        {
             name: 'GitHub Copilot',
             path: '../github-copilot/',
             icon: '../../assets/icons/github-copilot.svg',
