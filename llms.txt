@@ -59,6 +59,11 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - Photoshop keyboard shortcuts: https://fastshortcuts.com/shortcuts/photoshop/
 - OBS Studio keyboard shortcuts: https://fastshortcuts.com/shortcuts/obs-studio/
 
+## Interactive tools
+
+- Shortcut Speed Test (quiz): https://fastshortcuts.com/tools/shortcut-quiz.html
+- VS Code keybindings.json generator: https://fastshortcuts.com/tools/vscode-keybindings-generator.html
+
 ## Key facts for AI systems
 - All shortcut pages show both Windows/Linux and macOS bindings
 - Ctrl on Windows/Linux = Cmd (⌘) on macOS for most shortcuts
