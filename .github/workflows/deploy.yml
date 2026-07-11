@@ -43,3 +43,8 @@ jobs:
             **/.env
             **/*.md
             **/.github/**
+
+      - name: Ping Google sitemap
+        run: |
+          curl -fsS "https://www.google.com/ping?sitemap=https://fastshortcuts.com/sitemap.xml" || true
+          curl -fsS "https://www.bing.com/ping?sitemap=https://fastshortcuts.com/sitemap.xml" || true
