@@ -34,6 +34,10 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - macOS keyboard shortcuts: https://fastshortcuts.com/shortcuts/mac/
 - Chrome keyboard shortcuts: https://fastshortcuts.com/shortcuts/chrome/
 
+## Productivity launchers
+
+- Raycast keyboard shortcuts: https://fastshortcuts.com/shortcuts/raycast/
+
 ## Project management & issue tracking
 
 - Linear keyboard shortcuts: https://fastshortcuts.com/shortcuts/linear/

@@ -361,6 +361,14 @@ document.addEventListener('DOMContentLoaded', function() {
             date: '2026-06-13'
         },
         {
+            name: 'Raycast',
+            path: '../raycast/',
+            icon: '../../assets/icons/raycast.svg',
+            description: 'Raycast shortcuts for Mac and Windows: open launcher, Action Panel, Root Search, AI Chat, favorites, and hotkeys.',
+            badge: 'New',
+            date: '2026-07-11'
+        },
+        {
             name: 'Linear',
             path: '../linear/',
             icon: '../../assets/icons/linear.svg',
