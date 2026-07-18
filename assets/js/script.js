@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Ghostty',
+            path: '../ghostty/',
+            icon: '../../assets/icons/ghostty.svg',
+            description: 'Ghostty terminal shortcuts for Mac and Linux: tabs, splits, clipboard, scrollback, font size, and config reload.',
+            badge: 'New',
+            date: '2026-07-18'
+        },
+        {
             name: 'Zed Editor',
             path: '../zed/',
             icon: '../../assets/icons/zed.svg',

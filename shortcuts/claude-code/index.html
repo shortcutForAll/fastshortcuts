@@ -10,8 +10,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claude Code Keyboard Shortcuts 2026 | CLI & Terminal Cheat Sheet</title>
-    <meta name="description" content="Claude Code keyboard shortcuts for terminal navigation, prompt editing, history search, sessions, and slash commands. Windows, Linux, and macOS cheat sheet.">
+    <title>Claude Code Keyboard Shortcuts 2026 | CLI, Desktop &amp; Browser Cheat Sheet</title>
+    <meta name="description" content="Claude Code keyboard shortcuts for CLI, Desktop app, and the in-app Browser pane (Cmd/Ctrl+Shift+B). Prompt editing, history, sessions, and slash commands for Windows, Linux, and macOS.">
     <meta name="keywords" content="Claude Code keyboard shortcuts, Claude Code shortcuts, Claude terminal shortcuts, Claude Code slash commands, Claude Code cheat sheet">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
@@ -49,7 +49,7 @@
       "author": {"@type":"Organization","name":"FastShortcuts"},
       "publisher": {"@type":"Organization","name":"FastShortcuts","logo":{"@type":"ImageObject","url":"https://fastshortcuts.com/logo.png"}},
       "datePublished": "2026-04-25",
-      "dateModified": "2026-04-25",
+      "dateModified": "2026-07-18",
       "mainEntityOfPage": {"@type":"WebPage","@id":"https://fastshortcuts.com/shortcuts/claude-code/"},
       "keywords": "Claude Code shortcuts, terminal shortcuts, command line productivity",
       "articleSection": "Developer Tools"
@@ -79,6 +79,11 @@
           "@type":"Question",
           "name":"Can I use VS Code or Cursor shortcuts inside Claude Code?",
           "acceptedAnswer":{"@type":"Answer","text":"Claude Code runs in terminal context, so terminal shortcuts are primary. For editor workflows, use our VS Code and Cursor shortcut guides and combine them with Claude Code CLI shortcuts."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I open the Claude Code Desktop Browser pane?",
+          "acceptedAnswer":{"@type":"Answer","text":"In the Claude Code Desktop app, press Cmd+Shift+B on macOS or Ctrl+Shift+B on Windows to toggle the sandboxed Browser pane. Press Cmd+/ or Ctrl+/ in the Code tab to see all Desktop shortcuts."}
         }
       ]
     }
@@ -141,8 +146,8 @@
         <section class="content-section" style="padding-top:0.5rem;">
             <div class="content-container">
                 <article class="seo-content">
-                    <h2>What’s Covered in This Claude Code Cheat Sheet</h2>
-                    <p>This guide includes terminal control keys, text-editing keys, history search, session actions, and frequently used slash commands. Some bindings can vary by terminal emulator, shell profile, or app settings, so verify the keys in your own setup. If you also use the chat product at claude.ai or Claude Desktop, the <a href="../claude/">Claude keyboard shortcuts</a> page covers those separately. For source discovery and citation workflows before coding, keep our <a href="../perplexity/">Perplexity keyboard shortcuts</a> reference open in a second tab.</p>
+                    <h2>What’s Covered in This Claude Code Cheat Sheet (Updated July 2026)</h2>
+                    <p>This guide includes terminal control keys, text-editing keys, history search, session actions, slash commands, and the new <strong>Claude Code Desktop Browser</strong> pane shortcuts (Cmd/Ctrl+Shift+B). Some CLI bindings vary by terminal emulator—<a href="../ghostty/">Ghostty</a> and Warp support Shift+Enter newlines without extra setup. If you use claude.ai or Claude Desktop chat, see our <a href="../claude/">Claude keyboard shortcuts</a> page. Pair with <a href="../perplexity/">Perplexity</a> for research-to-code loops.</p>
                 </article>
             </div>
         </section>
@@ -226,6 +231,19 @@
                     <div class="shortcut-item"><span class="shortcut-description">Initialize project context</span><div class="shortcut-keys"><kbd class="key">/init</kbd></div></div>
                     <div class="shortcut-item"><span class="shortcut-description">Exit Claude Code</span><div class="shortcut-keys"><kbd class="key">/exit</kbd></div></div>
                 </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Desktop App — Browser &amp; Panes (2026)</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Show all Desktop shortcuts</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle Browser pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select element in Browser</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle terminal pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">`</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle diff pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">New session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Close session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Stop Claude response</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open model menu</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open permission mode menu</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">M</kbd></div></div>
+                </div>
             </div>
             <div class="no-results" style="display:none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
         </div>
@@ -289,12 +307,25 @@
                     <div class="shortcut-item"><span class="shortcut-description">Initialize project context</span><div class="shortcut-keys"><kbd class="key">/init</kbd></div></div>
                     <div class="shortcut-item"><span class="shortcut-description">Exit Claude Code</span><div class="shortcut-keys"><kbd class="key">/exit</kbd></div></div>
                 </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Desktop App — Browser &amp; Panes (2026)</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Show all Desktop shortcuts</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle Browser pane</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select element in Browser</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">S</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle terminal pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">`</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle diff pane</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">New session</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Close session</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Stop Claude response</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open model menu</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open permission mode menu</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">M</kbd></div></div>
+                </div>
             </div>
             <div class="no-results" style="display:none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
         </div>
 
         <section style="padding:2rem;text-align:center;background:var(--bg-secondary);">
-            <p style="font-size:1.1rem;color:var(--text-primary);margin:0;">Also see: <a href="../github-copilot/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">GitHub Copilot</a> • <a href="../cursor/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Cursor</a> • <a href="../vscode/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">VS Code</a> • <a href="../windsurf/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Windsurf</a> • <a href="../intellij/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">IntelliJ</a></p>
+            <p style="font-size:1.1rem;color:var(--text-primary);margin:0;">Also see: <a href="../ghostty/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Ghostty</a> • <a href="../github-copilot/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">GitHub Copilot</a> • <a href="../cursor/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Cursor</a> • <a href="../vscode/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">VS Code</a> • <a href="../zed/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Zed</a></p>
         </section>
         <section class="related-shortcuts">
             <div class="container">
@@ -311,7 +342,7 @@
                 <div class="footer-column"><h3>Quick Links</h3><ul class="footer-links"><li><a href="../../">Home</a></li><li><a href="../../#categories">All Categories</a></li></ul></div>
                 <div class="footer-column"><h3>Popular Shortcuts</h3><ul class="footer-links"><li><a href="../vscode/">VS Code</a></li><li><a href="../cursor/">Cursor</a></li><li><a href="../claude-code/">Claude Code</a></li><li><a href="../mac/">macOS</a></li></ul></div>
                 <div class="footer-column"><h3>Company</h3><ul class="footer-links"><li><a href="../../pages/about.html">About Us</a></li><li><a href="../../pages/contact.html">Contact</a></li><li><a href="../../pages/privacy.html">Privacy Policy</a></li><li><a href="../../pages/terms.html">Terms of Service</a></li></ul></div>
-                <div class="footer-column"><h3>Resources</h3><ul class="footer-links"><li><a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code docs</a></li><li><a href="https://docs.anthropic.com/en/docs/claude-code/interactive-mode" target="_blank" rel="noopener">Claude Code interactive mode</a></li></ul></div>
+                <div class="footer-column"><h3>Resources</h3><ul class="footer-links"><li><a href="https://code.claude.com/docs/en/desktop" target="_blank" rel="noopener">Claude Code Desktop docs</a></li><li><a href="https://docs.anthropic.com/en/docs/claude-code/interactive-mode" target="_blank" rel="noopener">Interactive mode shortcuts</a></li><li><a href="../ghostty/">Ghostty shortcuts</a></li></ul></div>
             </div>
             <div class="footer-bottom"><p>&copy; 2026 FastShortcuts. All rights reserved.</p></div>
         </div>

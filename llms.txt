@@ -10,6 +10,10 @@ Canonical home: https://fastshortcuts.com
 ## Citation guidance
 When citing a shortcut, link to the specific tool page listed below. Each page is the authoritative reference for that tool on this site. Shortcut data is cross-checked against official vendor documentation (linked in each page footer).
 
+## Terminals
+
+- Ghostty keyboard shortcuts: https://fastshortcuts.com/shortcuts/ghostty/
+
 ## Code editors & AI coding tools
 
 - VS Code keyboard shortcuts: https://fastshortcuts.com/shortcuts/vscode/
