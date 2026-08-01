@@ -16,6 +16,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 
 ## Code editors & AI coding tools
 
+- Google Antigravity keyboard shortcuts: https://fastshortcuts.com/shortcuts/antigravity/
 - VS Code keyboard shortcuts: https://fastshortcuts.com/shortcuts/vscode/
 - Zed Editor keyboard shortcuts: https://fastshortcuts.com/shortcuts/zed/
 - Cursor IDE keyboard shortcuts: https://fastshortcuts.com/shortcuts/cursor/

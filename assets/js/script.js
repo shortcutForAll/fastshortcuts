@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Google Antigravity',
+            path: '../antigravity/',
+            icon: '../../assets/icons/antigravity.svg',
+            description: 'Google Antigravity shortcuts for the agent panel, Agent Manager, inline AI, command palette, editor, terminal, and Git.',
+            badge: 'New',
+            date: '2026-08-01'
+        },
+        {
             name: 'Ghostty',
             path: '../ghostty/',
             icon: '../../assets/icons/ghostty.svg',
