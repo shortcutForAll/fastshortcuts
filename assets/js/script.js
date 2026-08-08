@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Gemini',
+            path: '../gemini/',
+            icon: '../../assets/icons/gemini.svg',
+            description: 'Google Gemini shortcuts for the web app, Mac desktop app (Option+Space, Fn dictation), and Gemini in Chrome (Alt+G / Ctrl+G).',
+            badge: 'New',
+            date: '2026-08-08'
+        },
+        {
             name: 'Google Antigravity',
             path: '../antigravity/',
             icon: '../../assets/icons/antigravity.svg',
