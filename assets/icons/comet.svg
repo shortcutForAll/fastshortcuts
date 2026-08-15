@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cometTail" x1="8" y1="14" x2="44" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20808D" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2EC4B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0F1E22"/>
+  <path d="M10 12l30 26-8 3-4 8z" fill="url(#cometTail)" opacity=".85"/>
+  <circle cx="42" cy="40" r="10" fill="#2EC4B6"/>
+  <circle cx="42" cy="40" r="10" fill="none" stroke="#7FE7DC" stroke-width="1.6" opacity=".6"/>
+  <circle cx="45" cy="37" r="3" fill="#EAFBF9" opacity=".9"/>
+</svg>

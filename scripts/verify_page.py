@@ -34,7 +34,7 @@ def check(page_rel: str) -> list[str]:
 
     # local hrefs/srcs resolve to real files
     for attr, url in re.findall(r'(href|src)="([^"#]+)"', html):
-        if url.startswith(("http", "mailto:", "//")):
+        if url.startswith(("http", "mailto:", "//", "data:")):
             continue
         base = ROOT if url.startswith("/") else page.parent
         target = (base / url.lstrip("/")).resolve()

@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Comet Browser',
+            path: '../comet/',
+            icon: '../../assets/icons/comet.svg',
+            description: 'Perplexity Comet shortcuts: Alt+A Assistant, Alt+S summarize page, Alt+Shift+V Voice Mode, and slash-command automations.',
+            badge: 'New',
+            date: '2026-08-15'
+        },
+        {
             name: 'Gemini',
             path: '../gemini/',
             icon: '../../assets/icons/gemini.svg',
