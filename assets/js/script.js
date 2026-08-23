@@ -353,6 +353,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Codex',
+            path: '../codex/',
+            icon: '../../assets/icons/codex.svg',
+            description: 'OpenAI Codex shortcuts for the CLI TUI, slash commands, and ChatGPT desktop workspace — file search, review, terminal, and agent controls.',
+            badge: 'New',
+            date: '2026-08-23'
+        },
+        {
+            name: 'Obsidian',
+            path: '../obsidian/',
+            icon: '../../assets/icons/obsidian.svg',
+            description: 'Obsidian hotkeys for command palette, quick switcher, graph, search, markdown, checklists, and Settings → Hotkeys on Windows and Mac.',
+            badge: 'New',
+            date: '2026-08-23'
+        },
+        {
             name: 'Comet Browser',
             path: '../comet/',
             icon: '../../assets/icons/comet.svg',
