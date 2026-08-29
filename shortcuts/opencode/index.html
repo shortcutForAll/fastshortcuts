@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D077DENC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4D077DENC5');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCode Keyboard Shortcuts 2026 | TUI Leader Key, Slash Commands &amp; Desktop</title>
+    <meta name="description" content="OpenCode keyboard shortcuts for the CLI TUI and desktop app. Leader key Ctrl+X, command palette Ctrl+P, slash commands, sessions, agents, and tui.json keybinds for Windows, Linux, and macOS.">
+    <meta name="keywords" content="opencode keyboard shortcuts, opencode shortcuts, opencode keybinds, opencode cheat sheet, opencode cli shortcuts, opencode tui shortcuts, opencode leader key, opencode ctrl+x, opencode slash commands, opencode hotkeys, opencode shortcuts mac, opencode shortcuts windows, opencode command palette, tui.json keybinds, opencode new session shortcut, opencode shift+enter">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OpenCode Keyboard Shortcuts 2026 — TUI Leader Key &amp; Slash Commands">
+    <meta property="og:description" content="OpenCode TUI keybinds, Ctrl+X leader key, slash commands, and desktop prompt shortcuts for Windows, Linux, and macOS.">
+    <meta property="og:url" content="https://fastshortcuts.com/shortcuts/opencode/">
+    <meta property="og:image" content="https://fastshortcuts.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OpenCode Keyboard Shortcuts 2026 — TUI Leader Key &amp; Slash Commands">
+    <meta name="twitter:description" content="OpenCode TUI keybinds, Ctrl+X leader key, slash commands, and desktop prompt shortcuts for Windows, Linux, and macOS.">
+    <meta name="twitter:image" content="https://fastshortcuts.com/assets/og-image.png">
+    <link rel="canonical" href="https://fastshortcuts.com/shortcuts/opencode/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>.then{color:var(--text-secondary);font-size:.7rem;padding:0 .25rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;}</style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://fastshortcuts.com"},
+        {"@type":"ListItem","position":2,"name":"Shortcuts","item":"https://fastshortcuts.com/#categories"},
+        {"@type":"ListItem","position":3,"name":"OpenCode Keyboard Shortcuts","item":"https://fastshortcuts.com/shortcuts/opencode/"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "OpenCode Keyboard Shortcuts 2026 - TUI Leader Key, Slash Commands & Desktop",
+      "description": "OpenCode keyboard shortcuts for the CLI TUI and desktop app. Leader key Ctrl+X, command palette Ctrl+P, slash commands, sessions, agents, and tui.json keybinds for Windows, Linux, and macOS.",
+      "author": {"@type":"Organization","name":"FastShortcuts"},
+      "publisher": {"@type":"Organization","name":"FastShortcuts","logo":{"@type":"ImageObject","url":"https://fastshortcuts.com/logo.png"}},
+      "datePublished": "2026-08-29",
+      "dateModified": "2026-08-29",
+      "mainEntityOfPage": {"@type":"WebPage","@id":"https://fastshortcuts.com/shortcuts/opencode/"},
+      "keywords": "opencode keyboard shortcuts, opencode keybinds, opencode cheat sheet, opencode cli shortcuts, opencode tui shortcuts, opencode leader key, opencode slash commands, opencode hotkeys mac windows",
+      "articleSection": "Developer Tools"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type":"Question",
+          "name":"What is the OpenCode leader key and how do I use it?",
+          "acceptedAnswer":{"@type":"Answer","text":"The default OpenCode leader key is Ctrl+X. Press and release Ctrl+X, then press the action key. Example: Ctrl+X then N starts a new session. The TUI greys out the input while it waits (default 2000 ms, set leader_timeout in tui.json). Do not hold Ctrl+X and the next key together."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I change OpenCode keyboard shortcuts or keybinds?",
+          "acceptedAnswer":{"@type":"Answer","text":"Edit keybinds in tui.json (schema https://opencode.ai/tui.json). Only override the keys you want to change — they merge with defaults. Set a binding to none or false to disable it. Use the leader placeholder in values so they follow your leader key. Runtime settings also live in the command palette (Ctrl+P). This is separate from opencode.json."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I start a new session or open the command palette in OpenCode?",
+          "acceptedAnswer":{"@type":"Answer","text":"New session: Ctrl+X then N, or type /new (alias /clear). Command palette: Ctrl+P. Session list: Ctrl+X then L, or /sessions. Interrupt the current turn with Esc."}
+        },
+        {
+          "@type":"Question",
+          "name":"Why doesn’t Shift+Enter insert a newline in OpenCode?",
+          "acceptedAnswer":{"@type":"Answer","text":"OpenCode maps newlines to Shift+Enter, Ctrl+Enter, Alt+Enter, and Ctrl+J. Many terminals swallow Shift+Enter. Ghostty and Warp usually work. In Windows Terminal, bind Shift+Enter to send the CSI u sequence \\u001b[13;2u. You can also type /editor (Ctrl+X then E) to compose in $EDITOR."}
+        },
+        {
+          "@type":"Question",
+          "name":"Are OpenCode shortcuts the same on Windows, Linux, and macOS?",
+          "acceptedAnswer":{"@type":"Answer","text":"The TUI uses Ctrl+X as the leader on every platform — it is not Cmd+X on Mac. Alt bindings become Option on macOS. Super mappings (select all, undo, redo) use Cmd. Desktop prompt editing is Emacs-style Ctrl+A / Ctrl+E even on Mac, and is not configurable in opencode.json."}
+        },
+        {
+          "@type":"Question",
+          "name":"Is OpenCode the same as OpenAI Codex?",
+          "acceptedAnswer":{"@type":"Answer","text":"No. OpenCode (opencode.ai) is an open-source AI coding TUI with a Ctrl+X leader key and tui.json keybinds. OpenAI Codex is a separate CLI and ChatGPT desktop workspace. Use this page for OpenCode; use the Codex shortcuts page for OpenAI Codex."}
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../../" class="logo"><span class="logo-icon">⌨️</span><span>FastShortcuts</span></a>
+            <ul class="nav-links">
+                <li><a href="../../">Home</a></li>
+                <li><a href="../../#categories">Categories</a></li>
+                <li><a href="../../#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tools ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../opencode/">OpenCode</a></li>
+                        <li><a href="../vscode/">VS Code</a></li>
+                        <li><a href="../cursor/">Cursor</a></li>
+                        <li><a href="../claude-code/">Claude Code</a></li>
+                        <li><a href="../codex/">Codex</a></li>
+                        <li><a href="../obsidian/">Obsidian</a></li>
+                        <li><a href="../chatgpt/">ChatGPT</a></li>
+                        <li><a href="../windows/">Windows</a></li>
+                        <li><a href="../mac/">macOS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="utility-buttons"><button class="pdf-download-btn" title="Download as PDF">📥 Download PDF</button></div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="../../" class="logo"><span class="logo-icon">⌨️</span><span>FastShortcuts</span></a>
+            <button class="mobile-menu-close">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../#categories">Categories</a></li>
+            <li><a href="../../#features">Features</a></li>
+            <li><a href="../opencode/">OpenCode</a></li>
+            <li><a href="../vscode/">VS Code</a></li>
+            <li><a href="../cursor/">Cursor</a></li>
+            <li><a href="../claude-code/">Claude Code</a></li>
+            <li><a href="../codex/">Codex</a></li>
+            <li><a href="../obsidian/">Obsidian</a></li>
+            <li><a href="../chatgpt/">ChatGPT</a></li>
+            <li><a href="../windows/">Windows</a></li>
+            <li><a href="../mac/">macOS</a></li>
+        </ul>
+    </div>
+
+    <main class="shortcut-page">
+        <div class="page-header">
+            <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-bottom:1rem;">
+                <img src="../../assets/icons/opencode.svg" alt="OpenCode" style="width:64px;height:64px;">
+                <h1 class="page-title" style="margin:0;">OpenCode Keyboard Shortcuts</h1>
+            </div>
+            <p class="page-description">Searchable <strong>OpenCode keyboard shortcuts</strong> for the CLI TUI and desktop prompt. Covers the <strong>Ctrl+X leader key</strong>, command palette, slash commands, sessions, agents, and <code>tui.json</code> keybinds on Windows, Linux, and macOS. Pair with <a href="../claude-code/">Claude Code shortcuts</a>, <a href="../codex/">OpenAI Codex shortcuts</a>, and <a href="../ghostty/">Ghostty shortcuts</a>.</p>
+        </div>
+
+        <section class="content-section" style="padding-top:0.5rem;">
+            <div class="content-container">
+                <article class="seo-content">
+                    <h2>What’s Covered in This OpenCode Cheat Sheet (August 2026)</h2>
+                    <p>This page is for <strong>OpenCode</strong> (<a href="https://opencode.ai/docs/keybinds" target="_blank" rel="noopener">opencode.ai</a>) — the open-source AI coding agent TUI — not OpenAI Codex and not VS Code. Defaults below match the official <code>tui.json</code> keybinds: leader <strong>Ctrl+X</strong>, command list <strong>Ctrl+P</strong>, interrupt <strong>Esc</strong>, plus slash commands (<code>/new</code>, <code>/sessions</code>, <code>/models</code>, <code>/undo</code>). Use in-page search for a hotkey or command name. Bindings merge in <code>tui.json</code>; set a key to <code>none</code> to disable it.</p>
+                    <h2>How the OpenCode leader key works</h2>
+                    <p>Press <strong>Ctrl+X</strong>, release it, then press the action key. Example: <strong>Ctrl+X then N</strong> starts a new session. Holding both keys at once does nothing — that is the usual reason “OpenCode shortcuts don’t work.” <code>leader_timeout</code> defaults to 2000 ms. Subagent navigation is an exception: <strong>Up</strong> is parent, <strong>Left</strong>/<strong>Right</strong> cycle children, <strong>Ctrl+X then Down</strong> jumps to the first child.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="🔍 Search OpenCode shortcuts, keybinds, slash commands..." autocomplete="off">
+            </div>
+        </div>
+
+        <div class="platform-tabs">
+            <button class="platform-tab active" data-platform="windows">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+                Windows / Linux
+            </button>
+            <button class="platform-tab" data-platform="mac">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                macOS
+            </button>
+        </div>
+
+        <div id="windows-shortcuts" class="platform-content active">
+            <div class="shortcuts-container">
+                <div class="shortcut-group">
+                    <h2 class="group-title">Leader key &amp; command palette</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Leader key (press, release, then the next key)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Command palette / command list (Ctrl+P)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle which-key overlay</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit OpenCode</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit OpenCode (EOF)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit OpenCode (leader)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">Q</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Suspend terminal process</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Z</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Sessions</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">New session (Ctrl+X then N)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Session list / resume / continue</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Compact / summarize session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Interrupt current turn</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Rename session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete session (in session list)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Export session to Markdown</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">X</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Session timeline</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Status view</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">S</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle sidebar</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Theme list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open prompt in $EDITOR</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">E</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Subagent session navigation</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Go to parent session</span><div class="shortcut-keys"><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle to next child session</span><div class="shortcut-keys"><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle to previous child session</span><div class="shortcut-keys"><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Jump to first child session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">↓</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Models, agents &amp; variants</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Model list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">M</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Model provider list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle model favorite</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle recent models</span><div class="shortcut-keys"><kbd class="key">F2</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle recent models (reverse)</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">F2</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Agent list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle agent</span><div class="shortcut-keys"><kbd class="key">Tab</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle agent (reverse)</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">Tab</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle variant</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Messages &amp; transcript</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy last message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo last message (git repo)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo undone message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle conceal / tips overlay</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">H</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page up</span><div class="shortcut-keys"><kbd class="key">PageUp</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page down</span><div class="shortcut-keys"><kbd class="key">PageDown</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page up (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page down (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll messages one line up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll messages one line down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Half-page up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Half-page down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Jump to first message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Jump to last message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">G</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Prompt input, @ files &amp; bash</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Submit prompt</span><div class="shortcut-keys"><kbd class="key">Enter</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (Shift+Enter)</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">Enter</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Enter</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (Ctrl+J)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">J</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Paste</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">V</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear input</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Previous prompt in history</span><div class="shortcut-keys"><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Next prompt in history</span><div class="shortcut-keys"><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Attach file with fuzzy search</span><div class="shortcut-keys"><kbd class="key">@</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Run a local bash command</span><div class="shortcut-keys"><kbd class="key">!</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open slash-command menu</span><div class="shortcut-keys"><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Complete autocomplete suggestion</span><div class="shortcut-keys"><kbd class="key">Tab</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Hide autocomplete</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Autocomplete previous item</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Autocomplete next item</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Prompt editing (Readline)</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">End of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move left / right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move right (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Word backward</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Word forward</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete previous word</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete next word</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete whole line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo in prompt</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">-</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo in prompt</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">.</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select all (Super / Win key)</span><div class="shortcut-keys"><kbd class="key">Win</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Permission prompt fullscreen</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Slash commands</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Show help</span><div class="shortcut-keys"><kbd class="key">/help</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">New session (alias /clear)</span><div class="shortcut-keys"><kbd class="key">/new</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">List / switch sessions (aliases /resume, /continue)</span><div class="shortcut-keys"><kbd class="key">/sessions</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Compact session (alias /summarize)</span><div class="shortcut-keys"><kbd class="key">/compact</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">List models</span><div class="shortcut-keys"><kbd class="key">/models</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Connect a provider / API key</span><div class="shortcut-keys"><kbd class="key">/connect</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open external editor</span><div class="shortcut-keys"><kbd class="key">/editor</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Export conversation to Markdown</span><div class="shortcut-keys"><kbd class="key">/export</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo last message and file changes</span><div class="shortcut-keys"><kbd class="key">/undo</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo after /undo</span><div class="shortcut-keys"><kbd class="key">/redo</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Share current session</span><div class="shortcut-keys"><kbd class="key">/share</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Unshare session</span><div class="shortcut-keys"><kbd class="key">/unshare</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Theme list</span><div class="shortcut-keys"><kbd class="key">/themes</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle thinking / reasoning blocks</span><div class="shortcut-keys"><kbd class="key">/thinking</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle tool-execution details</span><div class="shortcut-keys"><kbd class="key">/details</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Create or update AGENTS.md</span><div class="shortcut-keys"><kbd class="key">/init</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit (aliases /quit, /q)</span><div class="shortcut-keys"><kbd class="key">/exit</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Desktop app — prompt editing</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Start of current line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">End of current line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Back one character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Forward one character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Back one word</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Forward one word</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete character under cursor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill previous word</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill next word</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Transpose characters</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cancel popovers / abort running response</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div></div>
+                </div>
+            </div>
+            <div class="no-results" style="display:none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
+        </div>
+
+        <div id="mac-shortcuts" class="platform-content">
+            <div class="shortcuts-container">
+                <div class="shortcut-group">
+                    <h2 class="group-title">Leader key &amp; command palette</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Leader key (press, release, then the next key) — not Cmd+X</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Command palette / command list (Ctrl+P)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle which-key overlay</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit OpenCode</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit OpenCode (EOF)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit OpenCode (leader)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">Q</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Suspend terminal process</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Z</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Sessions</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">New session (Ctrl+X then N)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Session list / resume / continue</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Compact / summarize session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Interrupt current turn</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Rename session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete session (in session list)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Export session to Markdown</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">X</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Session timeline</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Status view</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">S</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle sidebar</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Theme list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open prompt in $EDITOR</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">E</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Subagent session navigation</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Go to parent session</span><div class="shortcut-keys"><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle to next child session</span><div class="shortcut-keys"><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle to previous child session</span><div class="shortcut-keys"><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Jump to first child session</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">↓</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Models, agents &amp; variants</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Model list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">M</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Model provider list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle model favorite</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle recent models</span><div class="shortcut-keys"><kbd class="key">F2</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle recent models (reverse)</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">F2</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Agent list</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle agent</span><div class="shortcut-keys"><kbd class="key">Tab</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle agent (reverse)</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Tab</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cycle variant</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Messages &amp; transcript</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy last message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo last message (git repo)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo undone message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle conceal / tips overlay</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">X</kbd><span class="then">then</span><kbd class="key">H</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page up</span><div class="shortcut-keys"><kbd class="key">PageUp</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page down</span><div class="shortcut-keys"><kbd class="key">PageDown</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page up (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Messages page down (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll messages one line up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll messages one line down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Half-page up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Half-page down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Jump to first message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Jump to last message</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">G</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Prompt input, @ files &amp; bash</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Submit prompt</span><div class="shortcut-keys"><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (Shift+Return)</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (Ctrl+J)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">J</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (Option+Return)</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Paste</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">V</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear input</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Previous prompt in history</span><div class="shortcut-keys"><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Next prompt in history</span><div class="shortcut-keys"><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Attach file with fuzzy search</span><div class="shortcut-keys"><kbd class="key">@</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Run a local bash command</span><div class="shortcut-keys"><kbd class="key">!</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open slash-command menu</span><div class="shortcut-keys"><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Complete autocomplete suggestion</span><div class="shortcut-keys"><kbd class="key">Tab</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Hide autocomplete</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Autocomplete previous item</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Autocomplete next item</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Prompt editing (Readline)</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">End of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move left / right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move right (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Word backward</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Word forward</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete previous word</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete next word</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete whole line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo in prompt</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Z</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo in prompt (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">-</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo in prompt</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">Z</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select all</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Permission prompt fullscreen</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Slash commands</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Show help</span><div class="shortcut-keys"><kbd class="key">/help</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">New session (alias /clear)</span><div class="shortcut-keys"><kbd class="key">/new</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">List / switch sessions (aliases /resume, /continue)</span><div class="shortcut-keys"><kbd class="key">/sessions</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Compact session (alias /summarize)</span><div class="shortcut-keys"><kbd class="key">/compact</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">List models</span><div class="shortcut-keys"><kbd class="key">/models</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Connect a provider / API key</span><div class="shortcut-keys"><kbd class="key">/connect</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open external editor</span><div class="shortcut-keys"><kbd class="key">/editor</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Export conversation to Markdown</span><div class="shortcut-keys"><kbd class="key">/export</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo last message and file changes</span><div class="shortcut-keys"><kbd class="key">/undo</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo after /undo</span><div class="shortcut-keys"><kbd class="key">/redo</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Share current session</span><div class="shortcut-keys"><kbd class="key">/share</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Unshare session</span><div class="shortcut-keys"><kbd class="key">/unshare</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Theme list</span><div class="shortcut-keys"><kbd class="key">/themes</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle thinking / reasoning blocks</span><div class="shortcut-keys"><kbd class="key">/thinking</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle tool-execution details</span><div class="shortcut-keys"><kbd class="key">/details</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Create or update AGENTS.md</span><div class="shortcut-keys"><kbd class="key">/init</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit (aliases /quit, /q)</span><div class="shortcut-keys"><kbd class="key">/exit</kbd></div></div>
+                </div>
+                <div class="shortcut-group">
+                    <h2 class="group-title">Desktop app — prompt editing</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Start of current line (Emacs-style, not Cmd+A)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">End of current line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Back one character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Forward one character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Back one word</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Forward one word</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete character under cursor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill previous word</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Kill next word</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Transpose characters</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cancel popovers / abort running response</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div></div>
+                </div>
+            </div>
+            <div class="no-results" style="display:none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
+        </div>
+
+        <section class="content-section">
+            <div class="content-container">
+                <article class="seo-content">
+                    <h2>Customize OpenCode keybinds in tui.json</h2>
+                    <p>Put overrides in <code>tui.json</code> (or <code>tui.jsonc</code>). They merge with defaults. This file is separate from <code>opencode.json</code>. Disable a shortcut with <code>"none"</code>. Point OpenCode at another path with <code>OPENCODE_TUI_CONFIG</code>.</p>
+                    <pre style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1rem 1.25rem;overflow:auto;font-size:0.9rem;line-height:1.5;"><code>{
+  "$schema": "https://opencode.ai/tui.json",
+  "leader_timeout": 2000,
+  "keybinds": {
+    "leader": "ctrl+x",
+    "session_new": "&lt;leader&gt;n",
+    "command_list": "ctrl+p",
+    "session_compact": "none"
+  }
+}</code></pre>
+                    <p>If Shift+Enter still submits instead of inserting a newline, use <a href="../ghostty/">Ghostty</a> or Warp, or bind Shift+Enter in Windows Terminal to send <code>\u001b[13;2u</code>. Full terminal notes: <a href="https://opencode.ai/docs/keybinds" target="_blank" rel="noopener">OpenCode keybinds docs</a>.</p>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding:2rem;text-align:center;background:var(--bg-secondary);">
+            <p style="font-size:1.1rem;color:var(--text-primary);margin:0;">Also see: <a href="../claude-code/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Claude Code</a> • <a href="../codex/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Codex</a> • <a href="../ghostty/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Ghostty</a> • <a href="../cursor/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Cursor</a> • <a href="../github-copilot/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">GitHub Copilot</a> • <a href="../antigravity/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Antigravity</a></p>
+        </section>
+
+        <section id="faq" style="padding:3rem 1.5rem;max-width:860px;margin:0 auto;">
+            <div style="text-align:center;margin-bottom:2rem;">
+                <h2 style="font-size:1.6rem;font-weight:700;color:var(--text-primary);">OpenCode Shortcuts — Frequently Asked Questions</h2>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">What is the OpenCode leader key and how do I use it?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">The default OpenCode leader key is <strong>Ctrl+X</strong>. Press and release Ctrl+X, then press the action key. Example: Ctrl+X then N starts a new session. The TUI greys out the input while it waits (default 2000 ms, set <code>leader_timeout</code> in <code>tui.json</code>). Do not hold Ctrl+X and the next key together.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I change OpenCode keyboard shortcuts or keybinds?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">Edit <code>keybinds</code> in <code>tui.json</code> (schema <a href="https://opencode.ai/tui.json" target="_blank" rel="noopener">https://opencode.ai/tui.json</a>). Only override the keys you want to change — they merge with defaults. Set a binding to <code>none</code> or <code>false</code> to disable it. Use <code>&lt;leader&gt;</code> in values so they follow your leader key. Runtime settings also live in the command palette (Ctrl+P). This is separate from <code>opencode.json</code>.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I start a new session or open the command palette in OpenCode?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">New session: <strong>Ctrl+X then N</strong>, or type <code>/new</code> (alias <code>/clear</code>). Command palette: <strong>Ctrl+P</strong>. Session list: Ctrl+X then L, or <code>/sessions</code>. Interrupt the current turn with Esc.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">Why doesn’t Shift+Enter insert a newline in OpenCode?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">OpenCode maps newlines to Shift+Enter, Ctrl+Enter, Alt+Enter, and Ctrl+J. Many terminals swallow Shift+Enter. <a href="../ghostty/">Ghostty</a> and Warp usually work. In Windows Terminal, bind Shift+Enter to send the CSI u sequence <code>\u001b[13;2u</code>. You can also type <code>/editor</code> (Ctrl+X then E) to compose in <code>$EDITOR</code>.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">Are OpenCode shortcuts the same on Windows, Linux, and macOS?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">The TUI uses <strong>Ctrl+X</strong> as the leader on every platform — it is not Cmd+X on Mac. Alt bindings become Option on macOS. Super mappings (select all, undo, redo) use Cmd. Desktop prompt editing is Emacs-style Ctrl+A / Ctrl+E even on Mac, and is not configurable in <code>opencode.json</code>.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">Is OpenCode the same as OpenAI Codex?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">No. OpenCode (<a href="https://opencode.ai" target="_blank" rel="noopener">opencode.ai</a>) is an open-source AI coding TUI with a Ctrl+X leader key and <code>tui.json</code> keybinds. OpenAI Codex is a separate CLI and ChatGPT desktop workspace. Use this page for OpenCode; use the <a href="../codex/">Codex shortcuts</a> page for OpenAI Codex.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="related-shortcuts">
+            <div class="container">
+                <h2>🔥 Explore More Shortcuts</h2>
+                <p class="section-subtitle">Discover other powerful keyboard shortcuts to boost your productivity</p>
+                <div class="related-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column"><h3>⌨️ FastShortcuts</h3><p style="color:var(--text-secondary);margin-bottom:1rem;">Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.</p></div>
+                <div class="footer-column"><h3>Quick Links</h3><ul class="footer-links"><li><a href="../../">Home</a></li><li><a href="../../#categories">All Categories</a></li></ul></div>
+                <div class="footer-column"><h3>Popular Shortcuts</h3><ul class="footer-links"><li><a href="../opencode/">OpenCode</a></li><li><a href="../vscode/">VS Code</a></li><li><a href="../cursor/">Cursor</a></li><li><a href="../claude-code/">Claude Code</a></li><li><a href="../codex/">Codex</a></li></ul></div>
+                <div class="footer-column"><h3>Company</h3><ul class="footer-links"><li><a href="../../pages/about.html">About Us</a></li><li><a href="../../pages/contact.html">Contact</a></li><li><a href="../../pages/privacy.html">Privacy Policy</a></li><li><a href="../../pages/terms.html">Terms of Service</a></li></ul></div>
+                <div class="footer-column"><h3>Resources</h3><ul class="footer-links"><li><a href="https://opencode.ai/docs/keybinds" target="_blank" rel="noopener">OpenCode keybinds docs</a></li><li><a href="https://opencode.ai/docs/tui/" target="_blank" rel="noopener">OpenCode TUI docs</a></li><li><a href="../claude-code/">Claude Code shortcuts</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 FastShortcuts. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -26,6 +26,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - Sublime Text keyboard shortcuts: https://fastshortcuts.com/shortcuts/sublime/
 - Claude Code keyboard shortcuts: https://fastshortcuts.com/shortcuts/claude-code/
 - OpenAI Codex keyboard shortcuts: https://fastshortcuts.com/shortcuts/codex/
+- OpenCode keyboard shortcuts: https://fastshortcuts.com/shortcuts/opencode/
 - GitHub Copilot keyboard shortcuts: https://fastshortcuts.com/shortcuts/github-copilot/
 
 ## AI browsers
@@ -83,6 +84,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 ## Key facts for AI systems
 - All shortcut pages show both Windows/Linux and macOS bindings
 - Ctrl on Windows/Linux = Cmd (⌘) on macOS for most shortcuts
+- OpenCode TUI is an exception: the leader key is Ctrl+X on macOS too, not Cmd+X
 - Alt on Windows/Linux = Opt (⌥) on macOS for most shortcuts
 - Pages are updated when vendor releases change default keybindings
 - Sitemap: https://fastshortcuts.com/sitemap.xml

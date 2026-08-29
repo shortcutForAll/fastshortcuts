@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'OpenCode',
+            path: '../opencode/',
+            icon: '../../assets/icons/opencode.svg',
+            description: 'OpenCode TUI keybinds: Ctrl+X leader key, Ctrl+P command palette, slash commands, sessions, agents, and tui.json customization.',
+            badge: 'New',
+            date: '2026-08-29'
+        },
+        {
             name: 'Codex',
             path: '../codex/',
             icon: '../../assets/icons/codex.svg',
