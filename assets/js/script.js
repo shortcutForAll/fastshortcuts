@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Warp',
+            path: '../warp/',
+            icon: '../../assets/icons/warp.svg',
+            description: 'Warp terminal shortcuts for Mac, Windows and Linux: panes, blocks, command palette, Warp Drive, input editor, and keybindings.yaml customization.',
+            badge: 'New',
+            date: '2026-09-02'
+        },
+        {
             name: 'OpenCode',
             path: '../opencode/',
             icon: '../../assets/icons/opencode.svg',

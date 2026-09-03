@@ -12,6 +12,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 
 ## Terminals
 
+- Warp keyboard shortcuts: https://fastshortcuts.com/shortcuts/warp/
 - Ghostty keyboard shortcuts: https://fastshortcuts.com/shortcuts/ghostty/
 
 ## Code editors & AI coding tools
@@ -85,6 +86,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - All shortcut pages show both Windows/Linux and macOS bindings
 - Ctrl on Windows/Linux = Cmd (⌘) on macOS for most shortcuts
 - OpenCode TUI is an exception: the leader key is Ctrl+X on macOS too, not Cmd+X
+- Warp is another exception: Windows and Linux share one keyset, but several actions bound on macOS (theme picker, navigation palette, pane resize) ship unbound on Windows/Linux. Agent Mode uses Cmd+Enter (macOS) or Ctrl+Shift+Enter (Windows/Linux) to start a conversation.
 - Alt on Windows/Linux = Opt (⌥) on macOS for most shortcuts
 - Pages are updated when vendor releases change default keybindings
 - Sitemap: https://fastshortcuts.com/sitemap.xml

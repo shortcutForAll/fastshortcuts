@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <defs>
+    <linearGradient id="warpG" x1="4" y1="6" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#01A0B4"/>
+      <stop offset="0.5" stop-color="#7B61FF"/>
+      <stop offset="1" stop-color="#E5507E"/>
+    </linearGradient>
+  </defs>
+  <rect width="24" height="24" rx="5" fill="#12121A"/>
+  <path d="M5.5 8L9 12l-3.5 4" stroke="url(#warpG)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.5 16h7" stroke="url(#warpG)" stroke-width="2" stroke-linecap="round"/>
+</svg>

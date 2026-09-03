@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D077DENC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4D077DENC5');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warp Keyboard Shortcuts 2026 | Mac, Windows &amp; Linux Cheat Sheet</title>
+    <meta name="description" content="Warp shortcuts for Mac, Windows, and Linux: panes, blocks, Agent Mode, command palette, Warp Drive, and keybindings.yaml. Verified from Warp docs.">
+    <meta name="keywords" content="warp keyboard shortcuts, warp terminal shortcuts, warp shortcuts cheat sheet, warp keybindings, warp keybindings.yaml, warp custom keyboard shortcuts, warp terminal shortcuts mac, warp shortcuts windows, warp shortcuts linux, warp split pane shortcut, warp command palette shortcut, warp clear blocks, warp drive shortcut, warp keysets, warp vim keybindings, warp shortcuts not working, warpify subshell, warp agent mode shortcut, warp block shortcuts, warp hotkeys">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FastShortcuts">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="FastShortcuts">
+    <meta property="og:title" content="Warp Keyboard Shortcuts 2026 — Mac, Windows &amp; Linux">
+    <meta property="og:description" content="Warp keyboard shortcuts for Mac, Windows, and Linux: panes, blocks, Agent Mode, command palette, Warp Drive, and keybindings.yaml.">
+    <meta property="og:url" content="https://fastshortcuts.com/shortcuts/warp/">
+    <meta property="og:image" content="https://fastshortcuts.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Warp Keyboard Shortcuts 2026 — Mac, Windows &amp; Linux">
+    <meta name="twitter:description" content="Warp shortcuts for Mac, Windows, and Linux: panes, blocks, Agent Mode, command palette, and keybindings.yaml.">
+    <meta name="twitter:image" content="https://fastshortcuts.com/assets/og-image.png">
+    <link rel="canonical" href="https://fastshortcuts.com/shortcuts/warp/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+      .unbound{color:var(--text-secondary);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.75;}
+      .verified{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--text-secondary);margin-top:.75rem;}
+      .keytable{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.92rem;}
+      .keytable th,.keytable td{border:1px solid var(--border-color);padding:.6rem .8rem;text-align:left;}
+      .keytable th{background:var(--bg-secondary);font-weight:700;}
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://fastshortcuts.com"},
+        {"@type":"ListItem","position":2,"name":"Shortcuts","item":"https://fastshortcuts.com/#categories"},
+        {"@type":"ListItem","position":3,"name":"Warp Terminal Keyboard Shortcuts","item":"https://fastshortcuts.com/shortcuts/warp/"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Warp Keyboard Shortcuts 2026 - Mac, Windows & Linux Cheat Sheet",
+      "description": "Warp keyboard shortcuts for Mac, Windows, and Linux. Split panes, blocks, command palette, Agent Mode, Warp Drive, and keybindings.yaml customization.",
+      "author": {"@type":"Organization","name":"FastShortcuts"},
+      "publisher": {"@type":"Organization","name":"FastShortcuts","logo":{"@type":"ImageObject","url":"https://fastshortcuts.com/logo.png"}},
+      "datePublished": "2026-09-02",
+      "dateModified": "2026-09-02",
+      "mainEntityOfPage": {"@type":"WebPage","@id":"https://fastshortcuts.com/shortcuts/warp/"},
+      "keywords": "warp keyboard shortcuts, warp terminal shortcuts, warp keybindings.yaml, warp custom shortcuts, warp split pane, warp command palette, warp blocks, warp shortcuts mac windows linux",
+      "articleSection": "Developer Tools",
+      "about": {"@type":"SoftwareApplication","name":"Warp","applicationCategory":"DeveloperApplication","operatingSystem":"macOS, Windows, Linux","url":"https://www.warp.dev"}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to customize Warp keyboard shortcuts",
+      "description": "Remap Warp terminal keybindings in Settings or in ~/.warp/keybindings.yaml.",
+      "totalTime": "PT5M",
+      "step": [
+        {"@type":"HowToStep","position":1,"name":"Open the keybindings editor","text":"On macOS press Ctrl+Cmd+K, or open Settings > Keyboard shortcuts on any platform. Search by action name or by the current key."},
+        {"@type":"HowToStep","position":2,"name":"Set, clear, or reset a binding","text":"Click the shortcut field and press the new combination. Warp flags conflicts with an orange border. Changes save automatically and write back to keybindings.yaml."},
+        {"@type":"HowToStep","position":3,"name":"Optional: edit keybindings.yaml","text":"Create ~/.warp/keybindings.yaml as a YAML map of action names to hyphenated key strings, for example workspace:toggle_command_palette: cmd-p. Restart Warp to load the file. Import a preset from github.com/warpdotdev/keysets if you are migrating from another terminal."}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type":"Question",
+          "name":"How do I split a pane in Warp?",
+          "acceptedAnswer":{"@type":"Answer","text":"On macOS, Cmd+D splits the pane to the right and Shift+Cmd+D splits it downward. On Windows and Linux, Ctrl+Shift+D splits right and Ctrl+Shift+E splits down. Move between panes with Option+Cmd plus an arrow key on Mac, or Ctrl+Alt plus an arrow key on Windows and Linux. Shift+Cmd+Enter (Ctrl+Shift+Enter on Windows and Linux) maximizes the active pane."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I customize or remap Warp keyboard shortcuts?",
+          "acceptedAnswer":{"@type":"Answer","text":"There are two ways. In the app, open Settings > Keyboard shortcuts and search for the action you want to change. To manage bindings as a file, create ~/.warp/keybindings.yaml — a top-level YAML map of action names to key strings such as workspace:toggle_command_palette: cmd-p. Modifiers are hyphen-separated. Warp also publishes ready-made presets in the warpdotdev/keysets repository that you can copy into ~/.warp/."}
+        },
+        {
+          "@type":"Question",
+          "name":"Why are my Warp keyboard shortcuts not working?",
+          "acceptedAnswer":{"@type":"Answer","text":"Three common causes. On macOS, system-level shortcuts such as Cmd+Esc, Cmd+backtick, Cmd+Tab, Cmd+period and Cmd+tilde must be unbound in System Settings before Warp can use them. If you switch your keyboard to a non-Latin input source such as Persian or Russian, bindings stop firing and must be rebound from scratch with that input source active — this is a known Warp issue. Finally, conflicting bindings are highlighted with an orange border in Settings > Keyboard shortcuts."}
+        },
+        {
+          "@type":"Question",
+          "name":"What is the Warp command palette shortcut?",
+          "acceptedAnswer":{"@type":"Answer","text":"Cmd+P on macOS and Ctrl+Shift+P on Windows and Linux. The separate navigation palette is Shift+Cmd+P on macOS and has no default binding on Windows or Linux. Command search — which searches your history — is Ctrl+R on every platform."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I clear the screen or clear blocks in Warp?",
+          "acceptedAnswer":{"@type":"Answer","text":"Ctrl+L clears the screen on every platform. Clearing blocks is different: Cmd+K on macOS and Ctrl+Shift+K on Windows and Linux removes the block history. Inside the input editor, Ctrl+C clears the command editor rather than sending an interrupt."}
+        },
+        {
+          "@type":"Question",
+          "name":"Are Warp keyboard shortcuts the same on Windows, Linux and macOS?",
+          "acceptedAnswer":{"@type":"Answer","text":"No. Windows and Linux share an identical default keyset, but macOS differs substantially — most Cmd-based Mac bindings become Ctrl+Shift on Windows and Linux. Several actions that have defaults on macOS are unbound on Windows and Linux, including the launch configuration palette, theme picker, navigation palette and the pane resize commands. The Emacs-style input editor bindings such as Ctrl+A and Ctrl+E are the same everywhere."}
+        },
+        {
+          "@type":"Question",
+          "name":"Does Warp support Vim keybindings?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes, for the input editor. Enable it under Settings > Features > Editor with the 'Edit commands with Vim keybindings' option. It is a beta feature, and the built-in Vim bindings themselves cannot currently be remapped, though that has been requested."}
+        },
+        {
+          "@type":"Question",
+          "name":"What is Warpify and what does Ctrl+I do?",
+          "acceptedAnswer":{"@type":"Answer","text":"Ctrl+I runs Warpify Subshell on every platform. It re-enables Warp's block UI, autocomplete and input editor inside a subshell such as an SSH session, a Docker container or a nested shell, where those features would otherwise be lost. Note that in the input editor context Ctrl+I is bound separately to Inspect Command."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I start Agent Mode or a new Warp Agent conversation?",
+          "acceptedAnswer":{"@type":"Answer","text":"From terminal mode, press Cmd+Enter on macOS or Ctrl+Shift+Enter on Windows and Linux to open a new agent conversation (same as typing /agent). Start a cloud agent with Option+Cmd+Enter or Ctrl+Alt+Enter. Press Esc to return to the terminal, and Cmd+Y or Ctrl+Y to open the conversation selector. Type / for slash commands and @ to attach files or symbols as context."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I switch between shell and Agent Mode in Warp?",
+          "acceptedAnswer":{"@type":"Answer","text":"Press Cmd+I on macOS or Ctrl+I on Windows and Linux to override auto-detection and force shell or agent for the current input. In Agent Mode, prepend ! to run a command in the shell instead, for example !git status. On Windows and Linux, Ctrl+I is also Warpify Subshell, so if Warpify fires when you meant to toggle Agent Mode, remap one of the two actions in Settings > Keyboard shortcuts."}
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../../" class="logo"><span class="logo-icon">⌨️</span><span>FastShortcuts</span></a>
+            <ul class="nav-links">
+                <li><a href="../../">Home</a></li>
+                <li><a href="../../#categories">Categories</a></li>
+                <li><a href="../../#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Tools ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../warp/">Warp</a></li>
+                        <li><a href="../ghostty/">Ghostty</a></li>
+                        <li><a href="../opencode/">OpenCode</a></li>
+                        <li><a href="../vscode/">VS Code</a></li>
+                        <li><a href="../cursor/">Cursor</a></li>
+                        <li><a href="../claude-code/">Claude Code</a></li>
+                        <li><a href="../codex/">Codex</a></li>
+                        <li><a href="../windows/">Windows</a></li>
+                        <li><a href="../mac/">macOS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="utility-buttons"><button class="pdf-download-btn" title="Download as PDF">📥 Download PDF</button></div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="../../" class="logo"><span class="logo-icon">⌨️</span><span>FastShortcuts</span></a>
+            <button class="mobile-menu-close">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../#categories">Categories</a></li>
+            <li><a href="../../#features">Features</a></li>
+            <li><a href="../warp/">Warp</a></li>
+            <li><a href="../ghostty/">Ghostty</a></li>
+            <li><a href="../opencode/">OpenCode</a></li>
+            <li><a href="../vscode/">VS Code</a></li>
+            <li><a href="../cursor/">Cursor</a></li>
+            <li><a href="../claude-code/">Claude Code</a></li>
+            <li><a href="../codex/">Codex</a></li>
+            <li><a href="../windows/">Windows</a></li>
+            <li><a href="../mac/">macOS</a></li>
+        </ul>
+    </div>
+
+    <main class="shortcut-page">
+        <div class="page-header">
+            <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-bottom:1rem;">
+                <img src="../../assets/icons/warp.svg" alt="Warp terminal" style="width:64px;height:64px;">
+                <h1 class="page-title" style="margin:0;">Warp Keyboard Shortcuts</h1>
+            </div>
+            <p class="page-description">A searchable cheat sheet of every <strong>Warp terminal keyboard shortcut</strong> — panes and splits, blocks, the command palette, Warp Drive, scrolling and the full input editor — for <strong>macOS, Windows and Linux</strong>. Includes how to remap bindings in <code>keybindings.yaml</code> and how to fix shortcuts that stop working. Pair with <a href="../ghostty/">Ghostty shortcuts</a>, <a href="../opencode/">OpenCode shortcuts</a>, and <a href="../claude-code/">Claude Code shortcuts</a>.</p>
+            <p class="verified">✅ Verified against Warp's official keybinding reference · Last checked 2 September 2026</p>
+        </div>
+
+        <section class="content-section" style="padding-top:0.5rem;">
+            <div class="content-container">
+                <article class="seo-content">
+                    <h2>What's in this Warp cheat sheet</h2>
+                    <p>Over 100 verified default shortcuts per platform, grouped the way you actually use them. Warp is a terminal, so the interesting bindings are not the copy-and-paste ones — they are <strong>blocks</strong> (Warp's unit of command plus output), <strong>panes</strong>, the <strong>command palette</strong>, and the surprisingly deep <strong>input editor</strong>, which supports Emacs-style motion, multiple cursors and code folding on the command line.</p>
+                    <p>Use the platform tabs below to switch between macOS and Windows/Linux, and the search box to jump to a key or an action name. Every row also lists Warp's internal <strong>action identifier</strong> where it is useful, because that is the exact string you need when writing a custom <code>keybindings.yaml</code>.</p>
+                    <h2>The one thing to know first</h2>
+                    <p>Warp's macOS keyset and its Windows/Linux keyset are genuinely different, not just Cmd swapped for Ctrl. Most Mac <kbd>⌘</kbd> bindings become <kbd>Ctrl</kbd>+<kbd>Shift</kbd> on Windows and Linux, and <strong>several actions that have a default on macOS ship unbound on Windows and Linux</strong> — the launch configuration palette, the theme picker, the navigation palette and all four pane-resize commands among them. Those are marked below so you know to assign them yourself rather than hunt for a key that does not exist. Windows and Linux share one identical keyset.</p>
+                    <h2>Warp Agent Mode shortcuts (September 2026)</h2>
+                    <p><strong>Last verified 2 September 2026</strong> against Warp's <a href="https://docs.warp.dev/getting-started/keyboard-shortcuts/" target="_blank" rel="noopener">keyboard shortcuts reference</a> and the <a href="https://docs.warp.dev/agents/local-agents/interacting-with-agents/terminal-and-agent-modes/" target="_blank" rel="noopener">Terminal and Agent modes</a> docs. Warp is now an agentic terminal: <strong>Cmd+Enter</strong> (Mac) or <strong>Ctrl+Shift+Enter</strong> (Windows/Linux) starts a new agent conversation from the prompt — the same as typing <code>/agent</code>. <strong>Option+Cmd+Enter</strong> / <strong>Ctrl+Alt+Enter</strong> starts a <em>cloud</em> agent. <strong>Esc</strong> returns you to the terminal. In conversation view, press <strong>?</strong> to show the in-app shortcut panel.</p>
+                    <p>On Windows and Linux, <strong>Ctrl+Shift+Enter</strong> is also the default for maximize pane, and <strong>Ctrl+Shift+I</strong> is both Agent auto-accept and “reinput selected command.” If one chord does the wrong thing, remap it. <strong>Ctrl+I</strong> is Warpify Subshell <em>and</em> the Agent/shell toggle on Windows and Linux — remap if they collide. Pair this page with <a href="../claude-code/">Claude Code shortcuts</a> and <a href="../opencode/">OpenCode shortcuts</a> if you run those agents <em>inside</em> Warp.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="🔍 Search Warp shortcuts, actions, panes, blocks..." autocomplete="off">
+            </div>
+        </div>
+
+        <div class="platform-tabs">
+            <button class="platform-tab active" data-platform="windows">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+                Windows / Linux
+            </button>
+            <button class="platform-tab" data-platform="mac">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                macOS
+            </button>
+        </div>
+
+        <div id="windows-shortcuts" class="platform-content active">
+            <div class="shortcuts-container">
+                <div class="shortcut-group">
+                    <h2 class="group-title">Warp essentials</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Command search (search your command history)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle command palette</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Generate — natural language to command (AI)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">`</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Workflows</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Warp Drive (saved workflows, notebooks, prompts)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">\</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Warpify subshell (restore Warp UI inside SSH, Docker, nested shells)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Focus terminal input</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open resource center</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open settings</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">,</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Launch configuration palette</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open theme picker</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle navigation palette</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Agent Mode</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Start new agent conversation (same as /agent)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Enter</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Start new cloud agent conversation</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">Enter</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Override auto-detection (switch shell ↔ agent)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit conversation (back to terminal)</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Stop agent / exit on empty input</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open conversation selector</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle conversation list panel</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">H</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resume paused or cancelled conversation</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle auto-accept for agent tool executions</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open code review pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">+</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle plan panel</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open slash command menu</span><div class="shortcut-keys"><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Attach file or symbol as context</span><div class="shortcut-keys"><kbd class="key">@</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Force shell command (prefix in Agent Mode)</span><div class="shortcut-keys"><kbd class="key">!</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Show / hide Agent shortcut panel</span><div class="shortcut-keys"><kbd class="key">?</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">New conversation (alternate)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">N</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Panes &amp; splits</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Split pane right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Split pane down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle maximize active pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Enter</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate previous pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">[</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate next pane</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">]</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resize pane — move divider up / down / left / right</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Blocks</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Select previous block</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select next block</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select all blocks</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear blocks</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Expand block selection above</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Expand block selection below</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy command</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy command output</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Alt</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reinput selected command</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Share selected block</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">S</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Bookmark selected block</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select closest bookmark up</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select closest bookmark down</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reinput selected command as root (sudo)</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open block context menu</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Tabs &amp; window</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Open new tab</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reopen closed tab</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate previous tab</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">PageUp</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate next tab</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">PageDown</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move tab left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move tab right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch to tab 1–8</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">1</kbd>–<kbd class="key">8</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch to last tab</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">9</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Increase font size</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">=</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Decrease font size</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">-</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reset font size to default</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">0</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Copy, paste &amp; find</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Paste</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">V</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Find in terminal</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Find next occurrence</span><div class="shortcut-keys"><kbd class="key">F3</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Find previous occurrence</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">F3</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Scrolling</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll up one page</span><div class="shortcut-keys"><kbd class="key">PageUp</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll down one page</span><div class="shortcut-keys"><kbd class="key">PageDown</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to top</span><div class="shortcut-keys"><kbd class="key">Home</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to bottom</span><div class="shortcut-keys"><kbd class="key">End</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to top of selected block</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to bottom of selected block</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll output up / down one line</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Input editor — moving the cursor</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Home</span><div class="shortcut-keys"><kbd class="key">Home</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">End</span><div class="shortcut-keys"><kbd class="key">End</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor right / accept autosuggestion</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move backward one word</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move forward one word</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move backward one subword</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move forward one subword</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor to the bottom</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">End</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to start of paragraph</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to end of paragraph</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to start of buffer</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">Meta</kbd><kbd class="key">&lt;</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to end of buffer</span><div class="shortcut-keys"><kbd class="key">Shift</kbd><kbd class="key">Meta</kbd><kbd class="key">&gt;</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Input editor — editing &amp; deleting</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear command editor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear screen</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (multi-line command)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">J</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete character under cursor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Remove previous character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">H</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete word left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Backspace</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete word right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Delete</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cut word left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cut word right</span><div class="shortcut-keys"><kbd class="key">Alt</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cut all right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete all left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy and clear selected lines</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert last word of previous command</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">.</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select all</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Z</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">Z</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Inspect command</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete all right</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Input editor — selection, multi-cursor &amp; folding</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one character left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one character right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one word left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one word right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Add cursor above</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Add cursor below</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Shift</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Add selection for next occurrence</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Fold</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">[</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Unfold</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">]</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Fold selected ranges</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">Alt</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select to start of line</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select to end of line</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select down</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+            </div>
+            <div class="no-results" style="display:none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
+        </div>
+
+        <div id="mac-shortcuts" class="platform-content">
+            <div class="shortcuts-container">
+                <div class="shortcut-group">
+                    <h2 class="group-title">Warp essentials</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Open command palette</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle navigation palette</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Command search (search your command history)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Generate — natural language to command (AI)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">`</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Workflows</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Warp Drive (saved workflows, notebooks, prompts)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">\</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Warpify subshell (restore Warp UI inside SSH, Docker, nested shells)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">File search</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">O</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Focus terminal input</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Launch configuration palette</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open theme picker</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open keybindings editor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open resource center</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">?</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open settings</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">,</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Agent Mode</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Start new agent conversation (same as /agent)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Start new cloud agent conversation</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Override auto-detection (switch shell ↔ agent)</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Exit conversation (back to terminal)</span><div class="shortcut-keys"><kbd class="key">Esc</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Stop agent / exit on empty input</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open conversation selector</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Y</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle conversation list panel</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">H</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resume paused or cancelled conversation</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">R</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle auto-accept for agent tool executions</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open code review pane</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">+</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle plan panel</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⌥</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open slash command menu</span><div class="shortcut-keys"><kbd class="key">/</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Attach file or symbol as context</span><div class="shortcut-keys"><kbd class="key">@</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Force shell command (prefix in Agent Mode)</span><div class="shortcut-keys"><kbd class="key">!</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Show / hide Agent shortcut panel</span><div class="shortcut-keys"><kbd class="key">?</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">New conversation (alternate)</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">N</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Panes &amp; splits</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Split pane right</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Split pane down</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Toggle maximize active pane</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">Return</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane up</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane down</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane left</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch pane right</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate previous pane</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">[</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate next pane</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">]</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resize pane — move divider up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resize pane — move divider down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resize pane — move divider left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Resize pane — move divider right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌘</kbd><kbd class="key">→</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Blocks</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Select previous block</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select next block</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select all blocks</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear blocks</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Expand block selection above</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Expand block selection below</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy command</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy command output</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reinput selected command</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reinput selected command as root (sudo)</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Share selected block</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">S</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Bookmark selected block</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select closest bookmark up</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select closest bookmark down</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Open block context menu</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">M</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Tabs &amp; window</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Open new tab</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reopen closed tab</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">T</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate previous tab</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">{</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Activate next tab</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">}</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move tab left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move tab right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch to tab 1–8</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">1</kbd>–<kbd class="key">8</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Switch to last tab</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">9</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Increase font size</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">=</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Decrease font size</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">-</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Reset font size to default</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">0</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Copy, paste &amp; find</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Paste</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">V</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Find in terminal</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Find next occurrence</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Find previous occurrence</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">G</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Scrolling</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll up one page</span><div class="shortcut-keys"><kbd class="key">PageUp</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll down one page</span><div class="shortcut-keys"><kbd class="key">PageDown</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to top</span><div class="shortcut-keys"><kbd class="key">Home</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to bottom</span><div class="shortcut-keys"><kbd class="key">End</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to top of selected block</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll to bottom of selected block</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Scroll output up / down one line</span><div class="shortcut-keys"><span class="unbound">Not bound by default</span></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Input editor — moving the cursor</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Home</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">End</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor right / accept autosuggestion</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move backward one word</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move forward one word</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move backward one subword</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">←</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move forward one subword</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⌥</kbd><kbd class="key">→</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move cursor to the bottom</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to start of paragraph</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to end of paragraph</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to start of buffer</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Meta</kbd><kbd class="key">&lt;</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Move to end of buffer</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Meta</kbd><kbd class="key">&gt;</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Input editor — editing &amp; deleting</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear command editor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">C</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear screen</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">L</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert newline (multi-line command)</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">J</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete character under cursor</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Remove previous character</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">H</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete word left</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">Backspace</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete word right</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">Delete</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete all left</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Backspace</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Delete all right</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Delete</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cut word left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">W</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cut word right</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">D</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Cut all right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Copy and clear selected lines</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">U</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Clear selected lines</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">⌘</kbd><kbd class="key">K</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Insert last word of previous command</span><div class="shortcut-keys"><kbd class="key">Meta</kbd><kbd class="key">.</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select all</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Undo</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">Z</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Redo</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">⇧</kbd><kbd class="key">Z</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Inspect command</span><div class="shortcut-keys"><kbd class="key">⌘</kbd><kbd class="key">I</kbd></div></div>
+                </div>
+
+                <div class="shortcut-group">
+                    <h2 class="group-title">Input editor — selection, multi-cursor &amp; folding</h2>
+                    <div class="shortcut-item"><span class="shortcut-description">Select to start of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">A</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select to end of line</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">E</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one character left</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one character right</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one word left</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Meta</kbd><kbd class="key">B</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select one word right</span><div class="shortcut-keys"><kbd class="key">⇧</kbd><kbd class="key">Meta</kbd><kbd class="key">F</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select up</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">P</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Select down</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">N</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Add cursor above</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">↑</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Add cursor below</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">⇧</kbd><kbd class="key">↓</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Add selection for next occurrence</span><div class="shortcut-keys"><kbd class="key">Ctrl</kbd><kbd class="key">G</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Fold</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">[</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Unfold</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">]</kbd></div></div>
+                    <div class="shortcut-item"><span class="shortcut-description">Fold selected ranges</span><div class="shortcut-keys"><kbd class="key">⌥</kbd><kbd class="key">⌘</kbd><kbd class="key">F</kbd></div></div>
+                </div>
+            </div>
+            <div class="no-results" style="display:none;"><h3>🔍 No shortcuts found</h3><p>Try a different search term</p></div>
+        </div>
+
+        <section class="content-section">
+            <div class="content-container">
+                <article class="seo-content">
+                    <h2>A note on the Meta key</h2>
+                    <p>Warp documents a number of input editor bindings against <strong>Meta</strong>. On most keyboards this is <kbd>Option</kbd> on macOS and <kbd>Alt</kbd> on Windows and Linux, but it depends on how your terminal and OS map the modifier. If a Meta binding such as <kbd>Meta</kbd>+<kbd>.</kbd> (insert the last word of the previous command) does nothing, check whether your Option or Alt key is configured to send Meta rather than composing accented characters.</p>
+
+                    <h2 id="customize">Customize Warp keyboard shortcuts</h2>
+                    <p>There are two routes, and they stay in sync — anything you change in the UI is written back to the file.</p>
+                    <h3>1. In the app</h3>
+                    <p>Open <strong>Settings &gt; Keyboard shortcuts</strong> (<kbd>Ctrl</kbd>+<kbd>⌘</kbd>+<kbd>K</kbd> on macOS opens the keybindings editor directly). Search by action name or by the existing key, then set, clear, or reset to default. Bindings that clash with another binding are flagged with an <strong>orange border</strong>, so a conflict is visible before you save.</p>
+                    <h3>2. In keybindings.yaml</h3>
+                    <p>For version-controlled or scripted setups, Warp reads <code>~/.warp/keybindings.yaml</code>. It is a flat YAML map of action name to key string. Create the <code>~/.warp</code> directory first if it does not exist, then restart Warp to pick up changes.</p>
+                    <pre style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1rem 1.25rem;overflow:auto;font-size:0.9rem;line-height:1.5;"><code># ~/.warp/keybindings.yaml
+workspace:toggle_command_palette: cmd-p
+pane_group:add_right: cmd-d
+pane_group:add_down: cmd-shift-D
+terminal:clear_blocks: cmd-k
+editor_view:move_to_line_start: ctrl-a
+workspace:show_command_search: ctrl-r</code></pre>
+                    <p>Two rules catch people out. Modifiers are <strong>hyphen-separated and lowercase</strong>, ending with the key — <code>cmd-ctrl-g</code>, not <code>Cmd+Ctrl+G</code>. And when a binding includes Shift, the letter must be <strong>capitalised</strong>: <code>cmd-shift-A</code> is Command+Shift+A, while <code>cmd-a</code> is plain Command+A.</p>
+                    <table class="keytable">
+                        <thead><tr><th>Platform</th><th>Available modifiers</th></tr></thead>
+                        <tbody>
+                            <tr><td>macOS</td><td><code>ctrl</code>, <code>cmd</code>, <code>alt</code> (Option), <code>meta</code>, <code>shift</code></td></tr>
+                            <tr><td>Windows / Linux</td><td><code>ctrl</code>, <code>ctrl-shift</code> (Windows / Super / System), <code>alt</code>, <code>meta</code>, <code>shift</code></td></tr>
+                        </tbody>
+                    </table>
+                    <p>Non-printing keys use descriptive names: <code>up</code>, <code>down</code>, <code>left</code>, <code>right</code>, <code>home</code>, <code>end</code>, <code>pageup</code>, <code>pagedown</code>, <code>backspace</code>, <code>enter</code>, <code>insert</code>, <code>delete</code>, <code>escape</code>, <code>tab</code>, <code>numpadenter</code>, and <code>f1</code> through <code>f20</code>.</p>
+                    <h3>3. Import a preset keyset</h3>
+                    <p>Warp maintains ready-made presets in the <a href="https://github.com/warpdotdev/keysets" target="_blank" rel="noopener">warpdotdev/keysets</a> repository — useful if you are migrating muscle memory from another terminal. Back up any existing <code>keybindings.yaml</code>, copy the preset in, rename it to <code>keybindings.yaml</code>, and restart Warp. To revert, delete the file and restore your backup.</p>
+
+                    <h2>Why your Warp shortcuts stopped working</h2>
+                    <p>Four causes account for nearly every report, and only the first is in Warp's own documentation.</p>
+                    <h3>macOS is intercepting the key</h3>
+                    <p>System-level shortcuts including <kbd>⌘</kbd>+<kbd>Esc</kbd>, <kbd>⌘</kbd>+<kbd>`</kbd>, <kbd>⌘</kbd>+<kbd>Tab</kbd>, <kbd>⌘</kbd>+<kbd>.</kbd> and <kbd>⌘</kbd>+<kbd>~</kbd> are claimed by macOS before Warp ever sees them. Unbind them in System Settings first, then assign them in Warp.</p>
+                    <h3>You switched to a non-Latin keyboard layout</h3>
+                    <p>This is the one that catches people and has no fix in the docs. If you change your input source to something like Persian, Arabic, Russian or Greek, bindings such as copy and paste silently stop firing. Warp does not currently convert input from sources other than ABC, so the workaround is to <strong>rebind the keys from scratch while the new input source is active</strong>. It is tracked as a known issue on Warp's GitHub.</p>
+                    <h3>A full-screen program has the keys</h3>
+                    <p>While a long-running or full-screen command is in the foreground — think <code>vim</code>, <code>less</code>, <code>htop</code> — Warp forwards <kbd>PageUp</kbd>, <kbd>PageDown</kbd>, <kbd>Home</kbd> and <kbd>End</kbd> straight to that program instead of scrolling the terminal. This is intended behaviour, not a bug.</p>
+                    <h3>Two bindings are fighting</h3>
+                    <p>Open Settings &gt; Keyboard shortcuts and look for the orange border. Warp highlights conflicting bindings rather than silently picking a winner.</p>
+
+                    <h2>Vim keybindings in the input editor</h2>
+                    <p>Warp can run the command input in Vim mode. Turn it on under <strong>Settings &gt; Features &gt; Editor</strong> with <em>Edit commands with Vim keybindings</em>. It remains a beta feature, and one limitation is worth knowing before you commit to it: the built-in Vim bindings themselves cannot currently be remapped, though the request is open with the Warp team.</p>
+                </article>
+            </div>
+        </section>
+
+        <section style="padding:2rem;text-align:center;background:var(--bg-secondary);">
+            <p style="font-size:1.1rem;color:var(--text-primary);margin:0;">Also see: <a href="../ghostty/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Ghostty</a> • <a href="../opencode/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">OpenCode</a> • <a href="../claude-code/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Claude Code</a> • <a href="../codex/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Codex</a> • <a href="../cursor/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">Cursor</a> • <a href="../vscode/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">VS Code</a> • <a href="../mac/" style="color:var(--primary-color);text-decoration:none;font-weight:600;">macOS</a></p>
+        </section>
+
+        <section id="faq" style="padding:3rem 1.5rem;max-width:860px;margin:0 auto;">
+            <div style="text-align:center;margin-bottom:2rem;">
+                <h2 style="font-size:1.6rem;font-weight:700;color:var(--text-primary);">Warp Shortcuts — Frequently Asked Questions</h2>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I split a pane in Warp?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">On macOS, <strong>⌘+D</strong> splits the pane to the right and <strong>⇧+⌘+D</strong> splits it downward. On Windows and Linux, <strong>Ctrl+Shift+D</strong> splits right and <strong>Ctrl+Shift+E</strong> splits down. Move between panes with ⌥+⌘ plus an arrow key on Mac, or Ctrl+Alt plus an arrow key on Windows and Linux. ⇧+⌘+Return (Ctrl+Shift+Enter on Windows and Linux) maximizes the active pane.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I customize or remap Warp keyboard shortcuts?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">There are two ways. In the app, open <strong>Settings &gt; Keyboard shortcuts</strong> and search for the action you want to change. To manage bindings as a file, create <code>~/.warp/keybindings.yaml</code> — a top-level YAML map of action names to key strings such as <code>workspace:toggle_command_palette: cmd-p</code>. Modifiers are hyphen-separated. Warp also publishes ready-made presets in the <a href="https://github.com/warpdotdev/keysets" target="_blank" rel="noopener">warpdotdev/keysets</a> repository that you can copy into <code>~/.warp/</code>.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">Why are my Warp keyboard shortcuts not working?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">Three common causes. On macOS, system-level shortcuts such as ⌘+Esc, ⌘+`, ⌘+Tab, ⌘+. and ⌘+~ must be unbound in System Settings before Warp can use them. If you switch your keyboard to a non-Latin input source such as Persian or Russian, bindings stop firing and must be rebound from scratch with that input source active — this is a known Warp issue. Finally, conflicting bindings are highlighted with an orange border in Settings &gt; Keyboard shortcuts.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">What is the Warp command palette shortcut?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;"><strong>⌘+P</strong> on macOS and <strong>Ctrl+Shift+P</strong> on Windows and Linux. The separate navigation palette is ⇧+⌘+P on macOS and has no default binding on Windows or Linux. Command search — which searches your history — is <strong>Ctrl+R</strong> on every platform.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I clear the screen or clear blocks in Warp?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;"><strong>Ctrl+L</strong> clears the screen on every platform. Clearing blocks is different: <strong>⌘+K</strong> on macOS and <strong>Ctrl+Shift+K</strong> on Windows and Linux removes the block history. Inside the input editor, Ctrl+C clears the command editor rather than sending an interrupt.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">Are Warp keyboard shortcuts the same on Windows, Linux and macOS?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">No. Windows and Linux share an identical default keyset, but macOS differs substantially — most ⌘-based Mac bindings become Ctrl+Shift on Windows and Linux. Several actions that have defaults on macOS are unbound on Windows and Linux, including the launch configuration palette, theme picker, navigation palette and the pane resize commands. The Emacs-style input editor bindings such as Ctrl+A and Ctrl+E are the same everywhere.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">Does Warp support Vim keybindings?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">Yes, for the input editor. Enable it under <strong>Settings &gt; Features &gt; Editor</strong> with the "Edit commands with Vim keybindings" option. It is a beta feature, and the built-in Vim bindings themselves cannot currently be remapped, though that has been requested.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">What is Warpify and what does Ctrl+I do?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;"><strong>Ctrl+I</strong> runs Warpify Subshell on every platform. It re-enables Warp's block UI, autocomplete and input editor inside a subshell such as an SSH session, a Docker container or a nested shell, where those features would otherwise be lost. Note that in the input editor context Ctrl+I is bound separately to Inspect Command.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I start Agent Mode or a new Warp Agent conversation?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">From terminal mode, press <strong>⌘+Return</strong> on macOS or <strong>Ctrl+Shift+Enter</strong> on Windows and Linux to open a new agent conversation (same as typing <code>/agent</code>). Start a cloud agent with <strong>⌥+⌘+Return</strong> or <strong>Ctrl+Alt+Enter</strong>. Press Esc to return to the terminal, and ⌘+Y or Ctrl+Y to open the conversation selector. Type <code>/</code> for slash commands and <code>@</code> to attach files or symbols as context. See Warp's <a href="https://docs.warp.dev/agents/local-agents/interacting-with-agents/terminal-and-agent-modes/" target="_blank" rel="noopener">Terminal and Agent modes</a> docs.</p>
+                </details>
+                <details style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1.25rem 1.5rem;">
+                    <summary style="font-weight:600;color:var(--text-primary);cursor:pointer;list-style:none;">How do I switch between shell and Agent Mode in Warp?</summary>
+                    <p style="margin-top:0.75rem;color:var(--text-secondary);line-height:1.6;">Press <strong>⌘+I</strong> on macOS or <strong>Ctrl+I</strong> on Windows and Linux to override auto-detection and force shell or agent for the current input. In Agent Mode, prepend <code>!</code> to run a command in the shell instead, for example <code>!git status</code>. On Windows and Linux, Ctrl+I is also Warpify Subshell, so if Warpify fires when you meant to toggle Agent Mode, remap one of the two actions in Settings &gt; Keyboard shortcuts.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="related-shortcuts">
+            <div class="container">
+                <h2>🔥 Explore More Shortcuts</h2>
+                <p class="section-subtitle">Discover other powerful keyboard shortcuts to boost your productivity</p>
+                <div class="related-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column"><h3>⌨️ FastShortcuts</h3><p style="color:var(--text-secondary);margin-bottom:1rem;">Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.</p></div>
+                <div class="footer-column"><h3>Quick Links</h3><ul class="footer-links"><li><a href="../../">Home</a></li><li><a href="../../#categories">All Categories</a></li></ul></div>
+                <div class="footer-column"><h3>Popular Shortcuts</h3><ul class="footer-links"><li><a href="../warp/">Warp</a></li><li><a href="../ghostty/">Ghostty</a></li><li><a href="../opencode/">OpenCode</a></li><li><a href="../vscode/">VS Code</a></li><li><a href="../cursor/">Cursor</a></li></ul></div>
+                <div class="footer-column"><h3>Company</h3><ul class="footer-links"><li><a href="../../pages/about.html">About Us</a></li><li><a href="../../pages/contact.html">Contact</a></li><li><a href="../../pages/privacy.html">Privacy Policy</a></li><li><a href="../../pages/terms.html">Terms of Service</a></li></ul></div>
+                <div class="footer-column"><h3>Resources</h3><ul class="footer-links"><li><a href="https://docs.warp.dev/getting-started/keyboard-shortcuts/" target="_blank" rel="noopener">Warp keyboard shortcuts docs</a></li><li><a href="https://github.com/warpdotdev/keysets" target="_blank" rel="noopener">Warp keysets repository</a></li><li><a href="../ghostty/">Ghostty shortcuts</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 FastShortcuts. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
