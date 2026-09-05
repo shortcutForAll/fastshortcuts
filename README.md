@@ -70,7 +70,7 @@ fastshortcuts/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fastshortcuts.git
+git clone https://github.com/shortcutForAll/fastshortcuts.git
 cd fastshortcuts
 ```
 

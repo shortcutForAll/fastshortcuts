@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | FastShortcuts - Get in Touch</title>
-    <meta name="description" content="Contact FastShortcuts with questions, feedback or suggestions about our keyboard shortcuts guides. We'd love to hear from you. Quick response guaranteed.">
+    <meta name="description" content="Contact FastShortcuts at owner@fastshortcuts.com to report a wrong shortcut, request a tool, or send feedback.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://fastshortcuts.com/pages/contact.html">
     
@@ -159,6 +159,10 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             width: 100%;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
         }
         .submit-btn:hover {
             transform: translateY(-2px);
@@ -215,7 +219,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/#categories">Categories</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li><li><a href="../#sponsor">Sponsor</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </div>
@@ -224,48 +228,19 @@
     <div class="contact-page">
         <div class="contact-hero">
             <h1 class="contact-title">Get in Touch</h1>
-            <p class="contact-subtitle">Found a mistake? Have a suggestion? Want to request a new tool? We're all ears. Real humans read and respond to every message.</p>
+            <p class="contact-subtitle">Found a wrong shortcut, or want a tool added? Email <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a>. That address is monitored. There is no dummy form on this page.</p>
         </div>
 
         <div class="contact-grid">
             <!-- Contact Form -->
             <div class="contact-form-section">
-                <h2 style="font-size: 1.75rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">Send Us a Message</h2>
-                
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="category">What's this about? *</label>
-                        <select id="category" name="category" required>
-                            <option value="">Choose a category...</option>
-                            <option value="bug">🐛 Bug Report / Incorrect Shortcut</option>
-                            <option value="suggestion">💡 Feature Suggestion</option>
-                            <option value="request">🛠️ Tool Request</option>
-                            <option value="feedback">📝 General Feedback</option>
-                            <option value="other">💬 Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-
-                    <div class="response-time">
-                        <strong>⚡ Response Time:</strong> We typically respond within 24-48 hours. Messages sent on weekends might take until Monday.
-                    </div>
-                </form>
+                <h2 style="font-size: 1.75rem; font-weight: 700; color: #111827; margin-bottom: 1.5rem;">Email owner@fastshortcuts.com</h2>
+                <p style="color:#4b5563;line-height:1.7;margin-bottom:1.25rem;">This is the only contact address. The old on-page form was a placeholder and never delivered mail, so it has been removed. Use your own mail app so the message actually arrives.</p>
+                <p style="color:#4b5563;line-height:1.7;margin-bottom:1.5rem;">For a wrong shortcut, include the tool page, your operating system (Windows, macOS, or Linux), and what the key should be. For a new tool, include a link to the official shortcut docs if you have one.</p>
+                <a class="submit-btn" href="mailto:owner@fastshortcuts.com?subject=FastShortcuts%20feedback">Open email to owner@fastshortcuts.com</a>
+                <div class="response-time">
+                    <strong>Address:</strong> <a href="mailto:owner@fastshortcuts.com" style="color:#065f46;">owner@fastshortcuts.com</a>
+                </div>
             </div>
 
             <!-- Contact Info -->
@@ -273,32 +248,25 @@
                 <h3>Other Ways to Reach Us</h3>
 
                 <div class="contact-method">
-                    <h4>📧 Email</h4>
-                    <p>Prefer email? Send us a message at:<br>
-                    <a href="mailto:hello@fastshortcuts.com">hello@fastshortcuts.com</a></p>
+                    <h4>Email</h4>
+                    <p>Corrections, tool requests, privacy, and legal:<br>
+                    <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a></p>
                 </div>
 
                 <div class="contact-method">
-                    <h4>🐛 Bug Reports</h4>
-                    <p>Found an incorrect shortcut?<br>
-                    <a href="mailto:bugs@fastshortcuts.com">bugs@fastshortcuts.com</a></p>
+                    <h4>GitHub</h4>
+                    <p>Source and issues:<br>
+                    <a href="https://github.com/shortcutForAll/fastshortcuts" target="_blank" rel="noopener">github.com/shortcutForAll/fastshortcuts</a></p>
                 </div>
 
                 <div class="contact-method">
-                    <h4>💡 Suggestions</h4>
-                    <p>Have an idea for improving the site?<br>
-                    <a href="mailto:ideas@fastshortcuts.com">ideas@fastshortcuts.com</a></p>
-                </div>
-
-                <div class="contact-method">
-                    <h4>🔒 Privacy & Legal</h4>
-                    <p>Questions about data handling?<br>
-                    <a href="mailto:privacy@fastshortcuts.com">privacy@fastshortcuts.com</a></p>
+                    <h4>X</h4>
+                    <p><a href="https://twitter.com/fastshortcuts" target="_blank" rel="noopener">twitter.com/fastshortcuts</a></p>
                 </div>
 
                 <div style="background: white; padding: 1.25rem; border-radius: 8px; margin-top: 1.5rem;">
                     <p style="margin: 0; color: #6b7280; font-size: 0.95rem; line-height: 1.6;">
-                        <strong style="color: #111827;">Note:</strong> We're a small team of developers running this in our spare time. We read every message but can't guarantee immediate responses. Thanks for your patience! 🙏
+                        <strong style="color: #111827;">Note:</strong> This is an independent site. Messages are read by a person, not a support desk.
                     </p>
                 </div>
             </div>
@@ -310,17 +278,17 @@
             
             <div class="faq-item">
                 <h3>How do I report an incorrect shortcut?</h3>
-                <p>Use the form above (select "Bug Report") or email us at bugs@fastshortcuts.com. Please include: which shortcut is wrong, which tool/page it's on, and what the correct shortcut should be. Bonus points for including your OS version!</p>
+                <p>Email <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a>. Include which shortcut is wrong, which tool page it is on, and your OS (Windows, macOS, or Linux).</p>
             </div>
 
             <div class="faq-item">
                 <h3>Can you add shortcuts for [tool name]?</h3>
-                <p>Absolutely! We're always expanding. Send us a request through the form above (select "Tool Request") and tell us which tool you'd like to see. Popular requests get priority.</p>
+                <p>Yes. Email the tool name and, if you have it, a link to its official shortcut docs to <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a>.</p>
             </div>
 
             <div class="faq-item">
                 <h3>Do you accept contributions?</h3>
-                <p>Yes! If you want to contribute shortcuts, corrections, or improvements, reach out to us. We're building FastShortcuts for the developer community, and community input is invaluable.</p>
+                <p>Yes. Open an issue or pull request on <a href="https://github.com/shortcutForAll/fastshortcuts" target="_blank" rel="noopener">GitHub</a>, or email the change to owner@fastshortcuts.com.</p>
             </div>
 
             <div class="faq-item">
@@ -329,8 +297,8 @@
             </div>
 
             <div class="faq-item">
-                <h3>Can I advertise on FastShortcuts?</h3>
-                <p>We don't run ads currently, and we plan to keep it that way. FastShortcuts is built for developers, by developers - no distractions, no sponsored content. Just pure shortcuts.</p>
+                <h3>Can I sponsor a placement on FastShortcuts?</h3>
+                <p>Yes. There is one labeled homepage slot at $50 for 3 months. Email <a href="mailto:owner@fastshortcuts.com?subject=Sponsorship%20inquiry">owner@fastshortcuts.com</a> with your product and a short description. Paid links will use <code>rel="sponsored"</code>. Shortcut guides stay free and unchanged.</p>
             </div>
 
             <div class="faq-item">
@@ -350,9 +318,8 @@
                         Your ultimate resource for mastering keyboard shortcuts across all platforms and tools.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-                        <a href="#" class="social-link" aria-label="GitHub">⚡</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="https://twitter.com/fastshortcuts" class="social-link" aria-label="Twitter / X" rel="noopener" target="_blank">𝕏</a>
+                        <a href="https://github.com/shortcutForAll/fastshortcuts" class="social-link" aria-label="GitHub" rel="noopener" target="_blank">⚡</a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -376,7 +343,7 @@
                     <h3>Company</h3>
                     <ul class="footer-links">
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li><li><a href="../#sponsor">Sponsor</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
@@ -392,22 +359,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+                <p>&copy; 2026 FastShortcuts. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="../assets/js/script.js"></script>
-    <script>
-        // Simple form handling (you can replace with your preferred form service)
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // You can integrate with Formspree, EmailJS, or your backend here
-            // For now, just show a simple alert
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>

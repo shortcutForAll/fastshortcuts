@@ -2173,3 +2173,105 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* Labeled homepage sponsorship — one slot, not in the hero */
+.sponsor-slot {
+    padding: 2.25rem 1.5rem 3rem;
+    background: var(--bg-secondary);
+}
+
+.sponsor-card {
+    max-width: 420px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.65rem 1.75rem 1.4rem;
+}
+
+.sponsor-kicker {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.3rem;
+}
+
+.sponsor-price {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0 0 1.1rem;
+}
+
+.sponsor-price strong {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-right: 0.2rem;
+}
+
+.sponsor-points {
+    list-style: none;
+    margin: 0 0 1.35rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.sponsor-points li {
+    position: relative;
+    padding-left: 1.85rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.sponsor-points li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0.08rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #111827;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.sponsor-cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: var(--primary);
+    color: #111827;
+    font-weight: 700;
+    font-size: 0.98rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 999px;
+}
+
+.sponsor-cta:hover {
+    background: var(--accent);
+}
+
+.sponsor-email {
+    margin: 0.85rem 0 0;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.sponsor-email a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.sponsor-note {
+    margin: 0.45rem 0 0;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    line-height: 1.4;
+}

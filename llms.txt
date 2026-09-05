@@ -4,7 +4,7 @@
 ## About
 FastShortcuts publishes dedicated keyboard shortcut cheat sheets for code editors, AI tools, operating systems, productivity apps, and creative software. All content is static HTML — no login required, no paywalls.
 
-Contact: hello@fastshortcuts.com
+Contact: owner@fastshortcuts.com
 Canonical home: https://fastshortcuts.com
 
 ## Citation guidance

@@ -55,7 +55,175 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260905">
+    <style>
+        .top-shortcuts-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 340px;
+            gap: 2rem;
+            align-items: start;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        .top-shortcuts-list {
+            display: grid;
+            gap: 1.5rem;
+            min-width: 0;
+        }
+        .top-shortcuts-heading {
+            text-align: left;
+            margin: 0 0 0.25rem;
+        }
+        .top-shortcuts-heading h2 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 0.5rem;
+            text-align: left;
+        }
+        .top-shortcuts-heading p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            margin: 0;
+            text-align: left;
+        }
+        .sponsor-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #111827;
+            line-height: 1.3;
+            margin: 0 0 0.75rem;
+        }
+        .sponsor-slot {
+            position: sticky;
+            top: 6rem;
+            padding: 0;
+            background: transparent;
+        }
+        .sponsor-card {
+            max-width: none;
+            margin: 0;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 1.65rem 1.5rem 1.35rem;
+            color: #111827;
+        }
+        @media (max-width: 960px) {
+            .top-shortcuts-layout {
+                grid-template-columns: 1fr;
+            }
+            .sponsor-slot {
+                position: static;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+        }
+        .sponsor-kicker {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin: 0 0 0.3rem;
+        }
+        .sponsor-price {
+            font-size: 1rem;
+            color: #6b7280;
+            margin: 0 0 1.1rem;
+        }
+        .sponsor-price strong {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: #111827;
+            margin-right: 0.2rem;
+        }
+        .sponsor-points {
+            list-style: none;
+            margin: 0 0 1.35rem;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        .sponsor-points li {
+            position: relative;
+            padding-left: 1.85rem;
+            color: #111827;
+            font-size: 0.95rem;
+            line-height: 1.45;
+        }
+        .sponsor-points li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0.08rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background: #fbbf24;
+            color: #111827;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-align: center;
+            line-height: 1.2rem;
+        }
+        .sponsor-cta {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            background: #fbbf24;
+            color: #111827;
+            font-weight: 700;
+            font-size: 0.98rem;
+            padding: 0.85rem 1.25rem;
+            border-radius: 999px;
+        }
+        .sponsor-cta:hover {
+            background: #f59e0b;
+        }
+        .sponsor-email {
+            margin: 0.85rem 0 0;
+            font-size: 0.88rem;
+            color: #6b7280;
+        }
+        .sponsor-email a {
+            color: #d97706;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .sponsor-email a:hover {
+            text-decoration: underline;
+        }
+        .sponsor-note {
+            margin: 0.45rem 0 0;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            line-height: 1.4;
+        }
+        .top-shortcuts-more {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        .top-shortcuts-more p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.05rem;
+            margin: 0 0 1rem;
+        }
+        .top-shortcuts-more-links {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .top-shortcuts-more-links a {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #000;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
     
     <!-- Schema.org: single WebSite (no SearchAction — search is in-page JS on guide pages, not a URL endpoint) -->
     <script type="application/ld+json">
@@ -93,7 +261,7 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Support",
-        "email": "hello@fastshortcuts.com"
+        "email": "owner@fastshortcuts.com"
       },
       "sameAs": [
         "https://github.com/shortcutForAll/fastshortcuts",
@@ -1074,14 +1242,14 @@
     </section>
 
     <!-- Top 10 Essential Shortcuts Section -->
-    <section class="top-shortcuts" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 5rem 0; color: white;">
+    <section class="top-shortcuts" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 5rem 1.5rem; color: white;">
         <div class="features-container">
-            <div class="section-header">
-                <h2 class="section-title" style="color: white;">🏆 Top 10 Universal Shortcuts</h2>
-                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Master these essential shortcuts that work across almost every application</p>
-            </div>
-            <div style="max-width: 900px; margin: 0 auto;">
-                <div style="display: grid; gap: 1.5rem;">
+            <div class="top-shortcuts-layout">
+                <div class="top-shortcuts-list">
+                    <div class="top-shortcuts-heading">
+                        <h2>🏆 Top 10 Universal Shortcuts</h2>
+                        <p>Master these essential shortcuts that work across almost every application</p>
+                    </div>
                     <!-- Top 10 Shortcuts -->
                     <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; border: 1px solid rgba(255,255,255,0.2);">
                         <div>
@@ -1202,19 +1370,31 @@
                             <kbd style="background: rgba(251,191,36,0.2); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 600; border: 2px solid #fbbf24; color: #fbbf24;">⌘P</kbd>
                         </div>
                     </div>
-                </div>
-                
-                <div style="margin-top: 3rem; text-align: center;">
-                    <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 1.5rem;">
-                        Want more shortcuts? Explore our complete guides:
-                    </p>
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="/shortcuts/vscode/" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">VS Code →</a>
-                        <a href="/shortcuts/windows/" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Windows →</a>
-                        <a href="/shortcuts/mac/" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">macOS →</a>
-                        <a href="/shortcuts/chrome/" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">Chrome →</a>
+                    <div class="top-shortcuts-more">
+                        <p>Want more shortcuts? Explore our complete guides:</p>
+                        <div class="top-shortcuts-more-links">
+                            <a href="/shortcuts/vscode/">VS Code →</a>
+                            <a href="/shortcuts/windows/">Windows →</a>
+                            <a href="/shortcuts/mac/">macOS →</a>
+                            <a href="/shortcuts/chrome/">Chrome →</a>
+                        </div>
                     </div>
                 </div>
+                <aside id="sponsor" class="sponsor-slot" aria-label="Sponsorship">
+                    <div class="sponsor-card">
+                        <p class="sponsor-kicker">Sponsored placement</p>
+                        <h3 class="sponsor-title">Interested in featuring your tool?</h3>
+                        <p class="sponsor-price"><strong>$50</strong> <span>for 3 months</span></p>
+                        <ul class="sponsor-points">
+                            <li>Show a developer or productivity tool next to people who already look up shortcuts</li>
+                            <li>One labeled slot — no pop-ups, no takeover</li>
+                            <li>Optional mention on a matching tool page when it fits the topic</li>
+                        </ul>
+                        <a class="sponsor-cta" href="mailto:owner@fastshortcuts.com?subject=Sponsorship%20inquiry">Contact for availability</a>
+                        <p class="sponsor-email">Email: <a href="mailto:owner@fastshortcuts.com?subject=Sponsorship%20inquiry">owner@fastshortcuts.com</a></p>
+                        <p class="sponsor-note">Paid placements are marked. Future sponsor links will use rel=&quot;sponsored&quot;.</p>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -1448,7 +1628,7 @@
                     <h3>Company</h3>
                     <ul class="footer-links">
                         <li><a href="pages/about.html">About Us</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li><li><a href="#sponsor">Sponsor</a></li>
                         <li><a href="pages/privacy.html">Privacy Policy</a></li>
                         <li><a href="pages/terms.html">Terms of Service</a></li>
                     </ul>
@@ -1464,7 +1644,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FastShortcuts. All rights reserved. Made with ❤️ for developers.</p>
+                <p>&copy; 2026 FastShortcuts. All rights reserved.</p>
             </div>
         </div>
     </footer>
