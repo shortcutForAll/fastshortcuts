@@ -1115,6 +1115,13 @@ footer {
     transition: all 0.3s ease;
 }
 
+.social-link svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+    fill: currentColor;
+}
+
 .social-link:hover {
     background: var(--primary);
     border-color: var(--primary);
