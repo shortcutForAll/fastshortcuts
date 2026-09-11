@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Zen Browser',
+            path: '../zen-browser/',
+            icon: '../../assets/icons/zen-browser.svg',
+            description: 'Zen Browser shortcuts for Compact Mode, Workspaces, Split View, Glance, copy URL as Markdown, and remapping on Windows, Mac, and Linux.',
+            badge: 'New',
+            date: '2026-09-10'
+        },
+        {
             name: 'Warp',
             path: '../warp/',
             icon: '../../assets/icons/warp.svg',

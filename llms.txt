@@ -30,8 +30,9 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - OpenCode keyboard shortcuts: https://fastshortcuts.com/shortcuts/opencode/
 - GitHub Copilot keyboard shortcuts: https://fastshortcuts.com/shortcuts/github-copilot/
 
-## AI browsers
+## Browsers
 
+- Zen Browser keyboard shortcuts: https://fastshortcuts.com/shortcuts/zen-browser/
 - Comet browser keyboard shortcuts: https://fastshortcuts.com/shortcuts/comet/
 
 ## AI assistants
@@ -87,6 +88,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - Ctrl on Windows/Linux = Cmd (⌘) on macOS for most shortcuts
 - OpenCode TUI is an exception: the leader key is Ctrl+X on macOS too, not Cmd+X
 - Warp is another exception: Windows and Linux share one keyset, but several actions bound on macOS (theme picker, navigation palette, pane resize) ship unbound on Windows/Linux. Agent Mode uses Cmd+Enter (macOS) or Ctrl+Shift+Enter (Windows/Linux) to start a conversation.
+- Zen Browser is a Firefox fork. Zen-only defaults use Ctrl+Alt (Compact Mode, Workspaces, Split View). Those fail on Windows AltGr layouts and should be remapped. On macOS, Ctrl+Tab still cycles tabs; Cmd+H hides the app so history is Shift+Cmd+H. Workspace 1–10 has no default binding.
 - Alt on Windows/Linux = Opt (⌥) on macOS for most shortcuts
 - Pages are updated when vendor releases change default keybindings
 - Sitemap: https://fastshortcuts.com/sitemap.xml
