@@ -86,6 +86,7 @@ nav.scrolled {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
 }
@@ -115,6 +116,46 @@ nav.scrolled {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.nav-links a.nav-sponsor-btn,
+.mobile-nav-links a.nav-sponsor-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    padding: 0.5rem 1.05rem;
+    border: 2px solid var(--primary);
+    border-radius: 999px;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(251, 191, 36, 0.28);
+}
+
+.nav-links a.nav-sponsor-btn::after {
+    display: none;
+}
+
+.nav-links a.nav-sponsor-btn:hover,
+.mobile-nav-links a.nav-sponsor-btn:hover {
+    background: #1f2937;
+    color: #fde047;
+    border-color: #fde047;
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+    transform: translateY(-1px);
+}
+
+.mobile-nav-links a.nav-sponsor-btn {
+    margin-top: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sponsor {
+    scroll-margin-top: 6rem;
 }
 
 .mobile-menu-btn {
