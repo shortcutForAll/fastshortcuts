@@ -13,15 +13,15 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About FastShortcuts | Our Story & Mission</title>
-    <meta name="description" content="FastShortcuts is an independent keyboard shortcut reference. Shortcuts are compiled from official vendor docs. Contact: owner@fastshortcuts.com.">
+    <title>About FastShortcuts</title>
+    <meta name="description" content="FastShortcuts is an independent keyboard shortcut reference compiled from official vendor docs. Windows, macOS, and Linux. Contact: owner@fastshortcuts.com.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://fastshortcuts.com/pages/about.html">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="About FastShortcuts | Our Story & Mission">
-    <meta property="og:description" content="Independent keyboard shortcut reference. Compiled from official vendor docs. owner@fastshortcuts.com">
+    <meta property="og:title" content="About FastShortcuts">
+    <meta property="og:description" content="Independent keyboard shortcut reference compiled from official vendor docs. owner@fastshortcuts.com">
     <meta property="og:url" content="https://fastshortcuts.com/pages/about.html">
     <meta property="og:image" content="https://fastshortcuts.com/assets/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -29,8 +29,8 @@
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About FastShortcuts | Our Story & Mission">
-    <meta name="twitter:description" content="Independent keyboard shortcut reference. Compiled from official vendor docs.">
+    <meta name="twitter:title" content="About FastShortcuts">
+    <meta name="twitter:description" content="Independent keyboard shortcut reference compiled from official vendor docs.">
     <meta name="twitter:image" content="https://fastshortcuts.com/assets/og-image.png">
     
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -39,160 +39,233 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <style>
+        body.about-body {
+            background: #f8f8f6;
+        }
         .about-page {
-            max-width: 1100px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 2rem 1.5rem 4rem;
+            padding: 6.75rem 1.5rem 5rem;
+        }
+        .about-page a {
+            color: #1f2937;
+            text-decoration: underline;
+            text-decoration-color: #d1d5db;
+            text-underline-offset: 3px;
+        }
+        .about-page a:hover {
+            color: #111827;
+            text-decoration-color: #111827;
+        }
+        .about-kicker {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 0.85rem;
         }
         .about-hero {
-            text-align: center;
-            margin: 3rem 0 4rem;
+            padding-bottom: 2.75rem;
+            margin-bottom: 0.25rem;
+            border-bottom: 1px solid #e7e5e4;
         }
         .about-title {
-            font-size: 3rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #fbbf24 0%, #ef4444 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
+            font-size: 2.35rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: #111827;
+            line-height: 1.15;
+            margin: 0 0 1rem;
         }
         .about-subtitle {
-            font-size: 1.4rem;
-            color: #6b7280;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-        .story-section {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            margin-bottom: 3rem;
-        }
-        .story-section h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 1.5rem;
-        }
-        .story-section p {
-            line-height: 1.8;
+            font-size: 1.125rem;
             color: #4b5563;
-            margin-bottom: 1.25rem;
-            font-size: 1.05rem;
-        }
-        .mission-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        .mission-card {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid #fbbf24;
-        }
-        .mission-card h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #92400e;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .mission-card p {
-            color: #78350f;
+            max-width: 40rem;
+            margin: 0;
             line-height: 1.7;
         }
-        .stats-section {
-            background: linear-gradient(135deg, #111827 0%, #374151 100%);
-            padding: 3rem;
-            border-radius: 12px;
-            color: white;
-            margin: 3rem 0;
+        .story-section {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid #e7e5e4;
         }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+        .story-section:last-of-type {
+            border-bottom: none;
         }
-        .stat-item {
-            text-align: center;
-        }
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-        .stat-label {
-            color: #d1d5db;
-            font-size: 1rem;
-        }
-        .team-quote {
-            background: #f9fafb;
-            padding: 2rem;
-            border-left: 4px solid #fbbf24;
-            border-radius: 8px;
-            margin: 2rem 0;
-            font-style: italic;
-            color: #374151;
+        .story-section h2 {
             font-size: 1.15rem;
-            line-height: 1.8;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #111827;
+            margin: 0 0 1rem;
+        }
+        .story-section h2:not(:first-child) {
+            margin-top: 2.25rem;
+        }
+        .story-section p {
+            line-height: 1.75;
+            color: #374151;
+            margin: 0 0 1rem;
+            font-size: 1.02rem;
+        }
+        .story-section p:last-child {
+            margin-bottom: 0;
+        }
+        .about-contacts {
+            display: grid;
+            gap: 0.65rem 1.5rem;
+            margin: 1.25rem 0 1.25rem;
+            padding: 1rem 0;
+            border-top: 1px solid #f0eeeb;
+            border-bottom: 1px solid #f0eeeb;
+        }
+        .about-contacts div {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 0.75rem;
+            align-items: baseline;
+            font-size: 0.98rem;
+        }
+        .about-contacts dt {
+            margin: 0;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .about-contacts dd {
+            margin: 0;
+            color: #111827;
+        }
+        .about-contacts a {
+            text-decoration: none;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .about-contacts a:hover {
+            border-bottom-color: #111827;
+        }
+        .about-facts {
+            list-style: none;
+            margin: 0 0 1.25rem;
+            padding: 0;
+            display: grid;
+            gap: 0;
+        }
+        .about-facts li {
+            color: #374151;
+            font-size: 1.02rem;
+            line-height: 1.55;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #f0eeeb;
+        }
+        .about-facts li:last-child {
+            border-bottom: none;
+        }
+        .about-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0 0 1.25rem;
+        }
+        .about-tools a {
+            display: inline-block;
+            padding: 0.3rem 0.65rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 999px;
+            background: #fff;
+            color: #111827;
+            font-size: 0.88rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .about-tools a:hover {
+            border-color: #111827;
+            text-decoration: none;
         }
         .cta-section {
-            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-            padding: 3rem;
-            border-radius: 12px;
-            text-align: center;
-            color: #78350f;
-            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+            margin-top: 2.5rem;
+            padding: 1.5rem 0 0;
+            border-top: 1px solid #e7e5e4;
+            background: none;
+            border-radius: 0;
+            text-align: left;
+            color: inherit;
         }
-        .cta-section h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
+        .cta-copy h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #111827;
+            margin: 0 0 0.35rem;
         }
-        .cta-section p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+        .cta-copy p {
+            margin: 0;
+            color: #6b7280;
+            font-size: 0.98rem;
+            line-height: 1.55;
         }
         .cta-buttons {
             display: flex;
-            gap: 1rem;
-            justify-content: center;
+            gap: 0.65rem;
             flex-wrap: wrap;
         }
         .btn {
-            padding: 0.75rem 1.5rem;
+            padding: 0.6rem 1.15rem;
             border-radius: 8px;
+            font-size: 0.92rem;
             font-weight: 600;
             text-decoration: none;
-            transition: transform 0.2s;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
+            transition: background 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s;
         }
         .btn-primary {
-            background: white;
-            color: #92400e;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #111827;
+            border: 1px solid #f59e0b;
+            box-shadow: 0 2px 8px rgba(251, 191, 36, 0.28);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+            color: #111827;
         }
         .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
+            background: #fffbeb;
+            color: #92400e;
+            border: 1px solid #fbbf24;
+        }
+        .btn-secondary:hover {
+            background: #fef3c7;
+            border-color: #f59e0b;
+            color: #78350f;
+        }
+        .about-page .btn {
+            text-decoration: none;
+        }
+        @media (max-width: 640px) {
+            .about-page {
+                padding-top: 4.75rem;
+            }
+            .about-title {
+                font-size: 1.85rem;
+            }
+            .about-subtitle {
+                font-size: 1.05rem;
+            }
+            .about-contacts div {
+                grid-template-columns: 1fr;
+                gap: 0.15rem;
+            }
+            .cta-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
-<body>
+<body class="about-body">
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
@@ -211,104 +284,74 @@
     </nav>
 
     <div class="about-page">
-        <div class="about-hero">
-            <h1 class="about-title">About FastShortcuts</h1>
-            <p class="about-subtitle">An independent keyboard shortcut reference. Each cheat sheet is compiled from official vendor documentation and kept next to a working search box. Guides stay free; any paid placement is labeled.</p>
-        </div>
+        <header class="about-hero">
+            <p class="about-kicker">About</p>
+            <h1 class="about-title">FastShortcuts</h1>
+            <p class="about-subtitle">An independent keyboard shortcut reference. Each cheat sheet is compiled from official vendor documentation, searchable, and split by Windows, macOS, and Linux when the defaults differ. Guides stay free. Paid placements are labeled.</p>
+        </header>
 
-        <div class="story-section">
+        <section class="story-section">
             <h2>Who runs this</h2>
-            <p>FastShortcuts is an independent project published at <a href="https://fastshortcuts.com">fastshortcuts.com</a>. It is not a company blog and it is not anonymous spam: the site has a public source repo, a working email, and a documented method for how shortcuts get onto a page.</p>
-            <p><strong>Email:</strong> <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a><br>
-            <strong>GitHub:</strong> <a href="https://github.com/shortcutForAll/fastshortcuts" target="_blank" rel="noopener">github.com/shortcutForAll/fastshortcuts</a><br>
-            <strong>X:</strong> <a href="https://twitter.com/fastshortcuts" target="_blank" rel="noopener">twitter.com/fastshortcuts</a></p>
-            <p>Treat the email and GitHub account as the people behind the site — not a fictional editorial team.</p>
+            <p>FastShortcuts is an independent project published at <a href="https://fastshortcuts.com">fastshortcuts.com</a>. There is no fictional editorial team and no personal name on this page. The public mailbox and source repo are how to reach the person who publishes it.</p>
+            <dl class="about-contacts">
+                <div>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a></dd>
+                </div>
+                <div>
+                    <dt>GitHub</dt>
+                    <dd><a href="https://github.com/shortcutForAll/fastshortcuts" target="_blank" rel="noopener">github.com/shortcutForAll/fastshortcuts</a></dd>
+                </div>
+                <div>
+                    <dt>X</dt>
+                    <dd><a href="https://twitter.com/fastshortcuts" target="_blank" rel="noopener">twitter.com/fastshortcuts</a></dd>
+                </div>
+            </dl>
+            <p>Messages to that address are read by a person, not a support desk.</p>
 
             <h2>How shortcuts are verified</h2>
             <p>Every cheat sheet is compiled from that tool’s official keyboard-shortcut documentation (linked in the page footer). Platform tabs show Windows/Linux and macOS separately when the vendor ships different defaults. When a vendor changes a default — Cursor, Warp, Claude Code, and similar tools do this often — the page is updated and the visible “last verified” date is refreshed where it exists.</p>
             <p>If a shortcut on the site does not match what you see in the app, email <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a> with the tool, the OS, and the official doc URL if you have it.</p>
-        </div>
+        </section>
 
-        <div class="mission-grid">
-            <div class="mission-card">
-                <h3>🎯 Our Mission</h3>
-                <p>Help developers work faster by making keyboard shortcuts easily accessible. Every second you save looking up a shortcut is a second you can spend actually building something.</p>
-            </div>
-            <div class="mission-card">
-                <h3>💡 Our Vision</h3>
-                <p>A world where developers never have to break their flow to search for shortcuts. Where muscle memory replaces menu clicking. Where productivity is the default, not the exception.</p>
-            </div>
-            <div class="mission-card">
-                <h3>🤝 Our Values</h3>
-                <p>Keep it simple. Keep it free. Keep it accurate. No bloated interfaces, no subscription traps, just honest tools for honest work.</p>
-            </div>
-        </div>
+        <section class="story-section">
+            <h2>What each sheet includes</h2>
+            <ul class="about-facts">
+                <li>Live search on the page</li>
+                <li>Windows, macOS, and Linux keys when the vendor’s defaults differ</li>
+                <li>A PDF download for offline use</li>
+                <li>A link to the official shortcut docs in the footer</li>
+                <li>No popup, signup wall, or email gate</li>
+                <li>Paid placements marked as sponsored</li>
+            </ul>
+            <p>Learn the 15–20 shortcuts you actually use in your main tool first. That is enough to stay on the keyboard most of the day.</p>
+        </section>
 
-        <div class="stats-section">
-            <h2 style="text-align: center; margin-bottom: 0.5rem;">FastShortcuts by the Numbers</h2>
-            <p style="text-align: center; color: #d1d5db; margin-bottom: 2rem;">Making developers more productive, one shortcut at a time</p>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">2,000+</div>
-                    <div class="stat-label">Keyboard Shortcuts</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">36+</div>
-                    <div class="stat-label">Tools Covered</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Free Forever</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Platforms Supported</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="story-section">
-            <h2>Why Keyboard Shortcuts Matter</h2>
-            <p>Here's the thing about shortcuts: they're not just about speed (though that's a nice bonus). They're about maintaining focus.</p>
-            
-            <p>Studies show it takes 23 minutes to fully recover from an interruption. Every time you stop to google a shortcut, you're not just losing those 30 seconds - you're potentially losing 20+ minutes of deep work.</p>
-            
-            <p>Keyboard shortcuts let you stay in the zone. Your hands never leave the keyboard. Your eyes stay on the code. Your brain stays in flow state. That's when the magic happens.</p>
-
-            <p>Learn the 15–20 shortcuts you actually use in your main tool first. That is enough to stay in the keyboard most of the day.</p>
-        </div>
-
-        <div class="story-section">
-            <h2>What Makes FastShortcuts Different</h2>
-            <p>There are other shortcut resources out there. Here's why we think FastShortcuts is better:</p>
-            
-            <p><strong>🔍 Instantly Searchable:</strong> Every page has live search. Type what you want to do, find the shortcut instantly. No scrolling through hundreds of irrelevant commands.</p>
-            
-            <p><strong>📱 Mobile-Friendly:</strong> Need a shortcut on your phone while working? Our site works perfectly on any device.</p>
-            
-            <p><strong>📥 Downloadable PDFs:</strong> Want offline access? Download any shortcuts page as a PDF. Print it, keep it next to your keyboard, reference it anytime.</p>
-            
-            <p><strong>🎨 Clean Design:</strong> No popups, no interstitials, no email capture walls. If a paid placement is on the site, it is labeled as sponsored.</p>
-            
-            <p><strong>✅ Platform-Specific:</strong> We show shortcuts for Windows, Mac, and Linux where they differ. No more guessing which key combo works on your system.</p>
-            
-            <p><strong>🆓 Actually Free:</strong> Not "free trial" or "freemium." Just free. Forever. We're developers building for developers.</p>
-        </div>
-
-        <div class="story-section">
-            <h2>The Road Ahead</h2>
-            <p>FastShortcuts is a work in progress. We're constantly adding new tools, updating existing shortcuts, and improving the site based on user feedback.</p>
-            
-            <p>Recent additions include Warp, OpenCode, Codex, Ghostty, and the AI editor set (Cursor, Claude Code, Antigravity). Next tools are chosen when the official keybind docs exist and the SERP is still thin — not on a calendar for its own sake.</p>
+        <section class="story-section">
+            <h2>What shipped recently</h2>
+            <p>There are 38 cheat sheets. The newest:</p>
+            <p class="about-tools">
+                <a href="/shortcuts/zen-browser/">Zen Browser</a>
+                <a href="/shortcuts/warp/">Warp</a>
+                <a href="/shortcuts/opencode/">OpenCode</a>
+                <a href="/shortcuts/codex/">Codex</a>
+                <a href="/shortcuts/ghostty/">Ghostty</a>
+                <a href="/shortcuts/cursor/">Cursor</a>
+                <a href="/shortcuts/claude-code/">Claude Code</a>
+                <a href="/shortcuts/antigravity/">Antigravity</a>
+            </p>
+            <p>The next tool is added when official keybind docs exist and the search results are still thin — not on a calendar for its own sake.</p>
             <p>Want a tool covered? Email <a href="mailto:owner@fastshortcuts.com">owner@fastshortcuts.com</a> with the product name and a link to its shortcut docs.</p>
-        </div>
+        </section>
 
         <div class="cta-section">
-            <h2>Ready to Level Up Your Workflow?</h2>
-            <p>Start with the tool you already live in. The homepage lists every cheat sheet.</p>
+            <div class="cta-copy">
+                <h2>Browse the cheat sheets</h2>
+                <p>Start with the tool you already live in. The homepage lists every sheet.</p>
+            </div>
             <div class="cta-buttons">
-                <a href="/#categories" class="btn btn-primary">Browse All Shortcuts</a>
-                <a href="contact.html" class="btn btn-secondary">Send Us Feedback</a>
+                <a href="/#categories" class="btn btn-primary">All shortcuts</a>
+                <a href="contact.html" class="btn btn-secondary">Send a correction</a>
             </div>
         </div>
     </div>
