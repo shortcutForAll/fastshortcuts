@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Muse Code',
+            path: '../muse-code/',
+            icon: '../../assets/icons/muse-code.svg',
+            description: 'Muse Code keymap: Enter vs Alt+Enter, Esc vs /stop, double-Esc rewind, slash commands, /plan skill, and /keymap on Windows, Mac, and Linux.',
+            badge: 'New',
+            date: '2026-09-19'
+        },
+        {
             name: 'Zen Browser',
             path: '../zen-browser/',
             icon: '../../assets/icons/zen-browser.svg',
