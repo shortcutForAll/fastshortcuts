@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'CapCut',
+            path: '../capcut/',
+            icon: '../../assets/icons/capcut.svg',
+            description: 'CapCut desktop shortcuts for Windows and Mac: Ctrl/Cmd+B split, Q and W trim, Space, Shift+Z, and the in-app shortcut panel.',
+            badge: 'New',
+            date: '2026-09-27'
+        },
+        {
             name: 'Muse Code',
             path: '../muse-code/',
             icon: '../../assets/icons/muse-code.svg',
