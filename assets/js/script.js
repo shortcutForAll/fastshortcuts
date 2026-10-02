@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Grok Build',
+            path: '../grok-build/',
+            icon: '../../assets/icons/grok-build.svg',
+            description: 'Grok Build TUI shortcuts: Ctrl+. help, Shift+Tab modes, vim scrollback, interject keys, sessions, and VS Code / Cursor terminal overrides.',
+            badge: 'New',
+            date: '2026-10-02'
+        },
+        {
             name: 'CapCut',
             path: '../capcut/',
             icon: '../../assets/icons/capcut.svg',
