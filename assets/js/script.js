@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Dia Browser',
+            path: '../dia/',
+            icon: '../../assets/icons/dia.svg',
+            description: 'Dia browser shortcuts for Windows and Mac: Ctrl/Cmd+E Chat, command bar, Focus Mode, pinned tabs, profiles, split view, and copy URL as Markdown.',
+            badge: 'New',
+            date: '2026-10-10'
+        },
+        {
             name: 'Grok Build',
             path: '../grok-build/',
             icon: '../../assets/icons/grok-build.svg',

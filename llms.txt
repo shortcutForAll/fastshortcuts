@@ -33,6 +33,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 
 ## Browsers
 
+- Dia browser keyboard shortcuts: https://fastshortcuts.com/shortcuts/dia/
 - Zen Browser keyboard shortcuts: https://fastshortcuts.com/shortcuts/zen-browser/
 - Comet browser keyboard shortcuts: https://fastshortcuts.com/shortcuts/comet/
 
@@ -91,6 +92,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - OpenCode TUI is an exception: the leader key is Ctrl+X on macOS too, not Cmd+X
 - Warp is another exception: Windows and Linux share one keyset, but several actions bound on macOS (theme picker, navigation palette, pane resize) ship unbound on Windows/Linux. Agent Mode uses Cmd+Enter (macOS) or Ctrl+Shift+Enter (Windows/Linux) to start a conversation.
 - Zen Browser is a Firefox fork. Zen-only defaults use Ctrl+Alt (Compact Mode, Workspaces, Split View). Those fail on Windows AltGr layouts and should be remapped. On macOS, Ctrl+Tab still cycles tabs; Cmd+H hides the app so history is Shift+Cmd+H. Workspace 1–10 has no default binding.
+- Dia (The Browser Company's AI browser, on Windows since October 6, 2026): Cmd/Ctrl+E opens Chat, Cmd/Ctrl+L opens the command bar. Cmd+1–9 selects pinned tabs and is hardcoded; profiles (Arc's Spaces equivalent) use Ctrl+1–9 on Mac. Cmd+S is Focus Mode (hide tabs), not Save Page. Option+Shift+Cmd+C copies the URL as Markdown. The full list lives in Settings > Shortcuts.
 - Alt on Windows/Linux = Opt (⌥) on macOS for most shortcuts
 - Pages are updated when vendor releases change default keybindings
 - Sitemap: https://fastshortcuts.com/sitemap.xml
