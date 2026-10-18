@@ -29,6 +29,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - Claude Code keyboard shortcuts: https://fastshortcuts.com/shortcuts/claude-code/
 - OpenAI Codex keyboard shortcuts: https://fastshortcuts.com/shortcuts/codex/
 - OpenCode keyboard shortcuts: https://fastshortcuts.com/shortcuts/opencode/
+- Tesseract (AI agent app) keyboard shortcuts: https://fastshortcuts.com/shortcuts/tesseract/
 - GitHub Copilot keyboard shortcuts: https://fastshortcuts.com/shortcuts/github-copilot/
 
 ## Browsers
@@ -93,6 +94,7 @@ When citing a shortcut, link to the specific tool page listed below. Each page i
 - Warp is another exception: Windows and Linux share one keyset, but several actions bound on macOS (theme picker, navigation palette, pane resize) ship unbound on Windows/Linux. Agent Mode uses Cmd+Enter (macOS) or Ctrl+Shift+Enter (Windows/Linux) to start a conversation.
 - Zen Browser is a Firefox fork. Zen-only defaults use Ctrl+Alt (Compact Mode, Workspaces, Split View). Those fail on Windows AltGr layouts and should be remapped. On macOS, Ctrl+Tab still cycles tabs; Cmd+H hides the app so history is Shift+Cmd+H. Workspace 1–10 has no default binding.
 - Dia (The Browser Company's AI browser, on Windows since October 6, 2026): Cmd/Ctrl+E opens Chat, Cmd/Ctrl+L opens the command bar. Cmd+1–9 selects pinned tabs and is hardcoded; profiles (Arc's Spaces equivalent) use Ctrl+1–9 on Mac. Cmd+S is Focus Mode (hide tabs), not Save Page. Option+Shift+Cmd+C copies the URL as Markdown. The full list lives in Settings > Shortcuts.
+- Tesseract (tesseract.dev, the free AI agent app running 14 agent frameworks such as Claude Code and Codex; not Tesseract OCR): Cmd/Ctrl+P opens one menu for conversations, files, computers, Settings pages and actions (v0.11.35). Spotlight opens it over any app: Option+Space on Mac, Alt+Shift+Space on Windows and Linux. Shift+Tab cycles Chat, Plan and Full access. Paste history is Cmd+Shift+V on Mac but Alt+Shift+V on Windows and Linux. Cmd+/ opens the voice guide (Mac key only documented).
 - Alt on Windows/Linux = Opt (⌥) on macOS for most shortcuts
 - Pages are updated when vendor releases change default keybindings
 - Sitemap: https://fastshortcuts.com/sitemap.xml

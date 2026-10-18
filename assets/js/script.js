@@ -353,6 +353,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // All shortcut pages with metadata (ordered by date - newest first)
     const allShortcuts = [
         {
+            name: 'Tesseract',
+            path: '../tesseract/',
+            icon: '../../assets/icons/tesseract.svg',
+            description: 'Tesseract AI agent app shortcuts for Mac, Windows and Linux: Cmd/Ctrl+P menu, Spotlight over any app, Shift+Tab modes, voice guide, and paste history.',
+            badge: 'New',
+            date: '2026-10-18'
+        },
+        {
             name: 'Dia Browser',
             path: '../dia/',
             icon: '../../assets/icons/dia.svg',
