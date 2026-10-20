@@ -50,92 +50,168 @@
     }
     </script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "Warp Keyboard Shortcuts 2026 - Mac, Windows & Linux Cheat Sheet",
-      "description": "Warp keyboard shortcuts for Mac, Windows, and Linux. Split panes, blocks, command palette, Agent Mode, Warp Drive, and keybindings.yaml customization.",
-      "author": {"@type":"Organization","name":"FastShortcuts"},
-      "publisher": {"@type":"Organization","name":"FastShortcuts","logo":{"@type":"ImageObject","url":"https://fastshortcuts.com/logo.png"}},
-      "datePublished": "2026-09-02",
-      "dateModified": "2026-09-02",
-      "mainEntityOfPage": {"@type":"WebPage","@id":"https://fastshortcuts.com/shortcuts/warp/"},
-      "keywords": "warp keyboard shortcuts, warp terminal shortcuts, warp keybindings.yaml, warp custom shortcuts, warp split pane, warp command palette, warp blocks, warp shortcuts mac windows linux",
-      "articleSection": "Developer Tools",
-      "about": {"@type":"SoftwareApplication","name":"Warp","applicationCategory":"DeveloperApplication","operatingSystem":"macOS, Windows, Linux","url":"https://www.warp.dev"}
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Warp Keyboard Shortcuts 2026 - Mac, Windows & Linux Cheat Sheet",
+  "description": "Warp keyboard shortcuts for Mac, Windows, and Linux. Split panes, blocks, command palette, Agent Mode, Warp Drive, and keybindings.yaml customization.",
+  "author": {
+    "@type": "Organization",
+    "name": "FastShortcuts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FastShortcuts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fastshortcuts.com/logo.png"
     }
+  },
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fastshortcuts.com/shortcuts/warp/"
+  },
+  "keywords": "warp keyboard shortcuts, warp terminal shortcuts, warp keybindings.yaml, warp custom shortcuts, warp split pane, warp command palette, warp blocks, warp shortcuts mac windows linux",
+  "articleSection": "Developer Tools",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Warp",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS, Windows, Linux",
+    "url": "https://www.warp.dev"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://fastshortcuts.com/assets/og-image.png",
+    "width": 1200,
+    "height": 630
+  }
+}
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to customize Warp keyboard shortcuts",
+  "description": "Remap Warp terminal keybindings in Settings or in ~/.warp/keybindings.yaml.",
+  "totalTime": "PT5M",
+  "step": [
     {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "How to customize Warp keyboard shortcuts",
-      "description": "Remap Warp terminal keybindings in Settings or in ~/.warp/keybindings.yaml.",
-      "totalTime": "PT5M",
-      "step": [
-        {"@type":"HowToStep","position":1,"name":"Open the keybindings editor","text":"On macOS press Ctrl+Cmd+K, or open Settings > Keyboard shortcuts on any platform. Search by action name or by the current key."},
-        {"@type":"HowToStep","position":2,"name":"Set, clear, or reset a binding","text":"Click the shortcut field and press the new combination. Warp flags conflicts with an orange border. Changes save automatically and write back to keybindings.yaml."},
-        {"@type":"HowToStep","position":3,"name":"Optional: edit keybindings.yaml","text":"Create ~/.warp/keybindings.yaml as a YAML map of action names to hyphenated key strings, for example workspace:toggle_command_palette: cmd-p. Restart Warp to load the file. Import a preset from github.com/warpdotdev/keysets if you are migrating from another terminal."}
-      ]
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open the keybindings editor",
+      "text": "On macOS press Ctrl+Cmd+K, or open Settings > Keyboard shortcuts on any platform. Search by action name or by the current key."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Set, clear, or reset a binding",
+      "text": "Click the shortcut field and press the new combination. Warp flags conflicts with an orange border. Changes save automatically and write back to keybindings.yaml."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Optional: edit keybindings.yaml",
+      "text": "Create ~/.warp/keybindings.yaml as a YAML map of action names to hyphenated key strings, for example workspace:toggle_command_palette: cmd-p. Restart Warp to load the file. Import a preset from github.com/warpdotdev/keysets if you are migrating from another terminal."
     }
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://fastshortcuts.com/assets/og-image.png",
+    "width": 1200,
+    "height": 630
+  }
+}
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type":"Question",
-          "name":"How do I split a pane in Warp?",
-          "acceptedAnswer":{"@type":"Answer","text":"On macOS, Cmd+D splits the pane to the right and Shift+Cmd+D splits it downward. On Windows and Linux, Ctrl+Shift+D splits right and Ctrl+Shift+E splits down. Move between panes with Option+Cmd plus an arrow key on Mac, or Ctrl+Alt plus an arrow key on Windows and Linux. Shift+Cmd+Enter (Ctrl+Shift+Enter on Windows and Linux) maximizes the active pane."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I customize or remap Warp keyboard shortcuts?",
-          "acceptedAnswer":{"@type":"Answer","text":"There are two ways. In the app, open Settings > Keyboard shortcuts and search for the action you want to change. To manage bindings as a file, create ~/.warp/keybindings.yaml — a top-level YAML map of action names to key strings such as workspace:toggle_command_palette: cmd-p. Modifiers are hyphen-separated. Warp also publishes ready-made presets in the warpdotdev/keysets repository that you can copy into ~/.warp/."}
-        },
-        {
-          "@type":"Question",
-          "name":"Why are my Warp keyboard shortcuts not working?",
-          "acceptedAnswer":{"@type":"Answer","text":"Three common causes. On macOS, system-level shortcuts such as Cmd+Esc, Cmd+backtick, Cmd+Tab, Cmd+period and Cmd+tilde must be unbound in System Settings before Warp can use them. If you switch your keyboard to a non-Latin input source such as Persian or Russian, bindings stop firing and must be rebound from scratch with that input source active — this is a known Warp issue. Finally, conflicting bindings are highlighted with an orange border in Settings > Keyboard shortcuts."}
-        },
-        {
-          "@type":"Question",
-          "name":"What is the Warp command palette shortcut?",
-          "acceptedAnswer":{"@type":"Answer","text":"Cmd+P on macOS and Ctrl+Shift+P on Windows and Linux. The separate navigation palette is Shift+Cmd+P on macOS and has no default binding on Windows or Linux. Command search — which searches your history — is Ctrl+R on every platform."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I clear the screen or clear blocks in Warp?",
-          "acceptedAnswer":{"@type":"Answer","text":"Ctrl+L clears the screen on every platform. Clearing blocks is different: Cmd+K on macOS and Ctrl+Shift+K on Windows and Linux removes the block history. Inside the input editor, Ctrl+C clears the command editor rather than sending an interrupt."}
-        },
-        {
-          "@type":"Question",
-          "name":"Are Warp keyboard shortcuts the same on Windows, Linux and macOS?",
-          "acceptedAnswer":{"@type":"Answer","text":"No. Windows and Linux share an identical default keyset, but macOS differs substantially — most Cmd-based Mac bindings become Ctrl+Shift on Windows and Linux. Several actions that have defaults on macOS are unbound on Windows and Linux, including the launch configuration palette, theme picker, navigation palette and the pane resize commands. The Emacs-style input editor bindings such as Ctrl+A and Ctrl+E are the same everywhere."}
-        },
-        {
-          "@type":"Question",
-          "name":"Does Warp support Vim keybindings?",
-          "acceptedAnswer":{"@type":"Answer","text":"Yes, for the input editor. Enable it under Settings > Features > Editor with the 'Edit commands with Vim keybindings' option. It is a beta feature, and the built-in Vim bindings themselves cannot currently be remapped, though that has been requested."}
-        },
-        {
-          "@type":"Question",
-          "name":"What is Warpify and what does Ctrl+I do?",
-          "acceptedAnswer":{"@type":"Answer","text":"Ctrl+I runs Warpify Subshell on every platform. It re-enables Warp's block UI, autocomplete and input editor inside a subshell such as an SSH session, a Docker container or a nested shell, where those features would otherwise be lost. Note that in the input editor context Ctrl+I is bound separately to Inspect Command."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I start Agent Mode or a new Warp Agent conversation?",
-          "acceptedAnswer":{"@type":"Answer","text":"From terminal mode, press Cmd+Enter on macOS or Ctrl+Shift+Enter on Windows and Linux to open a new agent conversation (same as typing /agent). Start a cloud agent with Option+Cmd+Enter or Ctrl+Alt+Enter. Press Esc to return to the terminal, and Cmd+Y or Ctrl+Y to open the conversation selector. Type / for slash commands and @ to attach files or symbols as context."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I switch between shell and Agent Mode in Warp?",
-          "acceptedAnswer":{"@type":"Answer","text":"Press Cmd+I on macOS or Ctrl+I on Windows and Linux to override auto-detection and force shell or agent for the current input. In Agent Mode, prepend ! to run a command in the shell instead, for example !git status. On Windows and Linux, Ctrl+I is also Warpify Subshell, so if Warpify fires when you meant to toggle Agent Mode, remap one of the two actions in Settings > Keyboard shortcuts."}
-        }
-      ]
+      "@type": "Question",
+      "name": "How do I split a pane in Warp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On macOS, ⌘+D splits the pane to the right and ⇧+⌘+D splits it downward. On Windows and Linux, Ctrl+Shift+D splits right and Ctrl+Shift+E splits down. Move between panes with ⌥+⌘ plus an arrow key on Mac, or Ctrl+Alt plus an arrow key on Windows and Linux. ⇧+⌘+Return (Ctrl+Shift+Enter on Windows and Linux) maximizes the active pane."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I customize or remap Warp keyboard shortcuts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are two ways. In the app, open Settings > Keyboard shortcuts and search for the action you want to change. To manage bindings as a file, create ~/.warp/keybindings.yaml — a top-level YAML map of action names to key strings such as workspace:toggle_command_palette: cmd-p. Modifiers are hyphen-separated. Warp also publishes ready-made presets in the warpdotdev/keysets repository that you can copy into ~/.warp/."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are my Warp keyboard shortcuts not working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three common causes. On macOS, system-level shortcuts such as ⌘+Esc, ⌘+`, ⌘+Tab, ⌘+. and ⌘+~ must be unbound in System Settings before Warp can use them. If you switch your keyboard to a non-Latin input source such as Persian or Russian, bindings stop firing and must be rebound from scratch with that input source active — this is a known Warp issue. Finally, conflicting bindings are highlighted with an orange border in Settings > Keyboard shortcuts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Warp command palette shortcut?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "⌘+P on macOS and Ctrl+Shift+P on Windows and Linux. The separate navigation palette is ⇧+⌘+P on macOS and has no default binding on Windows or Linux. Command search — which searches your history — is Ctrl+R on every platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I clear the screen or clear blocks in Warp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ctrl+L clears the screen on every platform. Clearing blocks is different: ⌘+K on macOS and Ctrl+Shift+K on Windows and Linux removes the block history. Inside the input editor, Ctrl+C clears the command editor rather than sending an interrupt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Warp keyboard shortcuts the same on Windows, Linux and macOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Windows and Linux share an identical default keyset, but macOS differs substantially — most ⌘-based Mac bindings become Ctrl+Shift on Windows and Linux. Several actions that have defaults on macOS are unbound on Windows and Linux, including the launch configuration palette, theme picker, navigation palette and the pane resize commands. The Emacs-style input editor bindings such as Ctrl+A and Ctrl+E are the same everywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Warp support Vim keybindings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for the input editor. Enable it under Settings > Features > Editor with the \"Edit commands with Vim keybindings\" option. It is a beta feature, and the built-in Vim bindings themselves cannot currently be remapped, though that has been requested."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Warpify and what does Ctrl+I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ctrl+I runs Warpify Subshell on every platform. It re-enables Warp's block UI, autocomplete and input editor inside a subshell such as an SSH session, a Docker container or a nested shell, where those features would otherwise be lost. Note that in the input editor context Ctrl+I is bound separately to Inspect Command."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I start Agent Mode or a new Warp Agent conversation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From terminal mode, press ⌘+Return on macOS or Ctrl+Shift+Enter on Windows and Linux to open a new agent conversation (same as typing /agent). Start a cloud agent with ⌥+⌘+Return or Ctrl+Alt+Enter. Press Esc to return to the terminal, and ⌘+Y or Ctrl+Y to open the conversation selector. Type / for slash commands and @ to attach files or symbols as context. See Warp's Terminal and Agent modes docs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I switch between shell and Agent Mode in Warp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Press ⌘+I on macOS or Ctrl+I on Windows and Linux to override auto-detection and force shell or agent for the current input. In Agent Mode, prepend ! to run a command in the shell instead, for example !git status. On Windows and Linux, Ctrl+I is also Warpify Subshell, so if Warpify fires when you meant to toggle Agent Mode, remap one of the two actions in Settings > Keyboard shortcuts."
+      }
     }
+  ]
+}
     </script>
 </head>
 <body>

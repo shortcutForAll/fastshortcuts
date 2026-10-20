@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenCode Keyboard Shortcuts 2026 | TUI Leader Key, Slash Commands &amp; Desktop</title>
-    <meta name="description" content="OpenCode keyboard shortcuts for the CLI TUI and desktop app. Leader key Ctrl+X, command palette Ctrl+P, slash commands, sessions, agents, and tui.json keybinds for Windows, Linux, and macOS.">
+    <meta name="description" content="OpenCode shortcuts for the TUI and desktop app: leader key Ctrl+X, command palette Ctrl+P, slash commands, sessions, and agents.">
     <meta name="keywords" content="opencode keyboard shortcuts, opencode shortcuts, opencode keybinds, opencode cheat sheet, opencode cli shortcuts, opencode tui shortcuts, opencode leader key, opencode ctrl+x, opencode slash commands, opencode hotkeys, opencode shortcuts mac, opencode shortcuts windows, opencode command palette, tui.json keybinds, opencode new session shortcut, opencode shift+enter">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
@@ -42,57 +42,94 @@
     }
     </script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "OpenCode Keyboard Shortcuts 2026 - TUI Leader Key, Slash Commands & Desktop",
-      "description": "OpenCode keyboard shortcuts for the CLI TUI and desktop app. Leader key Ctrl+X, command palette Ctrl+P, slash commands, sessions, agents, and tui.json keybinds for Windows, Linux, and macOS.",
-      "author": {"@type":"Organization","name":"FastShortcuts"},
-      "publisher": {"@type":"Organization","name":"FastShortcuts","logo":{"@type":"ImageObject","url":"https://fastshortcuts.com/logo.png"}},
-      "datePublished": "2026-08-29",
-      "dateModified": "2026-08-29",
-      "mainEntityOfPage": {"@type":"WebPage","@id":"https://fastshortcuts.com/shortcuts/opencode/"},
-      "keywords": "opencode keyboard shortcuts, opencode keybinds, opencode cheat sheet, opencode cli shortcuts, opencode tui shortcuts, opencode leader key, opencode slash commands, opencode hotkeys mac windows",
-      "articleSection": "Developer Tools"
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "OpenCode Keyboard Shortcuts 2026 - TUI Leader Key, Slash Commands & Desktop",
+  "description": "OpenCode keyboard shortcuts for the CLI TUI and desktop app. Leader key Ctrl+X, command palette Ctrl+P, slash commands, sessions, agents, and tui.json keybinds for Windows, Linux, and macOS.",
+  "author": {
+    "@type": "Organization",
+    "name": "FastShortcuts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FastShortcuts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fastshortcuts.com/logo.png"
     }
+  },
+  "datePublished": "2026-08-29",
+  "dateModified": "2026-08-29",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fastshortcuts.com/shortcuts/opencode/"
+  },
+  "keywords": "opencode keyboard shortcuts, opencode keybinds, opencode cheat sheet, opencode cli shortcuts, opencode tui shortcuts, opencode leader key, opencode slash commands, opencode hotkeys mac windows",
+  "articleSection": "Developer Tools",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://fastshortcuts.com/assets/og-image.png",
+    "width": 1200,
+    "height": 630
+  }
+}
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type":"Question",
-          "name":"What is the OpenCode leader key and how do I use it?",
-          "acceptedAnswer":{"@type":"Answer","text":"The default OpenCode leader key is Ctrl+X. Press and release Ctrl+X, then press the action key. Example: Ctrl+X then N starts a new session. The TUI greys out the input while it waits (default 2000 ms, set leader_timeout in tui.json). Do not hold Ctrl+X and the next key together."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I change OpenCode keyboard shortcuts or keybinds?",
-          "acceptedAnswer":{"@type":"Answer","text":"Edit keybinds in tui.json (schema https://opencode.ai/tui.json). Only override the keys you want to change — they merge with defaults. Set a binding to none or false to disable it. Use the leader placeholder in values so they follow your leader key. Runtime settings also live in the command palette (Ctrl+P). This is separate from opencode.json."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I start a new session or open the command palette in OpenCode?",
-          "acceptedAnswer":{"@type":"Answer","text":"New session: Ctrl+X then N, or type /new (alias /clear). Command palette: Ctrl+P. Session list: Ctrl+X then L, or /sessions. Interrupt the current turn with Esc."}
-        },
-        {
-          "@type":"Question",
-          "name":"Why doesn’t Shift+Enter insert a newline in OpenCode?",
-          "acceptedAnswer":{"@type":"Answer","text":"OpenCode maps newlines to Shift+Enter, Ctrl+Enter, Alt+Enter, and Ctrl+J. Many terminals swallow Shift+Enter. Ghostty and Warp usually work. In Windows Terminal, bind Shift+Enter to send the CSI u sequence \\u001b[13;2u. You can also type /editor (Ctrl+X then E) to compose in $EDITOR."}
-        },
-        {
-          "@type":"Question",
-          "name":"Are OpenCode shortcuts the same on Windows, Linux, and macOS?",
-          "acceptedAnswer":{"@type":"Answer","text":"The TUI uses Ctrl+X as the leader on every platform — it is not Cmd+X on Mac. Alt bindings become Option on macOS. Super mappings (select all, undo, redo) use Cmd. Desktop prompt editing is Emacs-style Ctrl+A / Ctrl+E even on Mac, and is not configurable in opencode.json."}
-        },
-        {
-          "@type":"Question",
-          "name":"Is OpenCode the same as OpenAI Codex?",
-          "acceptedAnswer":{"@type":"Answer","text":"No. OpenCode (opencode.ai) is an open-source AI coding TUI with a Ctrl+X leader key and tui.json keybinds. OpenAI Codex is a separate CLI and ChatGPT desktop workspace. Use this page for OpenCode; use the Codex shortcuts page for OpenAI Codex."}
-        }
-      ]
+      "@type": "Question",
+      "name": "What is the OpenCode leader key and how do I use it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The default OpenCode leader key is Ctrl+X. Press and release Ctrl+X, then press the action key. Example: Ctrl+X then N starts a new session. The TUI greys out the input while it waits (default 2000 ms, set leader_timeout in tui.json). Do not hold Ctrl+X and the next key together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I change OpenCode keyboard shortcuts or keybinds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Edit keybinds in tui.json (schema https://opencode.ai/tui.json). Only override the keys you want to change — they merge with defaults. Set a binding to none or false to disable it. Use <leader> in values so they follow your leader key. Runtime settings also live in the command palette (Ctrl+P). This is separate from opencode.json."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I start a new session or open the command palette in OpenCode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New session: Ctrl+X then N, or type /new (alias /clear). Command palette: Ctrl+P. Session list: Ctrl+X then L, or /sessions. Interrupt the current turn with Esc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn’t Shift+Enter insert a newline in OpenCode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenCode maps newlines to Shift+Enter, Ctrl+Enter, Alt+Enter, and Ctrl+J. Many terminals swallow Shift+Enter. Ghostty and Warp usually work. In Windows Terminal, bind Shift+Enter to send the CSI u sequence \\u001b[13;2u. You can also type /editor (Ctrl+X then E) to compose in $EDITOR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are OpenCode shortcuts the same on Windows, Linux, and macOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The TUI uses Ctrl+X as the leader on every platform — it is not Cmd+X on Mac. Alt bindings become Option on macOS. Super mappings (select all, undo, redo) use Cmd. Desktop prompt editing is Emacs-style Ctrl+A / Ctrl+E even on Mac, and is not configurable in opencode.json."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is OpenCode the same as OpenAI Codex?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OpenCode (opencode.ai) is an open-source AI coding TUI with a Ctrl+X leader key and tui.json keybinds. OpenAI Codex is a separate CLI and ChatGPT desktop workspace. Use this page for OpenCode; use the Codex shortcuts page for OpenAI Codex."
+      }
     }
+  ]
+}
     </script>
 </head>
 <body>

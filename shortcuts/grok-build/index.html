@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grok Build Keyboard Shortcuts 2026 | TUI Cheat Sheet (Windows, Mac &amp; Linux)</title>
-    <meta name="description" content="Grok Build keyboard shortcuts for the xAI agent TUI: Ctrl+. or Ctrl+X help, command palette, vim scrollback, interject, rewind, sessions, and VS Code / Cursor terminal overrides.">
+    <meta name="description" content="Grok Build TUI shortcuts: Ctrl+. or Ctrl+X for help, command palette, vim scrollback, interject, rewind, and sessions.">
     <meta name="keywords" content="grok build keyboard shortcuts, grok build shortcuts, grok build tui shortcuts, grok build cheat sheet, xai grok build shortcuts, grok build vim mode, grok build ctrl period, grok build cursor terminal, grok build command palette">
     <meta name="robots" content="index, follow">
     <meta name="author" content="FastShortcuts">
@@ -46,84 +46,142 @@
     }
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Grok Build Keyboard Shortcuts 2026 - TUI Cheat Sheet",
+  "description": "Keyboard shortcuts for the xAI Grok Build agent TUI on Windows, macOS, and Linux, including vim scrollback mode and VS Code-family terminal overrides.",
+  "author": {
+    "@type": "Organization",
+    "name": "FastShortcuts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FastShortcuts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fastshortcuts.com/logo.png"
+    }
+  },
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fastshortcuts.com/shortcuts/grok-build/"
+  },
+  "keywords": "grok build keyboard shortcuts, grok build tui, xai grok build cheat sheet",
+  "articleSection": "Developer Tools",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Grok Build",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "url": "https://docs.x.ai/build/keyboard-shortcuts"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://fastshortcuts.com/assets/og-image.png",
+    "width": 1200,
+    "height": 630
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to open the Grok Build keyboard shortcut list",
+  "description": "View every Grok Build TUI binding inside the running agent.",
+  "totalTime": "PT1M",
+  "step": [
     {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "Grok Build Keyboard Shortcuts 2026 - TUI Cheat Sheet",
-      "description": "Keyboard shortcuts for the xAI Grok Build agent TUI on Windows, macOS, and Linux, including vim scrollback mode and VS Code-family terminal overrides.",
-      "author": {"@type":"Organization","name":"FastShortcuts"},
-      "publisher": {"@type":"Organization","name":"FastShortcuts","logo":{"@type":"ImageObject","url":"https://fastshortcuts.com/logo.png"}},
-      "datePublished": "2026-10-02",
-      "dateModified": "2026-10-02",
-      "mainEntityOfPage": {"@type":"WebPage","@id":"https://fastshortcuts.com/shortcuts/grok-build/"},
-      "keywords": "grok build keyboard shortcuts, grok build tui, xai grok build cheat sheet",
-      "articleSection": "Developer Tools",
-      "about": {
-        "@type": "SoftwareApplication",
-        "name": "Grok Build",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "Windows, macOS, Linux",
-        "url": "https://docs.x.ai/build/keyboard-shortcuts"
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Start Grok Build",
+      "text": "Open your terminal and launch the Grok Build TUI in your project directory."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Open the shortcut panel",
+      "text": "Press Ctrl+. to open the in-app keyboard shortcuts list. If your terminal cannot send Ctrl+., use Ctrl+X instead (common on Windows and some emulators)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Use the command palette",
+      "text": "Press Ctrl+P or ? to open the command palette for slash commands, settings, and session actions."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Enable vim scrollback (optional)",
+      "text": "Run /vim-mode or set ui.vim_mode in ~/.grok/config.toml to use j/k navigation in scrollback."
+    }
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://fastshortcuts.com/assets/og-image.png",
+    "width": 1200,
+    "height": 630
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I see all Grok Build keyboard shortcuts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Press Ctrl+. inside the TUI. If nothing happens, use Ctrl+X — xAI documents that fallback for Windows and terminals without the Kitty keyboard protocol. The panel lists every binding for your current focus (prompt vs scrollback vs dashboard)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Ctrl+L open something different in Cursor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VS Code-family integrated terminals reserve Ctrl+L for mid-turn interject. Extensions move to /plugins. See the Integrated terminal overrides group in the Windows / Linux or macOS tab above, and our Cursor shortcuts page for editor chords that sit beside Grok Build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I enable vim mode in Grok Build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run /vim-mode or set [ui].vim_mode = true in ~/.grok/config.toml. Single-letter scrollback keys (j/k, h/l, g/G) only apply in vim mode; arrows and Ctrl chords work either way."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Shift+Tab do in Grok Build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It cycles permission / planning modes — typically Normal, Plan, Auto (when enabled), and Always-approve. Ctrl+O toggles always-approve directly. Exact modes depend on your build and settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Grok Build different from Claude Code or Codex?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All three are terminal agents with slash commands, but the maps differ. Grok Build emphasizes in-TUI help (Ctrl+.), vim scrollback, rewind via double-Esc, and terminal-specific interject keys. Use our Claude Code and Codex cheat sheets for those tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does xAI document Grok Build shortcuts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Official reference: docs.x.ai/build/keyboard-shortcuts. The changelog at x.ai/build/changelog notes when bindings change (voice, dashboard, multiline, WezTerm)."
       }
     }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "How to open the Grok Build keyboard shortcut list",
-      "description": "View every Grok Build TUI binding inside the running agent.",
-      "totalTime": "PT1M",
-      "step": [
-        {"@type":"HowToStep","position":1,"name":"Start Grok Build","text":"Open your terminal and launch the Grok Build TUI in your project directory."},
-        {"@type":"HowToStep","position":2,"name":"Open the shortcut panel","text":"Press Ctrl+. to open the in-app keyboard shortcuts list. If your terminal cannot send Ctrl+., use Ctrl+X instead (common on Windows and some emulators)."},
-        {"@type":"HowToStep","position":3,"name":"Use the command palette","text":"Press Ctrl+P or ? to open the command palette for slash commands, settings, and session actions."},
-        {"@type":"HowToStep","position":4,"name":"Enable vim scrollback (optional)","text":"Run /vim-mode or set ui.vim_mode in ~/.grok/config.toml to use j/k navigation in scrollback."}
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type":"Question",
-          "name":"How do I see all Grok Build keyboard shortcuts?",
-          "acceptedAnswer":{"@type":"Answer","text":"Press Ctrl+. inside the TUI to open the live shortcut list. Entries that do not apply in the current context appear dimmed. If Ctrl+. does not work in your terminal, press Ctrl+X instead."}
-        },
-        {
-          "@type":"Question",
-          "name":"Why does Ctrl+L do something different in Cursor or VS Code?",
-          "acceptedAnswer":{"@type":"Answer","text":"In VS Code-family integrated terminals (VS Code, Cursor, Windsurf, Zed), Ctrl+L interjects mid-turn instead of opening extensions. Use /plugins or the command palette for extensions there. Quit is Ctrl+D only in those terminals."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I insert a newline without sending in Grok Build?",
-          "acceptedAnswer":{"@type":"Answer","text":"Press Shift+Enter for a newline when multiline mode is on, or toggle multiline with Ctrl+M. In VS Code-family terminals use Alt+Enter where Shift+Enter is not delivered. In multiline mode, Enter may send while Shift+Enter inserts a newline."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I enable vim keys in Grok Build scrollback?",
-          "acceptedAnswer":{"@type":"Answer","text":"Run /vim-mode in the prompt or set vim_mode under [ui] in ~/.grok/config.toml. Vim-style j/k, h/l, g/G, and related single-letter bindings require vim mode; arrow keys and Ctrl+letter shortcuts work in both modes."}
-        },
-        {
-          "@type":"Question",
-          "name":"What is the difference between Esc and Ctrl+C in Grok Build?",
-          "acceptedAnswer":{"@type":"Answer","text":"Esc cancels the running turn. Ctrl+C also cancels a running turn; if the prompt has text, the first Ctrl+C may clear the draft first. Double Esc on an idle empty prompt can open rewind; double Esc with text clears the prompt within about 800 ms."}
-        },
-        {
-          "@type":"Question",
-          "name":"How do I interject while Grok Build is still working?",
-          "acceptedAnswer":{"@type":"Answer","text":"On most terminals press Ctrl+Enter or Ctrl+I to interject. In VS Code, Cursor, Windsurf, and Zed integrated terminals use Ctrl+L instead. Apple Terminal also treats Ctrl+O as interject."}
-        },
-        {
-          "@type":"Question",
-          "name":"Is Grok Build the same as Grok Desktop?",
-          "acceptedAnswer":{"@type":"Answer","text":"No. Grok Build is xAI's terminal coding agent TUI with the shortcuts on this page. Third-party Grok Desktop wrappers for grok.com use browser-style tab shortcuts (for example Ctrl+T). This page is only for Grok Build."}
-        }
-      ]
-    }
+  ]
+}
     </script>
 </head>
 <body>
